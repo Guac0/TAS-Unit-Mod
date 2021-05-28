@@ -8,9 +8,13 @@ While the developers have avoided using copyrighted assets, either as placeholde
 Because of Github file size limits compiled PBOs are not included (for the most part) in this repository, you will have to compile them yourself if you wish to test the WIP addon.
 
 Credits:
+
 CatCaptain — Steam owner, initial Pizza addon
+
 Guac — Programmer, 2D artist
+
 Foxtrotter — 3D artist
+
 TBONE — 3D artist
 
 If you would like to contribute to this project, contact Guac.
