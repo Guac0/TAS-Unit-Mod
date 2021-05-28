@@ -1,0 +1,3 @@
+5/26/21
+Renamed from Test_Pistol_01 to TAS_Revolver
+Increased hit values for Doomsday and Fragmentation ammunition

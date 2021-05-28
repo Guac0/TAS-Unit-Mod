@@ -1,0 +1,3 @@
+5/27/21
+Redid file locations and pathing to correctly utilize P: drive
+Added "TAS_BrightLite"
