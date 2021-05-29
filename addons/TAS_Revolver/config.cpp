@@ -8,8 +8,8 @@ class CfgPatches
 		addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
-			"A3_Weapons_F",
-			"TAS_BrightLite"
+			"A3_Weapons_F"//,
+			//"TAS_BrightLite"
 		};
 		requiredVersion=0.1;
 		version = "0.3";
@@ -230,11 +230,4 @@ class CfgWeapons
 			};
 		};
 	};
-	//class srifle_GM6_F
-	//class TAS_T&G_MK1_F: srifle_GM6_F
-	//{
-	//	author="TAS Mod Team";
-	//	scope=2;
-	//	model="TAS_Revolver\NTW-20.p3d";
-	//};
 };
