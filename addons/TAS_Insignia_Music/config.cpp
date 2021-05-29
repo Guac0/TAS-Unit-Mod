@@ -290,6 +290,14 @@ class CfgUnitInsignia
 		textureVehicle = "";
 		dlc = "TAS_Insignia_Music";
 	};
+	class TAS_35
+	{
+		displayName = "(TAS) Dragon Slayer";
+		author = "Guac";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2dragonSlayer.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
 	//SCP MTF patches
 	class MTF_1
 	{
