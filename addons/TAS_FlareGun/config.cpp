@@ -144,7 +144,7 @@ class CfgWeapons
 			class SilencedSound: BaseSoundModeType {};
 			recoil="recoil_pistol_heavy";
 			recoilProne="recoil_prone_pistol_heavy"; */
-			reloadTime=0.25;
+			reloadTime=0.5;
 			dispersion=0.00145;
 			minRange=5;
 			minRangeProbab=0.30000001;
@@ -170,7 +170,7 @@ class CfgWeapons
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=3;
-		initSpeed=-1;
+		initSpeed=400;
 		maxZeroing=100;
 		/*class WeaponSlotsInfo: WeaponSlotsInfo
 		{

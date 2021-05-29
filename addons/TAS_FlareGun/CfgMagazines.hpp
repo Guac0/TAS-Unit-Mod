@@ -11,8 +11,8 @@ class CfgMagazines
 		descriptionshort = "Used in: TAS Flaregun";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		count = 1;
-		mass = 	3;
-		initSpeed = 300;
+		mass = 	1;
+		initSpeed = 400;
 	};
 	class TAS_FlareGun_MagRed : CA_Magazine
 	{
@@ -23,7 +23,7 @@ class CfgMagazines
 		descriptionshort = "Used in: TAS Flaregun";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		count = 1;
-		mass = 	3;
-		initSpeed = 300;
+		mass = 	1;
+		initSpeed = 400;
 	};
 };
