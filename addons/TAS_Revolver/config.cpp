@@ -16,8 +16,8 @@ class CfgPatches
 		units[]={};
 		weapons[]=
 		{
-			"hgun_test_pistol_F",
-			"hgun_test_pistol_Yorris_F"//,
+			"TAS_hgun_revolver",
+			"TAS_hgun_revolver_Yorris_F"//,
 			//"hgun_test_pistol_brightlite"
 			//"TAS_T&G_MK1_F"
 		};
@@ -56,7 +56,7 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class hgun_test_pistol_F: Pistol_Base_F
+	class TAS_hgun_revolver: Pistol_Base_F
 	{
 		author="TAS Mod Team";
 		_generalMacro="hgun_test_pistol_F";
@@ -68,20 +68,20 @@ class CfgWeapons
 		magazines[]=
 		{
 			6Rnd_45ACP_Cylinder,
-			TAS_6Rnd_00Buck,
-			TAS_6Rnd_Slug,
-			TAS_6Rnd_FRAG,
-			TAS_6Rnd_doomsday_Buck
+			//TAS_6Rnd_00Buck,
+			//TAS_6Rnd_Slug,
+			//TAS_6Rnd_FRAG,
+			//TAS_6Rnd_doomsday_Buck //remove to test magwell
 		};
 		magazineWell[]=
 		{
-			"Cylinder_45ACP"
+			"TAS_magWell_Revolver"
 		};
-		displayname="Test Pistol";
-		descriptionShort="It's a test pistol";
+		displayname="Revolver";
+		descriptionShort="It's THE Revolver";
 		class Library
 		{
-			libTextDesc="Test Pistol Library Description";
+			libTextDesc="Revolver Library Description";
 		};
 		reloadAction="GestureReloadPistolHeavy02";
 		recoil="recoil_pistol_zubr";
@@ -217,10 +217,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class hgun_test_pistol_Yorris_F: hgun_test_pistol_F
+	class TAS_hgun_revolver_Yorris_F: TAS_hgun_revolver
 	{
 		author="TAS Mod Team";
-		_generalMacro="hgun_test_pistol_Yorris_F";
+		//_generalMacro="hgun_test_pistol_Yorris_F";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -228,6 +228,26 @@ class CfgWeapons
 				slot="CowsSlot";
 				item="optic_Yorris";
 			};
+		};
+	};
+};
+
+//magWell definition
+class CfgMagazineWells
+{
+	class TAS_magWell_Revolver
+	{
+		TAS_Magazines[] =
+		{
+			"TAS_6Rnd_00Buck",
+			"TAS_6Rnd_Slug",
+			"TAS_6Rnd_FRAG",
+			"TAS_6Rnd_doomsday_Buck"
+		};
+		// Magazines defined 
+		BI_Magazines[] =
+		{
+			"6Rnd_45ACP_Cylinder"
 		};
 	};
 };
