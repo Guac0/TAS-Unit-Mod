@@ -44,12 +44,15 @@ class CfgWeapons
 	{
 		author="TAS Mod Team";
 		scope=2;
-		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun1.p3d"; //WIP model, might break
+		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun4.p3d"; //WIP model, might break
 		picture="A3\Weapons_F\Data\placeholder_co.paa";
 		magazines[]=
 		{
-			TAS_FlareGun_MagGreen,
-			TAS_FlareGun_MagRed
+			TAS_FlareGun_MagWhite //others defined via magWell, this is a fallback
+		};
+		magazineWell[]=
+		{
+			"TAS_magWell_FlareGun"
 		};
 		displayname="Flaregun";
 		descriptionShort="It's a flaregun.";
@@ -58,8 +61,8 @@ class CfgWeapons
 			libTextDesc="Test Pistol Library Description";
 		}; */
 		reloadAction="GestureReloadPistolHeavy02";
-		//recoil="recoil_pistol_zubr";
-		/*hiddenSelections[]=
+		recoil="recoil_pistol_zubr";
+		hiddenSelections[]=
 		{
 			"camo",
 			"camo1"
@@ -68,8 +71,8 @@ class CfgWeapons
 		{
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_co",
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
-		};*/
-		/*drySound[]=
+		};
+		drySound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\dry_Zubr",
 			0.39810717,
@@ -82,12 +85,12 @@ class CfgWeapons
 			0.56234133,
 			1,
 			10
-		};*/
+		};
 		modes[]=
 		{
 			"Single"
 		};
-		/*class Single: Mode_SemiAuto
+		class Single: Mode_SemiAuto
 		{
 			sounds[]=
 			{
@@ -140,10 +143,10 @@ class CfgWeapons
 					};
 				};
 				soundSetShot[] = {"Zubr_Shot_SoundSet", "Zubr_Tail_SoundSet", "Zubr_InteriorTail_SoundSet"};
-			};
+			}; 
 			class SilencedSound: BaseSoundModeType {};
 			recoil="recoil_pistol_heavy";
-			recoilProne="recoil_prone_pistol_heavy"; */
+			recoilProne="recoil_prone_pistol_heavy";
 			reloadTime=0.5;
 			dispersion=0.00145;
 			minRange=5;
@@ -170,7 +173,7 @@ class CfgWeapons
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=3;
-		initSpeed=400;
+		initSpeed=300;
 		maxZeroing=100;
 		/*class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -191,4 +194,26 @@ class CfgWeapons
 			};
 		};*/
 	};
-//};
+};
+
+//magWell definition
+class CfgMagazineWells
+{
+	class TAS_magWell_FlareGun
+	{
+		TAS_Magazines[] =
+		{
+			"TAS_FlareGun_MagGreenCluster",
+			"TAS_FlareGun_MagRedCluster",
+			"TAS_FlareGun_MagWhite",
+			"TAS_FlareGun_MagRed",
+			"TAS_FlareGun_MagGreen",
+			"TAS_FlareGun_MagYellow",
+		};
+		// Magazines defined 
+		/*BI_Magazines[] =
+		{
+			"6Rnd_45ACP_Cylinder"
+		};*/
+	};
+};
