@@ -17,7 +17,7 @@ class CfgMagazines
 	class TAS_FlareGun_MagRedCluster : TAS_FlareGun_MagGreenCluster
 	{
 		ammo = Sub_F_Signal_Red;
-		displayName = "1Rnd Red ClusterFlare";
+		displayName = "1Rnd Red Cluster Flare";
 		displayNameShort = "Red Cluster Flare";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 	};
