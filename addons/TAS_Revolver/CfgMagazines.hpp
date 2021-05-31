@@ -46,7 +46,7 @@ class CfgMagazines
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_FRAG";
 		count = 6;
-		mass = 	7;
+		mass = 	8;
 		typicalSpeed = 125;
 	};
 	class TAS_6Rnd_doomsday_Buck : TAS_6Rnd_00Buck
@@ -58,6 +58,6 @@ class CfgMagazines
 		descriptionshort = "Used in: TEST PISTOL";
 		ammo = "TAS_ammo_doomsday_buckshot";
 		count = 6;
-		mass = 	10;
+		mass = 	12;
 	};
 };
