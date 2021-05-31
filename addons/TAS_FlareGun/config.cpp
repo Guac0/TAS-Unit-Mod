@@ -72,79 +72,29 @@ class CfgWeapons
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_co",
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
 		};
-		drySound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\dry_Zubr",
-			0.39810717,
-			1,
-			20
-		};
-		reloadMagazineSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\reload_Zubr",
-			0.56234133,
-			1,
-			10
-		};
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl", 0.316228, 1, 5};
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL", 0.562341, 1, 10};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl", 0.562341, 1, 10};
 		modes[]=
 		{
 			"Single"
 		};
 		class Single: Mode_SemiAuto
 		{
-			sounds[]= //replace Zubr sounds with UGL sounds in future, Zubr animation works fairely well though
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
+			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Closure_Zubr_01", 0.199526, 1, 10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Closure_Zubr_02", 0.199526, 1, 10};
-				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10};
+				soundClosure[] = {"closure1", 1};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_short_01", 3.16228, 1, 1400};
-				begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_short_02", 3.16228, 1, 1400};
-				begin3[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_short_03", 3.16228, 1, 1400};
-				soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_tail_interior", 1.41254, 1, 1400};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_tail_trees", 1, 1, 1400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_tail_forest", 1, 1, 1400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_tail_meadows", 1, 1, 1400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\Zubr_tail_houses", 1, 1, 1400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-				soundSetShot[] = {"Zubr_Shot_SoundSet", "Zubr_Tail_SoundSet", "Zubr_InteriorTail_SoundSet"};
-			}; 
-			class SilencedSound: BaseSoundModeType {};
+				begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200};
+				soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
+				soundSetShot[] = {"UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet"};
+			}; //doesnt have different sound based on enviroment
+			class SilencedSound: BaseSoundModeType {}; //can probably get rid of this
 			recoil="recoil_pistol_heavy";
 			recoilProne="recoil_prone_pistol_heavy";
 			reloadTime=0.5;
@@ -225,3 +175,50 @@ class CfgMagazineWells
 		};*/
 	};
 };
+
+//UGL code, used for sounds in flaregun
+/*
+class UGL_F: GrenadeLauncher
+		{
+			displayName = "EGLM";
+			magazines[] = {"1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "UGL_FlareCIR_F", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell"};
+			changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl", 0.316228, 1, 5};
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL", 0.562341, 1, 10};
+			drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl", 0.562341, 1, 10};
+			modes[] = {"Single"};
+			class Single: Mode_SemiAuto
+			{
+				sounds[] = {"StandardSound"};
+				class BaseSoundModeType
+				{
+					closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10};
+					soundClosure[] = {"closure1", 1};
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200};
+					begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200};
+					soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
+					soundSetShot[] = {"UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet"};
+				};
+				recoil = "M240Recoil";
+				recoilProne = "M240Recoil";
+				minRange = 30;
+				minRangeProbab = 0.1;
+				midRange = 200;
+				midRangeProbab = 0.7;
+				maxRange = 400;
+				maxRangeProbab = 0.05;
+			};
+			recoil = "recoil_default";
+			magazineReloadTime = 0;
+			reloadTime = 0.1;
+			optics = 1;
+			modelOptics = "-";
+			cameraDir = "UGL look";
+			memoryPointCamera = "UGL eye";
+			opticsZoomMin = 0.25;
+			opticsZoomMax = 1.25;
+			opticsZoomInit = 0.75;
+			weaponInfoType = "RscWeaponZeroing";
+		};*/
