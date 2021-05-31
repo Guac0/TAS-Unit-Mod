@@ -24,7 +24,7 @@ class CfgWeapons
 		//_generalMacro = "acc_flashlight";
 		scope = 2;
 		displayName = "BrightLite";
-		descriptionUse = "<t color='#9cf953'>Use: </t>Turn Flashlight ON/OFF";
+		//descriptionUse = "<t color='#9cf953'>Use: </t>Turn Flashlight ON/OFF";
 		picture = "\A3\weapons_F\Data\UI\gear_accv_flashlight_CA.paa";
 		model = "\A3\weapons_f\acc\accv_Flashlight_F";
 		descriptionShort = "Enhanced weapon-mounted lighting system.";
@@ -80,7 +80,12 @@ class CfgWeapons
 			};
 		};
 	};
-	class Rifle;
+	class SlotInfo;
+	class PointerSlot: SlotInfo
+	{
+		compatibleItems[] += {"acc_brightlite"};
+	};
+	/*class Rifle;
 	class Rifle_Base_F: Rifle
 	{
 	};
@@ -114,5 +119,5 @@ class CfgWeapons
 				item = "acc_brightlite";
 			};
 		};
-	};
+	};*/
 };
