@@ -1,4 +1,4 @@
-﻿	
+﻿//goes in CfgWeapons	
 	/** Special suppressor for test weapon */
 	class ItemCore; /// base class for accessories
 	class InventoryMuzzleItem_Base_F; /// base class for muzzle suppressors
