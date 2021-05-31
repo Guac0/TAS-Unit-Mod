@@ -298,6 +298,62 @@ class CfgUnitInsignia
 		textureVehicle = "";
 		dlc = "TAS_Insignia_Music";
 	};
+	class TAS_36
+	{
+		displayName = "(TAS) Boomer Math Joke";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3boomer_math_joke.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_37
+	{
+		displayName = "(TAS) Conner's Patch";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Conner_Patch.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_38
+	{
+		displayName = "(TAS) Hello I'm Fred";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3im_fred.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_39
+	{
+		displayName = "(TAS) Kentucky Taliban";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Kentucky_Taliban.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_40
+	{
+		displayName = "(TAS) Polish Slav";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Polish_slav.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_41
+	{
+		displayName = "(TAS) Squad Wipe";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Squad_wipe.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
+	class TAS_42
+	{
+		displayName = "(TAS) The Pole";
+		author = "Tbone";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3The_pole.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
 	//SCP MTF patches
 	class MTF_1
 	{
