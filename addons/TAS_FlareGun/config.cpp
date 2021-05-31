@@ -123,7 +123,8 @@ class CfgWeapons
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=3;
-		initSpeed=250;
+		initSpeed = -1;
+		//initSpeed=250;
 		maxZeroing=100;
 		/*class WeaponSlotsInfo: WeaponSlotsInfo
 		{
