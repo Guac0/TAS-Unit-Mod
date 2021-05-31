@@ -5,7 +5,7 @@ class CfgPatches {
 	{
 		name = "TAS BrightLite Addon";
 		units[] = {};
-		weapons[] = {"acc_brightlite","Item_acc_brightlite","arifle_TRG20_ACO_BrightLite_F"};
+		weapons[] = {"TAS_acc_brightlite","TAS_Item_acc_brightlite"};
 		requiredAddons[] = {"A3_Weapons_F"};
 		version = "0.3";
 		author[]= {"TAS Mod Team"};
@@ -18,7 +18,7 @@ class CfgWeapons
 {
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
-	class acc_brightlite: ItemCore
+	class TAS_acc_brightlite: ItemCore
 	{
 		author = "Guac";
 		//_generalMacro = "acc_flashlight";
@@ -62,7 +62,7 @@ class CfgWeapons
 		inertia = 0.1;
 	};
 	class Item_Base_F;
-	class Item_acc_brightlite: Item_Base_F
+	class TAS_Item_acc_brightlite: Item_Base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -81,9 +81,20 @@ class CfgWeapons
 		};
 	};
 	class SlotInfo;
-	class PointerSlot: SlotInfo
-	{
-		compatibleItems[] += {"acc_brightlite"};
+	class PointerSlot: SlotInfo {
+		compatibleItems[] += {"TAS_acc_brightlite"};
+	};
+	
+	class asdg_SlotInfo; //cba compatibility
+	class asdg_FrontSideRail: asdg_SlotInfo {
+		class compatibleItems {
+			TAS_acc_brightlite = 1;
+		};
+	};
+	class PointerSlot_Rail: PointerSlot {
+		class compatibleItems {
+			TAS_acc_brightlite = 1;
+		};
 	};
 	/*class Rifle;
 	class Rifle_Base_F: Rifle
@@ -121,3 +132,14 @@ class CfgWeapons
 		};
 	};*/
 };
+
+/*class BettIR_Config //add after works, required addon BettIR_Core
+{
+    class CompatibleAttachments
+    {
+        class TAS_acc_brightlite //same position as vanilla flashlight, is on the right side of the weapon
+		{
+			offset[] = {0.05,0.28,0.06};
+		};
+    };
+}; */
