@@ -302,446 +302,283 @@ class CfgUnitInsignia
 	class MTF_1
 	{
 		displayName = "MTF Alpha-1 (Red Right Hand)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Alpha-1.paa";
 		textureVehicle = "";
-		dlc = "CLoS_Insignia_Pack";
+		dlc = "SCP Foundation_Insignia_Pack";
 	};
 	class MTF_2
 	{
 		displayName = "MTF Alpha-4 (Pony Express)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Alpha-4.paa";
 		textureVehicle = "";
 	};
 	class MTF_3
 	{
 		displayName = "MTF Alpha-9 (Last Hope)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Alpha-9.paa";
 		textureVehicle = "";
 	};
 	class MTF_4
 	{
 		displayName = "MTF Beta-4 (Castaways)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Beta-4.paa";
 		textureVehicle = "";
 	};
 	class MTF_5
 	{
 		displayName = "MTF Beta-7 (Maz Hatters)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Beta-7.paa";
 		textureVehicle = "";
 	};
 	class MTF_6
 	{
 		displayName = "MTF Delta-5 (Front Runners)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Delta-5.paa";
 		textureVehicle = "";
 	};
 	class MTF_7
 	{
 		displayName = "MTF Epsilon-6 (Village Idiots)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Epsilon-6.paa";
 		textureVehicle = "";
 	};
 	class MTF_8
 	{
 		displayName = "MTF Epsilon-9 (Fire Eaters)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Epsilon-9.paa";
 		textureVehicle = "";
 	};
 	class MTF_9
 	{
 		displayName = "MTF Epsilon-11 (Nine Tailed Fox)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Epsilon-11.paa";
 		textureVehicle = "";
 	};
 	class MTF_10
 	{
 		displayName = "MTF Eta-10 (See No Evil)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Eta-10.paa";
 		textureVehicle = "";
 	};
 	class MTF_11
 	{
 		displayName = "MTF Eta-11 (Savage Beasts)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Eta-11.paa";
 		textureVehicle = "";
 	};
 	class MTF_12
 	{
 		displayName = "MTF Gamma-5 (Red Herrings)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Gamma-5.paa";
 		textureVehicle = "";
 	};
 	class MTF_13
 	{
 		displayName = "MTF Gamma-6 (Deep Feeders)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Gamma-6.paa";
 		textureVehicle = "";
 	};
 	class MTF_14
 	{
 		displayName = "MTF Gamma-13 (Asimov's Lawbringers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Gamma-13.paa";
 		textureVehicle = "";
 	};
 	class MTF_15
 	{
 		displayName = "MTF Iota-10 (Damn Feds)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Iota-10.paa";
 		textureVehicle = "";
 	};
 	class MTF_16
 	{
 		displayName = "MTF Kappa-10 (Skynet)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Kappa-10.paa";
 		textureVehicle = "";
 	};
 	class MTF_17
 	{
 		displayName = "MTF Lambda-4 (Birdwatchers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Lambda-4.paa";
 		textureVehicle = "";
 	};
 	class MTF_18
 	{
 		displayName = "MTF Lambda-5 (White Rabbits)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Lambda-5.paa";
 		textureVehicle = "";
 	};
 	class MTF_19
 	{
 		displayName = "MTF Lambda-12 (Pest Control)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Lambda-12.paa";
 		textureVehicle = "";
 	};
 	class MTF_20
 	{
 		displayName = "MTF Lambda-14 (One Star Reviewers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Lambda-14.paa";
 		textureVehicle = "";
 	};
 	class MTF_21
 	{
 		displayName = "MTF Mu-3 (Highest Bidders)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Mu-3.paa";
 		textureVehicle = "";
 	};
 	class MTF_22
 	{
 		displayName = "MTF Mu-4 (Debuggers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Mu-4.paa";
 		textureVehicle = "";
 	};
 	class MTF_23
 	{
 		displayName = "MTF Mu-13 (Ghostbusters)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Mu-13.paa";
 		textureVehicle = "";
 	};
 	class MTF_24
 	{
 		displayName = "MTF Nu-7 (Hammer Down)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Nu-7.paa";
 		textureVehicle = "";
 	};
 	class MTF_25
 	{
 		displayName = "MTF Omega-7 (Pandora's Box)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Omega-7.paa";
 		textureVehicle = "";
 	};
 	class MTF_26
 	{
 		displayName = "MTF Omega-12 (Achilles' Heels)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Omega-12.paa";
 		textureVehicle = "";
 	};
 	class MTF_27
 	{
 		displayName = "MTF Omicron Rho (The Dream Team)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Omicron Rho.paa";
 		textureVehicle = "";
 	};
 	class MTF_28
 	{
 		displayName = "MTF Pi-1 (City Slickers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Pi-1.paa";
 		textureVehicle = "";
 	};
 	class MTF_29
 	{
 		displayName = "MTF Psi-7 (Home Improvement)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Psi-7.paa";
 		textureVehicle = "";
 	};
 	class MTF_30
 	{
 		displayName = "MTF Psi-8 (The Silencers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Psi-8.paa";
 		textureVehicle = "";
 	};
 	class MTF_31
 	{
 		displayName = "MTF Rho-1 (The Professors)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Rho-1.paa";
 		textureVehicle = "";
 	};
 	class MTF_32
 	{
 		displayName = "MTF Rho-9 (Technical Support)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Rho-9.paa";
 		textureVehicle = "";
 	};
 	class MTF_33
 	{
 		displayName = "MTF Rho-19 (Cythereans)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Rho-19.paa";
 		textureVehicle = "";
 	};
 	class MTF_34
 	{
 		displayName = "MTF Sigma-3 (Bibliographers)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Sigma-3.paa";
 		textureVehicle = "";
 	};
 	class MTF_35
 	{
 		displayName = "MTF Sigma-66 (Sixteen Tons)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Sigma-66.paa";
 		textureVehicle = "";
 	};
 	class MTF_36
 	{
 		displayName = "MTF Stigma-9 (Evolved From Naturally Occurring Gears, Levers, and Pulleys)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Stigma-9.paa";
 		textureVehicle = "";
 	};
 	class MTF_37
 	{
 		displayName = "MTF Tau-5 (Samsara)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Tau-5.paa";
 		textureVehicle = "";
 	};
 	class MTF_38
 	{
 		displayName = "MTF Theta-4 (Gardeners)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Theta-4.paa";
 		textureVehicle = "";
 	};
 	class MTF_39
 	{
 		displayName = "MTF Theta-90 (Angle Grinders)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Theta-90.paa";
 		textureVehicle = "";
 	};
 	class MTF_40
 	{
 		displayName = "MTF Zeta-9 (Mole Rats)";
-		author = "CLoS";
+		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Zeta-9.paa";
 		textureVehicle = "";
-	};
-	//Patches from A Certain Lack of Sanity's addon which where used alongside WT6 to learn how to mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1866810551 All rights reserved
-	class CLoS_1
-	{
-		displayName = "(CLoS) Designated Bullet Magnet";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Designated Bullet Magnet.paa";
-		textureVehicle = "";
-	};
-	class CLoS_2
-	{
-		displayName = "(CLoS) Forgot Zeus";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-AmbiZeus.paa";
-		textureVehicle = "";
-	};
-	class CLoS_3
-	{
-		displayName = "(CLoS) Hmmmmmmmm";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-hmm.paa";
-		textureVehicle = "";
-	};
-	class CLoS_4
-	{
-		displayName = "(CLoS) Hotdropping Eddies!";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Hotdrop.paa";
-		textureVehicle = "";
-	};
-	class CLoS_5
-	{
-		displayName = "(CLoS) RTP Gaming";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-RTP.paa";
-		textureVehicle = "";
-	};
-	class CLoS_6
-	{
-		displayName = "(CLoS) Sabertooth Tactical";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Sabertooth.paa";
-		textureVehicle = "";
-	};
-	class CLoS_7
-	{
-		displayName = "(CLoS) Spooky Shit Ahead";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Spooky Shit This Way.paa";
-		textureVehicle = "";
-	};
-	class CLoS_8
-	{
-		displayName = "(CLoS) What game are we playing?";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Armatree.paa";
-		textureVehicle = "";
-	};
-	class CLoS_9
-	{
-		displayName = "(CLoS) You're Too Close!!!";
-		author = "CLoS";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\CLoS-Too Close!.paa";
-		textureVehicle = "";
-	};
-	//Patches from Weeb Team 6 which where used alongside CLoS to learn how to mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1839856128&searchtext= All rights reserved
-	class WT6_1
-	{
-		displayName="(WT6) All-Stars University";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-gup_university.paa";
-		textureVehicle="";
-	};
-	class WT6_2
-	{
-		displayName="(WT6) Autism Speaks";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Autism Speaks Patch.paa";
-		textureVehicle="";
-	};
-	class WT6_3
-	{
-		displayName="(WT6) B";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-B_.paa";
-		textureVehicle="";
-	};
-	class WT6_4
-	{
-		displayName="(WT6) Gasmask";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-gasmask.paa";
-		textureVehicle="";
-	};
-	class WT6_5
-	{
-		displayName="(WT6) Pfanner";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Pfanner.paa";
-		textureVehicle="";
-	};
-	class WT6_6
-	{
-		displayName="(WT6) Salt";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Salt.paa";
-		textureVehicle="";
-	};
-	class WT6_7
-	{
-		displayName="(WT6) Shape";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-test.paa";
-		textureVehicle="";
-	};
-	class WT6_8
-	{
-		displayName="(WT6) Soviet Pepe";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Soviet Pepe.paa";
-		textureVehicle="";
-	};
-	class WT6_9
-	{
-		displayName="(WT6) Soviet Pepe 2";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-pepe_2.paa";
-		textureVehicle="";
-	};
-	class WT6_10
-	{
-		displayName="(WT6) Waifu 1";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-waifu_1.paa";
-		textureVehicle="";
-	};
-	class WT6_11
-	{
-		displayName="(WT6) Waifu 2";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-waifu_2.paa";
-		textureVehicle="";
-	};
-	class WT6_12
-	{
-		displayName="(WT6) Wanna Fuck";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-wanna_fuck.paa";
-		textureVehicle="";
-	};
-	class WT6_13
-	{
-		displayName="(WT6) Weeb Team 6";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Unit Patch.paa";
-		textureVehicle="";
-	};
-	class WT6_14
-	{
-		displayName="(WT6) Zu teuer Bruda";
-		author="Giant_Cookie";
-		texture="Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\WT6-Zu Teuer.paa";
-		textureVehicle="";
 	};
 };
 
