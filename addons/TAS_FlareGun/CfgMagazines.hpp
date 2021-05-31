@@ -12,7 +12,7 @@ class CfgMagazines
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		count = 1;
 		mass = 	3;
-		initSpeed = 300;
+		initSpeed = 250;
 	};
 	class TAS_FlareGun_MagRedCluster : TAS_FlareGun_MagGreenCluster
 	{

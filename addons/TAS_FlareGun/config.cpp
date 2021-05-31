@@ -9,7 +9,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"
-		};
+		}; //also ace3 grenades but since that's not set up don't worry about it, we're always going to use ace and if not it's probably not a critical error
 		requiredVersion=0.1;
 		version = "0.3";
 		units[]={};
@@ -56,10 +56,10 @@ class CfgWeapons
 		};
 		displayname="Flaregun";
 		descriptionShort="It's a flaregun.";
-		/* class Library
+		class Library
 		{
-			libTextDesc="Test Pistol Library Description";
-		}; */
+			libTextDesc="FlareGun Library Description";
+		};
 		reloadAction="GestureReloadPistolHeavy02";
 		recoil="recoil_pistol_zubr";
 		hiddenSelections[]=
@@ -92,7 +92,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			sounds[]=
+			sounds[]= //replace Zubr sounds with UGL sounds in future, Zubr animation works fairely well though
 			{
 				"StandardSound",
 				"SilencedSound"
@@ -173,7 +173,7 @@ class CfgWeapons
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=3;
-		initSpeed=300;
+		initSpeed=250;
 		maxZeroing=100;
 		/*class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -209,6 +209,14 @@ class CfgMagazineWells
 			"TAS_FlareGun_MagRed",
 			"TAS_FlareGun_MagGreen",
 			"TAS_FlareGun_MagYellow",
+			"TAS_FlareGun_MagCir"
+		};
+		ACE[] = 
+		{
+			"ACE_40mm_flare_white",
+			"ACE_40mm_flare_red",
+			"ACE_40mm_flare_green",
+			"ACE_40mm_flare_ir"
 		};
 		// Magazines defined 
 		/*BI_Magazines[] =
