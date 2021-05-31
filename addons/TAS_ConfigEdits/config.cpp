@@ -30,7 +30,7 @@ class CfgMagazines
 	{
 		author = "Guac";
 		scope = 2;
-		displayName = "50Rnd P90 EP Magazine";
+		displayName = "5.7mm 50Rnd EP Magazine";
 		ammo = "TAS_570x28_Ball";
 		count = 50;
 		initSpeed = 715;
