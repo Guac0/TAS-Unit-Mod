@@ -1,17 +1,16 @@
 //adds a new flashlight item with a larger/longer light
-class CfgPatches {
-
+class CfgPatches 
+{
 	class TAS_BrightLite
 	{
 		name = "TAS BrightLite Addon";
 		units[] = {};
-		weapons[] = {"TAS_acc_brightlite","TAS_Item_acc_brightlite"};
-		requiredAddons[] = {"A3_Weapons_F"};
-		version = "0.3";
+		weapons[] = {"TAS_acc_brightlite","TAS_Item_acc_brightlite","arifle_TRG20_ACO_BrightLite_F"};
+		requiredAddons[] = {"A3_Weapons_F","cba_main"};
+		//version = "0.3";
 		author[]= {"TAS Mod Team"};
 		authorUrl = "https://steamcommunity.com/id/YT_YYG_Gaming";
 	};
-
 };
 
 class CfgWeapons
@@ -73,16 +72,19 @@ class CfgWeapons
 		vehicleClass = "WeaponAccessories";
 		class TransportItems
 		{
-			class acc_brightlite
+			class TAS_acc_brightlite
 			{
-				name = "acc_brightlite";
+				name = "TAS_acc_brightlite";
 				count = 1;
 			};
 		};
 	};
 	class SlotInfo;
+	//class PointerSlot;
 	class PointerSlot: SlotInfo {
-		compatibleItems[] += {"TAS_acc_brightlite"};
+		//compatibleItems[] = {"acc_flashlight", "acc_pointer_IR","TAS_acc_brightlite"};
+		compatibleItems[] = {"TAS_acc_brightlite"};
+		//compatibleItems[] += {"TAS_acc_brightlite"};
 	};
 	
 	class asdg_SlotInfo; //cba compatibility
@@ -99,17 +101,17 @@ class CfgWeapons
 	/*class Rifle;
 	class Rifle_Base_F: Rifle
 	{
-	};
-	class Tavor_base_F: Rifle_Base_F
-	{
-	};
-	class arifle_TRG20_F: Tavor_base_F
+	};*/
+	//class Tavor_base_F;
+	//{
+	//};
+	/*class arifle_TRG20_F
 	{
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class PointerSlot: PointerSlot /// default accessories for this slot
 			{
-				compatibleItems[] = {"acc_brightlite"};
+				compatibleItems[] += {"acc_brightlite"};
 			};
 		};
 	};
