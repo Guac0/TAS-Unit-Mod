@@ -9,13 +9,13 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
-		{
+		
 	};
 };
 
 class cfgWeapons
 {
-	class H_HelmetB;
+	class H_CrewHelmetHeli_B;
 	class TAS_TestHelmet: H_CrewHelmetHeli_B
 	{ 
 		author = "Tolly";
