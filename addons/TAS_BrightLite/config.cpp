@@ -13,6 +13,25 @@ class CfgPatches
 	};
 };
 
+//adds rail compatibility using code derived from ace laserpointer
+class SlotInfo;
+class PointerSlot: SlotInfo {
+    compatibleItems[] += {"TAS_acc_brightlite"};
+};
+
+class asdg_SlotInfo;
+class asdg_FrontSideRail: asdg_SlotInfo {
+    class compatibleItems {
+        TAS_acc_brightlite = 1;
+    };
+};
+
+class PointerSlot_Rail: PointerSlot {
+    class compatibleItems {
+        TAS_acc_brightlite = 1;
+    };
+};
+
 class CfgWeapons
 {
 	class ItemCore;
@@ -49,9 +68,9 @@ class CfgWeapons
 				scale[]={0};
 				class Attenuation
 				{
-					start=15;
-					constant=100;
-					linear=70;
+					start=55;
+					constant=1;
+					linear=2;
 					quadratic=15;
 					hardLimitStart=130;
 					hardLimitEnd=160;
@@ -79,15 +98,15 @@ class CfgWeapons
 			};
 		};
 	};
-	class SlotInfo;
-	//class PointerSlot;
-	class PointerSlot: SlotInfo {
-		//compatibleItems[] = {"acc_flashlight", "acc_pointer_IR","TAS_acc_brightlite"};
+	/*class SlotInfo;
+	//class PointerSlot; //uncomment this if you get rid of "class PointerSlot: SlotInfo" for testing
+	class PointerSlot: SlotInfo { //btw SlotInfo is access = 1
+		//compatibleItems[] = {"acc_flashlight", "acc_pointer_IR","TAS_acc_brightlite"}; //unneccessary/will literally not allow you to define it all again?
 		compatibleItems[] = {"TAS_acc_brightlite"};
-		//compatibleItems[] += {"TAS_acc_brightlite"};
+		//compatibleItems[] += {"TAS_acc_brightlite"}; //throws error about not being found
 	};
 	
-	class asdg_SlotInfo; //cba compatibility
+	class asdg_SlotInfo; //cba compatibility, moved to cfgjointrails for testing
 	class asdg_FrontSideRail: asdg_SlotInfo {
 		class compatibleItems {
 			TAS_acc_brightlite = 1;
@@ -97,7 +116,7 @@ class CfgWeapons
 		class compatibleItems {
 			TAS_acc_brightlite = 1;
 		};
-	};
+	}; */
 	/*class Rifle;
 	class Rifle_Base_F: Rifle
 	{
