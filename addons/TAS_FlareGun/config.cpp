@@ -1,22 +1,22 @@
-//AiO 20968
+//Adds a flaregun and ammo modeled by Tolly and configed by Guac
 #include "cfgMagazines.hpp" /// specific magazines for this rifle
 //#include "cfgAmmo.hpp" /// specific ammo for this rifle
 class CfgPatches
 {
 	class TAS_FlareGun
 	{
-		//addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"
 		}; //also ace3 grenades but since that's not set up don't worry about it, we're always going to use ace and if not it's probably not a critical error
 		requiredVersion=0.1;
-		version = "0.3";
 		units[]={};
 		weapons[]=
 		{
 			"hgun_TAS_FlareGun"
 		};
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 class Mode_SemiAuto;

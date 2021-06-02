@@ -1,4 +1,4 @@
-//adds a new flashlight item with a larger/longer light
+//adds a new flashlight item with a larger/longer light, made by Guac
 class CfgPatches 
 {
 	class TAS_BrightLite
@@ -7,9 +7,8 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"TAS_acc_brightlite","TAS_Item_acc_brightlite","arifle_TRG20_ACO_BrightLite_F"};
 		requiredAddons[] = {"A3_Weapons_F","cba_main"};
-		//version = "0.3";
 		author = "TAS Mod Team";
-		authorUrl = "https://steamcommunity.com/id/YT_YYG_Gaming";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 

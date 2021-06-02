@@ -1,16 +1,24 @@
-class CfgPatches {
-
+//adds custom Pizza uniforms, vehicles, and factions, primarily by CatCaptain
+class CfgPatches
+{
 	class TAS_Pizza_Factions
 	{
 		name = "TAS Faction Addon";
-		units[] = {"Dominos_Employee","PapaJhons_Employee","Custom_Offroad_F2","Custom_Offroad_F3"};
+		units[] = 
+		{
+			"Dominos_Employee",
+			"PapaJhons_Employee",
+			"Custom_Offroad_F2",
+			"Custom_Offroad_F3"
+		};
 		weapons[] = {};
-		requiredAddons[] = {"A3_Characters_F"};
-		version = "0.3";
-		author = {"TAS Mod Team"}; //author[]= {"TAS Mod Team"};
-		authorUrl = "https://steamcommunity.com/id/YT_YYG_Gaming";
+		requiredAddons[] = 
+		{
+			"A3_Characters_F"
+		};
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
-
 };
 
 //************************************************************************************************************************************************************************************************

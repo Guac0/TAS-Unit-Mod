@@ -1,3 +1,4 @@
+//adds an extremely-large sniper rifle modeled by TBONE and configed by Guac
 //#include "cfgMagazines.hpp" /// specific magazines for this rifle
 //#include "cfgAmmo.hpp" /// specific ammo for this rifle
 class CfgPatches
@@ -5,17 +6,14 @@ class CfgPatches
 	class TaG_MK1
 	{
 		addonRootClass="A3_Weapons_F";
-		requiredAddons[]=
-		{
-			"A3_Weapons_F"
-		};
-		requiredVersion=0.1;
-		version = "0.3";
+		requiredAddons[]={"A3_Weapons_F"};
 		units[]={};
 		weapons[]=
 		{
 			"TAS_TaG_MK1_F"
 		};
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 class Mode_SemiAuto;

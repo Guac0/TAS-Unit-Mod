@@ -1,5 +1,5 @@
+//adds custom insignia and music, primary config and textures by Guac, secondary config by Hoxxi, secondary textures by various
 class CfgPatches {
-
 	class TAS_Insignia_Music
 	{
 		name = "TAS Insignia and Music Addon";
@@ -7,10 +7,9 @@ class CfgPatches {
 		weapons[] = {};
 		requiredAddons[] = {};
 		version = "0.3";
-		author[]= {"TAS Mod Team"};
-		authorUrl = "https://steamcommunity.com/id/YT_YYG_Gaming";
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
-
 };
 
 class CfgUnitInsignia

@@ -1,4 +1,4 @@
-//Adds a new type of ammo to the official P90/ADR with a hit/caliber value of a B_762x54_Ball (Used in the Rahim)
+//Adds a new type of ammo to the official P90/ADR with a hit/caliber value of a B_762x54_Ball (Used in the Rahim), made by Guac
 class CfgPatches {
 
 	class TAS_ConfigEdits
@@ -7,9 +7,8 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"A3_Weapons_F_Mod"};
-		version = "0.3";
-		author[]= {"TAS Mod Team"};
-		authorUrl = "https://steamcommunity.com/id/YT_YYG_Gaming";
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 
 };

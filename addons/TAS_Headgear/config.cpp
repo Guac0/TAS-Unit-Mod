@@ -1,3 +1,4 @@
+//adds retextured headgear contributed by community members, various developers (Primarily Hoxxi on config, various other than that)
 class CfgPatches
 {
 	class TAS_Headgear
@@ -9,7 +10,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
-		
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 

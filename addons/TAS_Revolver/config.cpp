@@ -1,18 +1,16 @@
-//AiO 20968
+//adds a custom revolver and ammo, config by Guac and (eventually) model by TBONE
 #include "cfgMagazines.hpp" /// specific magazines for this rifle
 #include "cfgAmmo.hpp" /// specific ammo for this rifle
 class CfgPatches
 {
 	class TAS_Revolver
 	{
-		addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"//,
 			//"TAS_BrightLite"
 		};
 		requiredVersion=0.1;
-		version = "0.3";
 		units[]={};
 		weapons[]=
 		{
@@ -21,6 +19,8 @@ class CfgPatches
 			//"hgun_test_pistol_brightlite"
 			//"TAS_T&G_MK1_F"
 		};
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 class Mode_SemiAuto;
