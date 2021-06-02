@@ -44,7 +44,7 @@ class CfgWeapons
 	{
 		author="TAS Mod Team";
 		scope=2;
-		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun4.p3d"; //WIP model, might break
+		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun.p3d"; //WIP model, might break
 		picture="A3\Weapons_F\Data\placeholder_co.paa";
 		magazines[]=
 		{
