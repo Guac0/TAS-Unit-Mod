@@ -21,7 +21,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-a10.paa"; //texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-a10.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_2
 	{
@@ -29,7 +28,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-albania.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_3
 	{
@@ -37,7 +35,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Cowabunga.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_4
 	{
@@ -45,7 +42,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-dame_da_ne.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_5
 	{
@@ -53,7 +49,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-doi_chart.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_6
 	{
@@ -61,7 +56,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-handheld_radio.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_7
 	{
@@ -69,7 +63,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-ooarai_emblem.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_8
 	{
@@ -77,7 +70,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-ooarai_flag.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_9
 	{
@@ -85,7 +77,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-No_Miller.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_10
 	{
@@ -93,7 +84,6 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Autismo_Seals_Logo.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
 	};
 	class TAS_11
 	{
@@ -101,7 +91,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-ya_like_jasp.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_12
 	{
@@ -109,7 +99,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Propaganda_Immunity.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_13
 	{
@@ -117,7 +107,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-autismo_SEAL1.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_14
 	{
@@ -125,7 +115,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-autismo_SEAL2.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_15
 	{
@@ -133,7 +123,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-chaos_insignia_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_16
 	{
@@ -141,7 +131,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-martijn_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_17
 	{
@@ -149,7 +139,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-martijn2_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_18
 	{
@@ -157,7 +147,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-SLY_MARBO_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_19
 	{
@@ -165,7 +155,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-smiguel2_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_20
 	{
@@ -173,7 +163,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-megumin_roundel.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_21
 	{
@@ -181,25 +171,23 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-qwest.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
-	//seems to be buggy, file repeatedly not found -- works as of V2
 	class TAS_22
 	{
 		displayName = "(TAS) Rats";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-rats2.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
-	//incorrect size/color scheme? is blank ingame -- works as of V2
 	class TAS_23
 	{
 		displayName = "(TAS) 706th Fighter Squadron";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-A-10_706th.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_24
 	{
@@ -207,7 +195,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-coding_socks.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_25
 	{
@@ -215,7 +203,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-grumpy_jtac.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_26
 	{
@@ -223,15 +211,15 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-unsupervised.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_27
 	{
 		displayName = "(TAS) Autismo Seal 3";
-		author = "Guac";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2Autismo_Seal_TBONE.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_28
 	{
@@ -239,7 +227,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2forever.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_29
 	{
@@ -247,7 +235,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2GUP_Kuromorimine.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_30
 	{
@@ -255,7 +243,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2isforme.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_31
 	{
@@ -263,7 +251,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2MapleLeaf.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_32
 	{
@@ -271,7 +259,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2Ricardokun.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_33
 	{
@@ -279,7 +267,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2StenWaifu.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_34
 	{
@@ -287,7 +275,7 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2PanzerLake.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_35
 	{
@@ -295,63 +283,63 @@ class CfgUnitInsignia
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-2dragonSlayer.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_36
 	{
 		displayName = "(TAS) Boomer Math Joke";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3boomer_math_joke.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_37
 	{
 		displayName = "(TAS) Conner's Patch";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Conner_Patch.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_38
 	{
 		displayName = "(TAS) Hello I'm Fred";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3im_fred.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_39
 	{
 		displayName = "(TAS) Kentucky Taliban";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Kentucky_Taliban.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_40
 	{
 		displayName = "(TAS) Polish Slav";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Polish_slav.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_41
 	{
 		displayName = "(TAS) Squad Wipe";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3Squad_wipe.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	class TAS_42
 	{
 		displayName = "(TAS) The Pole";
-		author = "Tbone";
+		author = "TBONE";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3The_pole.paa";
 		textureVehicle = "";
-		dlc = "TAS_Insignia_Music";
+		
 	};
 	//SCP MTF patches
 	class MTF_1
@@ -360,7 +348,7 @@ class CfgUnitInsignia
 		author = "SCP Foundation";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\MTF Alpha-1.paa";
 		textureVehicle = "";
-		dlc = "SCP Foundation_Insignia_Pack";
+		
 	};
 	class MTF_2
 	{
