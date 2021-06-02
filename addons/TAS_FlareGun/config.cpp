@@ -132,8 +132,9 @@ class CfgWeapons
 			holsterScale=0.85000002;
 			class CowsSlot: CowsSlot_Rail_Pistol
 			{
-				iconPosition[]={0.40000001,0.30000001};
-				iconScale=0.15000001;
+				compatibleitems[] = {};
+				//iconPosition[]={0.40000001,0.30000001};
+				//iconScale=0.15000001;
 			};
 			class MuzzleSlot
 			{
@@ -143,7 +144,7 @@ class CfgWeapons
 				iconPosition[]={0.34999999,0.60000002};
 				iconScale=0.30000001;
 			};
-		};*/
+		}; */
 	};
 };
 
