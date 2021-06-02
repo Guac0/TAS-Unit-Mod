@@ -5,7 +5,7 @@ class CfgPatches
 {
 	class TAS_FlareGun
 	{
-		addonRootClass="A3_Weapons_F";
+		//addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"
