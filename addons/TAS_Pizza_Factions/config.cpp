@@ -1,4 +1,4 @@
-//adds custom Pizza uniforms, vehicles, and factions, primarily by CatCaptain
+//adds custom Pizza uniforms, vehicles, and factions, primarily by CatCaptain with fixes by Guac
 class CfgPatches
 {
 	class TAS_Pizza_Factions
@@ -74,18 +74,18 @@ class CfgVehicles
 	class B_G_Offroad_01_F;
 	
     class Dominos_Employee: B_soldier_F {
-		side = 1;
+		side = 1; //blufor
         author = "Ricardo"; 
-        _generalMacro = "B_soldier_F"; 
+        //_generalMacro = "B_soldier_F"; //internal BIS debug
         scope = 2; 
-        displayName = "Dominos Manager"; 
+        displayName = "Dominos Employee"; 
         identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
         genericNames = "NATOMen"; 
-        faction = "Domino_Zimbabwe";
+        faction = "Domino_Zimbabwe"; 
         model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; //Default NATO 
-        uniformClass = "Dominos_Uniform"; 
-        hiddenSelections[] = {"Camo","Insignia"}; 
-        hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};  //hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};
+        uniformClass = "Dominos_Uniform"; //name of uniform
+        hiddenSelections[] = {"Camo","Insignia"}; //declares that model can be changed in its camo and insignia sections
+        hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};  //sets camo of uniform model
          weapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; 
         respawnWeapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; 
         magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"}; 
@@ -97,7 +97,7 @@ class CfgVehicles
         author = "Ricardo"; 
         _generalMacro = "B_soldier_F"; 
         scope = 2; 
-        displayName = "Papa John Manager"; 
+        displayName = "Papa John Employee"; 
         identityTypes[]=
 		{
 			"LanguagePER_F",
@@ -167,30 +167,41 @@ class cfgWeapons
 
     class Dominos_Uniform: Uniform_Base 
     { 
-        scope = 2; 
-        displayName = "Dominos Uniform"; 
+        author = "CatCaptain";
+		scope = 2; /// scope needs to be 2 to have a visible class
+		allowedSlots[] = {BACKPACK_SLOT}; /// where does the uniform fit to when not equipped
+        displayName = "Dominos Uniform"; /// how would the stuff be displayed in inventory and on ground
 		//picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\dominos_uniform.paa";
-		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d"; 
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; /// preview in arsenal/inventory
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d"; /// how does the uniform look when put on ground
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[]=
 		{
-			"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_folded.paa"
+			"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa" //textures the suitpack?
 		};
         class ItemInfo : UniformItem { 
-            uniformClass = "Dominos_Uniform"; 
-            containerClass = "Supply50"; 
-            mass = 50; 
+			uniformModel = "-";
+            uniformClass = "Dominos_Employee"; /// what soldier class contains parameters of the uniform (such as model, camouflage, hitpoints and others)
+            containerClass = "Supply50"; /// what fake vehicle is used to describe size of uniform container, there is quite a lot SupplyXX classes ready
+            mass = 50; /// combined weight and volume
         }; 
     }; 
 	class Papa_John_Uniform: Uniform_Base 
     { 
-        scope = 2; 
-        displayName = "Papa John Uniform"; 
+        author = "CatCaptain";
+		scope = 2; 
+		allowedSlots[] = {BACKPACK_SLOT};
+        displayName = "Papa Jhon Uniform"; 
         picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; 
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+		hiddenSelections[] = { "camo" };
+		hiddenSelectionsTextures[]=
+		{
+			"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"
+		};
         class ItemInfo : UniformItem { 
-            uniformClass = "Papa_John_Uniform"; 
+            uniformModel = "-";
+			uniformClass = "PapaJhons_Employee"; 
             containerClass = "Supply50"; 
             mass = 50; 
         }; 
