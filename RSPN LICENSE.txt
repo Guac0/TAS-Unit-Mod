@@ -1,0 +1,7 @@
+RSPN Cave Systems Terms Of Use:
+
+You are authorized to use and redistribute this mod in its current state, for use with the game "Arma 3" By Bohemia Interactive Studios, as you require. 3rd party distribution must include the PBO file and LICENSE in their original form. You are also authorized to include the prefix folder and files, but not required. You may unpack PBO for use with visitor only, and any modification to files whilst unpacked is prohibited. You are authorized to use this mod with services that accept donations. You may include this mod with any free modpack or alternative free mod that you wish. It is required that you disclose all credit of the mod to "RSPN Gaming" or myself "Liv2Die". The use of this mod in conjunction with servers, mods, maps, addons, or any other distributed software requiring Fees, Donations, or Purchases is strictly prohibited and is punishable by law. Any commercial use of this mod is strictly prohibited and is punishable by law.
+
+Written on January 9th 2015 By,
+
+Kurtis Bell (Liv2Die)
