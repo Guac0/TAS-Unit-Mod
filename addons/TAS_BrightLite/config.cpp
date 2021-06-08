@@ -1,11 +1,12 @@
 //adds a new flashlight item with a larger/longer light, made by Guac
+//now has swappable modes with different ranges
 class CfgPatches 
 {
 	class TAS_BrightLite
 	{
 		name = "TAS BrightLite Addon";
-		units[] = {};
-		weapons[] = {"TAS_acc_brightlite","TAS_Item_acc_brightlite","arifle_TRG20_ACO_BrightLite_F"};
+		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"};
+		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper"}; //"arifle_TRG20_ACO_BrightLite_F"
 		requiredAddons[] = {"A3_Weapons_F","cba_main"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
@@ -15,19 +16,25 @@ class CfgPatches
 //adds rail compatibility using code derived from ace laserpointer
 class SlotInfo;
 class PointerSlot: SlotInfo {
-    compatibleItems[] += {"TAS_acc_brightlite"};
+    compatibleItems[] += {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"}; //throws errors about array not being found, doesn't matter because CBA join rails works
 };
 
 class asdg_SlotInfo;
 class asdg_FrontSideRail: asdg_SlotInfo {
     class compatibleItems {
-        TAS_acc_brightlite = 1;
+        TAS_acc_brightlite_medium = 1;
+		TAS_acc_brightlite_low = 1;
+		TAS_acc_brightlite_high = 1;
+		TAS_acc_brightlite_sniper = 1;
     };
 };
 
 class PointerSlot_Rail: PointerSlot {
     class compatibleItems {
-        TAS_acc_brightlite = 1;
+        TAS_acc_brightlite_medium = 1;
+		TAS_acc_brightlite_low = 1;
+		TAS_acc_brightlite_high = 1;
+		TAS_acc_brightlite_sniper = 1;
     };
 };
 
@@ -35,16 +42,144 @@ class CfgWeapons
 {
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
-	class TAS_acc_brightlite: ItemCore
+	class TAS_acc_brightlite_medium: ItemCore
 	{
 		author = "Guac";
 		//_generalMacro = "acc_flashlight";
 		scope = 2;
-		displayName = "BrightLite";
+		displayName = "BrightLite (Medium Yield)";
+		baseWeapon = "TAS_acc_brightlite_medium";
 		//descriptionUse = "<t color='#9cf953'>Use: </t>Turn Flashlight ON/OFF";
 		picture = "\A3\weapons_F\Data\UI\gear_accv_flashlight_CA.paa";
 		model = "\A3\weapons_f\acc\accv_Flashlight_F";
 		descriptionShort = "Enhanced weapon-mounted lighting system.";
+		MRT_SwitchItemNextClass = "TAS_acc_brightlite_high";
+        MRT_SwitchItemPrevClass = "TAS_acc_brightlite_low";
+        MRT_switchItemHintText = "Medium Yield";
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 4;
+			class FlashLight
+			{
+				//color[]={600,750,900};
+				color[]={1,1,1};
+				ambient[]={10,7.5,5};
+				position="flash dir";
+				direction="flash";
+				size=1;
+				innerAngle=10; //lowered from 25
+				outerAngle=25; //lowered from 40
+				coneFadeCoef=2; //
+				intensity=100;
+				useFlare=1;
+				dayLight=1;
+				FlareSize=0.7;
+				flareMaxDistance=300;
+				onlyInNvg=0;
+				scale[]={0};
+				class Attenuation
+				{
+					start=65; //lowered 
+					constant=1; //lowered
+					linear=1; //lowered
+					quadratic=1; //15
+					hardLimitStart=65; //130
+					hardLimitEnd=85; //160
+				};
+			};
+			
+		};
+		inertia = 0.1;
+	};
+	class TAS_acc_brightlite_low: TAS_acc_brightlite_medium
+	{
+		displayName = "BrightLite (Low Yield)";
+		descriptionShort = "Enhanced weapon-mounted lighting system (Low yield).";
+		baseWeapon = "TAS_acc_brightlite_medium";
+		MRT_SwitchItemNextClass = "TAS_acc_brightlite_medium";
+        MRT_SwitchItemPrevClass = "TAS_acc_brightlite_high";
+        MRT_switchItemHintText = "Low Yield";
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 4;
+			class FlashLight
+			{
+				//color[]={600,750,900};
+				color[]={255,255,255};
+				ambient[]={10,7.5,5};
+				position="flash dir";
+				direction="flash";
+				size=1;
+				innerAngle=25; //lowered from 25
+				outerAngle=40; //lowered from 40
+				coneFadeCoef=2; //
+				intensity=100;
+				useFlare=1;
+				dayLight=1;
+				FlareSize=0.5;
+				flareMaxDistance=250;
+				onlyInNvg=0;
+				scale[]={0};
+				/*class Attenuation
+				{
+					start=20; //lowered 
+					constant=1; //lowered
+					linear=1; //lowered
+					quadratic=1; //15
+					hardLimitStart=20; //130
+					hardLimitEnd=30; //160
+				}; */
+			};		
+		};
+	};
+	class TAS_acc_brightlite_high: TAS_acc_brightlite_medium
+	{
+		displayName = "BrightLite (High Yield)";
+		descriptionShort = "Enhanced weapon-mounted lighting system (High yield).";
+		//MRT_SwitchItemNextClass = "TAS_acc_brightlite_low";
+		MRT_SwitchItemNextClass = "TAS_acc_brightlite_sniper";
+        MRT_SwitchItemPrevClass = "TAS_acc_brightlite_medium";
+        MRT_switchItemHintText = "High Yield";
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 4;
+			class FlashLight
+			{
+				//color[]={600,750,900};
+				color[]={0,0,0};
+				ambient[]={10,7.5,5};
+				position="flash dir";
+				direction="flash";
+				size=1;
+				innerAngle=4; //lowered from 25
+				outerAngle=12; //lowered from 40
+				coneFadeCoef=2; //
+				intensity=100;
+				useFlare=1;
+				dayLight=1;
+				FlareSize=0.9;
+				flareMaxDistance=350;
+				onlyInNvg=0;
+				scale[]={0};
+				/* class Attenuation
+				{
+					start=120; //lowered 
+					constant=1; //lowered
+					linear=1; //lowered
+					quadratic=1; //15
+					hardLimitStart=120; //130
+					hardLimitEnd=150; //160
+				}; */
+			};
+		};
+	};
+	class TAS_acc_brightlite_sniper: TAS_acc_brightlite_medium
+	{
+		displayName = "BrightLite (Extreme Yield)";
+		descriptionShort = "Enhanced weapon-mounted lighting system (Extreme yield).";
+		MRT_SwitchItemNextClass = "TAS_acc_brightlite_low";
+        MRT_SwitchItemPrevClass = "TAS_acc_brightlite_high";
+        MRT_switchItemHintText = "Extreme Yield";
 		class ItemInfo: InventoryFlashLightItem_Base_F
 		{
 			mass = 4;
@@ -55,27 +190,139 @@ class CfgWeapons
 				position="flash dir";
 				direction="flash";
 				size=1;
-				innerAngle=5; //lowered from 25
-				outerAngle=20; //lowered from 40
+				innerAngle=1; //lowered from 25
+				outerAngle=3; //lowered from 40
 				coneFadeCoef=2; //
-				intensity=5;
+				intensity=100;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=0.7;
-				flareMaxDistance=400;
+				FlareSize=5;
+				flareMaxDistance=3000;
 				onlyInNvg=0;
 				scale[]={0};
 				class Attenuation
 				{
-					start=80; //lowered 
+					start=8000; //lowered 
 					constant=1; //lowered
 					linear=1; //lowered
 					quadratic=1; //15
-					hardLimitStart=120; //130
-					hardLimitEnd=150; //160
+					hardLimitStart=8000; //130
+					hardLimitEnd=10000; //160
 				};
+			};		
+		};
+	};
+	/*class Rifle; //adds a preconfigured birghtlight to trg20
+	class Rifle_Base_F: Rifle
+	{
+	};*/
+	//class Tavor_base_F;
+	//{
+	//};
+	/*class arifle_TRG20_F
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class PointerSlot: PointerSlot /// default accessories for this slot
+			{
+				compatibleItems[] += {"acc_brightlite"};
 			};
-			/* dazzler
+		};
+	};
+	class arifle_TRG20_ACO_BrightLite_F: arifle_TRG20_F
+	{
+		author = "Guac";
+		//_generalMacro = "arifle_TRG20_ACO_Flash_F";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_ACO_grn";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "acc_brightlite";
+			};
+		};
+	};*/
+};
+
+class CfgVehicles
+{
+	class Item_Base_F;
+	class TAS_Item_acc_brightlite_medium: Item_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Brightlite ( Yield)";
+		author = "Guac";
+		editorCategory = "EdCat_WeaponAttachments";
+		editorSubcategory = "EdSubcat_SideSlot";
+		vehicleClass = "WeaponAccessories";
+		class TransportItems
+		{
+			class TAS_acc_brightlite_medium
+			{
+				name = "TAS_acc_brightlite_medium";
+				count = 1;
+			};
+		};
+	};
+	class TAS_Item_acc_brightlite_low: TAS_Item_acc_brightlite_medium
+	{
+		displayName = "Brightlite (Low Yield)";
+		author = "Guac";
+		class TransportItems
+		{
+			class TAS_acc_brightlite_low
+			{
+				name = "TAS_acc_brightlite_low";
+				count = 1;
+			};
+		};
+	};
+	class TAS_Item_acc_brightlite_high: TAS_Item_acc_brightlite_medium
+	{
+		displayName = "Brightlite (High Yield)";
+		class TransportItems
+		{
+			class TAS_acc_brightlite_high
+			{
+				name = "TAS_acc_brightlite_high";
+				count = 1;
+			};
+		};
+	};
+	class TAS_Item_acc_brightlite_sniper: TAS_Item_acc_brightlite_medium
+	{
+		displayName = "Brightlite (Extreme Yield)";
+		class TransportItems
+		{
+			class TAS_acc_brightlite_extreme
+			{
+				name = "TAS_acc_brightlite_extreme";
+				count = 1;
+			};
+		};
+	};
+};
+
+/*class BettIR_Config //add after works, required addon BettIR_Core
+{
+    class CompatibleAttachments
+    {
+        class TAS_acc_brightlite //same position as vanilla flashlight, is on the right side of the weapon
+		{
+			offset[] = {0.05,0.28,0.06};
+		};
+    };
+}; */
+
+
+//some alternate/reference flashlight stats
+/* dazzler
 			class ItemInfo: InventoryFlashLightItem_Base_F
 		{
 			mass = 4;
@@ -161,91 +408,3 @@ class CfgWeapons
 					};
 					scale[] = {0};
 				};*/
-		};
-		inertia = 0.1;
-	};
-	class Item_Base_F;
-	class TAS_Item_acc_brightlite: Item_Base_F
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Brightlite";
-		author = "Guac";
-		editorCategory = "EdCat_WeaponAttachments";
-		editorSubcategory = "EdSubcat_SideSlot";
-		vehicleClass = "WeaponAccessories";
-		class TransportItems
-		{
-			class TAS_acc_brightlite
-			{
-				name = "TAS_acc_brightlite";
-				count = 1;
-			};
-		};
-	};
-	/*class SlotInfo;
-	//class PointerSlot; //uncomment this if you get rid of "class PointerSlot: SlotInfo" for testing
-	class PointerSlot: SlotInfo { //btw SlotInfo is access = 1
-		//compatibleItems[] = {"acc_flashlight", "acc_pointer_IR","TAS_acc_brightlite"}; //unneccessary/will literally not allow you to define it all again?
-		compatibleItems[] = {"TAS_acc_brightlite"};
-		//compatibleItems[] += {"TAS_acc_brightlite"}; //throws error about not being found
-	};
-	
-	class asdg_SlotInfo; //cba compatibility, moved to cfgjointrails for testing
-	class asdg_FrontSideRail: asdg_SlotInfo {
-		class compatibleItems {
-			TAS_acc_brightlite = 1;
-		};
-	};
-	class PointerSlot_Rail: PointerSlot {
-		class compatibleItems {
-			TAS_acc_brightlite = 1;
-		};
-	}; */
-	/*class Rifle;
-	class Rifle_Base_F: Rifle
-	{
-	};*/
-	//class Tavor_base_F;
-	//{
-	//};
-	/*class arifle_TRG20_F
-	{
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class PointerSlot: PointerSlot /// default accessories for this slot
-			{
-				compatibleItems[] += {"acc_brightlite"};
-			};
-		};
-	};
-	class arifle_TRG20_ACO_BrightLite_F: arifle_TRG20_F
-	{
-		author = "Guac";
-		//_generalMacro = "arifle_TRG20_ACO_Flash_F";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "optic_ACO_grn";
-			};
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "acc_brightlite";
-			};
-		};
-	};*/
-};
-
-/*class BettIR_Config //add after works, required addon BettIR_Core
-{
-    class CompatibleAttachments
-    {
-        class TAS_acc_brightlite //same position as vanilla flashlight, is on the right side of the weapon
-		{
-			offset[] = {0.05,0.28,0.06};
-		};
-    };
-}; */
