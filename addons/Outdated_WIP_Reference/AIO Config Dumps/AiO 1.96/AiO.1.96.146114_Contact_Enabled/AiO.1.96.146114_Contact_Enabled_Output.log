@@ -1,0 +1,85 @@
+ 1:23:05  Mission world: Enoch
+ 1:23:05  Mission directory: <snip>\Documents\Arma 3\missions\tempMissionSP.Enoch\
+ 1:23:06 unable to save config variable to: 
+ 1:23:07 CallExtension loaded: biext_txscan (<snip>\Arma 3\contact\biext_txscan_x64.dll) [2.1.5.0]
+
+ 1:23:07 CallExtension loaded: biext_idwmap (<snip>\Arma 3\contact\biext_idwmap_x64.dll) [1.3.1.5]
+
+ 1:23:11  Mission id: e5c85fd8d5e5e3e697feeb6ac26fead9fa500c8c
+ 1:23:13 Loading movesType CfgMovesSnakes_F
+ 1:23:14 unable to save config variable to: 
+ 1:25:19 CallExtension loaded: ConfigDumpFileIO (.\ConfigDumpFileIO_x64.dll) [P£·]
+
+ 1:25:24 String STR_A3_Fighter_03_Canopy_name not found
+ 1:25:25 String STR_A3_Fighter_03_Canopy_name not found
+ 1:25:25 String STR_A3_Fighter_03_Canopy_name not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_0 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_1 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_2 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_3 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_4 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_5 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_6 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_7 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_8 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_9 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_10 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_11 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_12 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_13 not found
+ 1:25:33 String STR_A3_c02_m01_093_br_all_briefing_a_GUARDIAN_14 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_0 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_1 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_2 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_3 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_4 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_5 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_6 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_7 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_8 not found
+ 1:25:33 String STR_A3_c02_m01_001_br_inf_briefing_b_GUARDIAN_9 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_0 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_1 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_2 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_3 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_4 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_5 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_6 not found
+ 1:25:33 String STR_A3_c02_m01_002_br_sf_briefing_c_GUARDIAN_7 not found
+ 1:25:33 String STR_A3_to_c03_m03_007_br_briefing_c__1 not found
+ 1:25:35 String STR_DISTANCE_DANGER_CLOSE_TO not found
+ 1:25:35 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:36 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:36 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:36 String STR_3DEN_Messages_missionLoadRequiredAddons not found
+ 1:25:38 String STR_A3_RscFunctionsViewer_btnRecompileSelected not found
+ 1:25:40 String STR_A3_to_c01_m01_065_eve_patrol_a_SOLDIER_01_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_065_eve_patrol_a_SOLDIER_02_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_01_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_02_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_01_1 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_02_1 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_01_2 not found
+ 1:25:40 String STR_A3_to_c01_m01_066_eve_patrol_b_SOLDIER_01_3 not found
+ 1:25:40 String STR_A3_to_c01_m01_067_eve_sentry_a_SOLDIER_01_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_067_eve_sentry_a_SOLDIER_01_1 not found
+ 1:25:40 String STR_A3_to_c01_m01_067_eve_sentry_a_SOLDIER_02_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_067_eve_sentry_a_SOLDIER_01_2 not found
+ 1:25:40 String STR_A3_to_c01_m01_068_eve_surprised_a_SOLDIER_01_0 not found
+ 1:25:40 String STR_A3_to_c01_m01_069_eve_surprised_b_SOLDIER_02_0 not found
+ 1:25:40 String STR_A3_to_c03_m03_007_br_briefing_c__1 not found
+ 1:25:40 String STR_A3_to_c03_m03_041_eve_ctrg_rv_alone_FALCON_0 not found
+ 1:25:40 String STR_A3_to_c03_m03_041_eve_ctrg_rv_alone_FALCON_1 not found
+ 1:25:40 String STR_A3_to_c03_m03_041_eve_ctrg_rv_alone_FALCON_2 not found
+ 1:25:40 String STR_A3_C_intro1_074_eve_removing_adapter_PLAYER_1 not found
+ 1:25:41 String STR_A3_C_q_east_device_015_fil_move_to_crash_ASTROBIO_0 not found
+ 1:25:41 String STR_A3_CfgSFX_MotherShip_Celestial_Rumble_01_3d not found
+ 1:25:41 String STR_A3_CfgSfx_Sfx_RadioStatic_Corpse_Loop_01 not found
+ 1:25:42 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:43 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:43 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:44 String STR_A3__mUNIT___Move__test_____mOBJ not found
+ 1:25:57 unable to save config variable to: 
+ 1:25:59 Loading movesType CfgMovesBird
+ 1:26:02 Loading movesType CfgMovesButterfly
+ 1:27:10 Loading movesType CfgMovesRabbit_F
