@@ -77,21 +77,32 @@ class CfgVehicles
 		side = 1; //blufor
         author = "Ricardo"; 
         //_generalMacro = "B_soldier_F"; //internal BIS debug
-        scope = 2; 
+        scope = 2;							// 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+		scopeCurator = 2;					// 2 = class is available in Zeus; 0 = class is unavailable in Zeus.
+		scopeArsenal = 2;					// 2 = class is available in the Virtual Arsenal; 0 = class is unavailable in the Virtual Arsenal.
+		/*cost = 200000;						// How likely the enemies attack this character among some others.
+		camouflage = 1.5;					// How likely this character is spotted (smaller number = more stealthy).
+		sensitivity = 2.5;					// How likely this character spots enemies when controlled by AI.
+		threat[] = {1, 1, 0.8};*/				// Multiplier of the cost of the character in the eyes of soft, armoured and air enemies.
         displayName = "Dominos Employee"; 
         identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
-        genericNames = "NATOMen"; 
-        faction = "Domino_Zimbabwe"; 
-        model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; //Default NATO 
+        genericNames = "NATOMen"; //name list this unit draws from
+        faction = "Domino_Zimbabwe"; //classname of faction this belongs to
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; //Default NATO, The path to the model this character uses. 
         uniformClass = "Dominos_Uniform"; //name of uniform
-        hiddenSelections[] = {"Camo","Insignia"}; //declares that model can be changed in its camo and insignia sections
-        hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};  //sets camo of uniform model
-         weapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; 
-        respawnWeapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; 
-        magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"}; 
-        respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
-        respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+        hiddenSelections[] = {"Camo","Insignia"}; //declares that model can be changed in its camo and insignia sections // List of model selections which can be changed with hiddenSelectionTextures[]
+																															// and hiddenSelectionMaterials[] properties. If empty, model textures are used.
+        hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};  //sets camo of uniform model // The textures for the selections defined above.
+																																						// If empty, no texture is used.
+        canDeactivateMines = true;				// Can this character deactivate mines?
+		engineer = true;						// Can this character repair vehicles?
+		attendant = 1;							// Can this character heal soldiers?
+		weapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; // Which weapons the character has.
+        respawnWeapons[] = {"arifle_TRG20_ACO_Flash_F","Throw","Put"}; // Which weapons the character respawns with.
+        magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"}; // Which items the character has.
+        respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"}; // Which items the character respawns with.
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"}; // Which items the character has.
+        respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"}; // Which items the character respawns with.
     };
 	class PapaJhons_Employee: O_Soldier_base_F {
         author = "Ricardo"; 
