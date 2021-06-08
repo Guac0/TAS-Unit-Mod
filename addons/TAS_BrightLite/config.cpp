@@ -16,7 +16,7 @@ class CfgPatches
 //adds rail compatibility using code derived from ace laserpointer
 class SlotInfo;
 class PointerSlot: SlotInfo {
-    compatibleItems[] += {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"}; //throws errors about array not being found during packing, doesn't matter because CBA joint rails works
+    //compatibleItems[] += {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"}; //throws errors about array not being found during packing, doesn't matter because CBA joint rails works
 };
 
 class asdg_SlotInfo; //see line 2503963 in AiO 2.00 ACE for more catagories
