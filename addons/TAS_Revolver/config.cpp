@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"//,
-			//"TAS_BrightLite"
+			//"TAS_BrightLite" //is done is brightlite instead
 		};
 		requiredVersion=0.1;
 		units[]={};
@@ -51,12 +51,16 @@ class PointerSlot_Pistol;
 class PointerSlot_Launcher;
 class CfgWeapons
 {
-	class Pistol;
+	/*class Pistol;
 	class Pistol_Base_F: Pistol
 	{
 		class WeaponSlotsInfo;
+	};*/
+	class hgun_Pistol_heavy_02_F
+	{
+		class WeaponSlotsInfo;
 	};
-	class TAS_hgun_revolver: Pistol_Base_F
+	class TAS_hgun_revolver: hgun_Pistol_heavy_02_F
 	{
 		author="TAS Mod Team";
 		_generalMacro="hgun_test_pistol_F";
