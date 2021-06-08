@@ -13,13 +13,15 @@ Credits:
 
 CatCaptain — Steam owner, initial Pizza addon creator
 
-Guac — Programmer, 2D artist
+Ricardo — Initial Pizza uniform textures
 
-Tolly — 3D artist
+Guac — Programmer, 2D Artist
 
-TBONE — 3D artist
+Tolly — 2D/3D Artist and Modeler
 
-Hoxxi — Apprentice
+TBONE — 2D/3D Artist and Modeler
+
+Hoxxi — Junior Programmer, 2D Artist
 
 If you would like to contribute to this project, contact Guac.
 
