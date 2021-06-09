@@ -91,11 +91,18 @@ class CfgWeapons
 				scale[]={0};
 				class Attenuation
 				{
-					start=65; //lowered 
-					constant=1; //lowered
-					linear=1; //lowered
-					quadratic=1; //15
-					hardLimitStart=65; //130
+					start=55; //lowered 
+					constant = 0.2;
+					linear = 0;
+					quadratic = 0;
+					/*
+					linear = 0.075;
+					quadratic = 0.15;
+					*/
+					/*constant=1;
+					linear=1;
+					quadratic=1;*/
+					hardLimitStart=70; //130
 					hardLimitEnd=85; //160
 				};
 			};
@@ -137,11 +144,14 @@ class CfgWeapons
 				class Attenuation
 				{
 					start=20; //lowered 
-					constant=1; //lowered
-					linear=1; //lowered
-					quadratic=1; //15
-					hardLimitStart=20; //130
-					hardLimitEnd=30; //160
+					constant = 0.2;
+					linear = 0;
+					quadratic = 0;
+					/*constant=1;
+					linear=1;
+					quadratic=1;*/
+					hardLimitStart=30; //130
+					hardLimitEnd=40; //160
 				};
 			};		
 		};
@@ -179,11 +189,14 @@ class CfgWeapons
 				class Attenuation
 				{
 					start=120; //lowered 
-					constant=1; //lowered
-					linear=1; //lowered
-					quadratic=1; //15
-					hardLimitStart=120; //130
-					hardLimitEnd=150; //160
+					constant = 0.2;
+					linear = 0;
+					quadratic = 0;
+					/*constant=1;
+					linear=1;
+					quadratic=1;*/
+					hardLimitStart=140; //130
+					hardLimitEnd=160; //160
 				};
 			};
 		};
@@ -191,8 +204,8 @@ class CfgWeapons
 	class TAS_acc_brightlite_sniper: TAS_acc_brightlite_medium
 	{
 		displayName = "BrightLite (Extreme Yield)";
-		descriptionShort = "Enhanced weapon-mounted lighting system (Extreme yield).";
-		//scopeArsenal = 0;
+		descriptionShort = "OverGUACed weapon-mounted lighting system (Extreme yield).";
+		scopeArsenal = 0;
 		//MRT_SwitchItemNextClass = "TAS_acc_brightlite_low";
         //MRT_SwitchItemPrevClass = "TAS_acc_brightlite_high";
         //MRT_switchItemHintText = "Extreme Yield";
@@ -219,10 +232,13 @@ class CfgWeapons
 				scale[]={0};
 				class Attenuation
 				{
-					start=8000; //lowered 
-					constant=1; //lowered
-					linear=1; //lowered
-					quadratic=1; //15
+					start=6000; //lowered 
+					constant = 0.1;
+					linear = 0;
+					quadratic = 0;
+					/*constant=1;
+					linear=1;
+					quadratic=1;*/
 					hardLimitStart=8000; //130
 					hardLimitEnd=10000; //160
 				};
@@ -266,14 +282,14 @@ class CfgWeapons
 				class Attenuation
 				{
 					start=20;
-					constant = 0.5;
-					linear = 0.1;
-					quadratic = 0.2;
+					constant = 0.2;
+					linear = 0;
+					quadratic = 0;
 					/*constant=1;
 					linear=1;
 					quadratic=1;*/
-					hardLimitStart=20;
-					hardLimitEnd=30;
+					hardLimitStart=30;
+					hardLimitEnd=40;
 				};
 			};		
 		};
