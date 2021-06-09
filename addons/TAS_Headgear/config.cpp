@@ -23,4 +23,12 @@ class cfgWeapons
 		picture = "A3\Weapons_F\Data\placeholder_co.paa";
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Tolly_CrewHelm1.paa"};
 	};
+	class H_HelmetIA;
+	class TAS_TboneGroundHelmet: H_HelmetIA
+	{ 
+		author = "Tbone";
+		displayName = "Tbone's field helmet";
+		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_ground_helmet.paa"};
+	};
 }; 
