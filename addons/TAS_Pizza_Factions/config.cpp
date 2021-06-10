@@ -7,11 +7,15 @@ class CfgPatches
 		name = "TAS Faction Addon";
 		units[] = 
 		{
-			"Dominos_BaseUnit",
-			"Dominos_Employee",
-			"Dominos_Manager",
-			"Dominos_Operative",
-			"PapaJhons_Employee",
+			"TAS_Dominos_BaseUnit",
+			"TAS_Dominos_Employee",
+			"TAS_Dominos_Manager",
+			"TAS_Dominos_Operative",
+			"TAS_PapaJhons_BaseUnit",
+			"TAS_PapaJhons_Employee",
+			"TAS_PapaJhons_EmployeeCombat",
+			"TAS_PapaJhons_Manager",
+			"TAS_PapaJhons_Operative",
 			"Custom_Offroad_F2",
 			"Custom_Offroad_F3"
 		};
@@ -46,14 +50,14 @@ class CfgPatches
 //************************************************************************************************************************************************************************************************
 class cfgFactionClasses 
 {  
-	class Domino_Zimbabwe
+	class TAS_Dominos_Zimbabwe
     { 
         displayName = "Dominos Zimbabwe Employees"; 
         priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = ""; //Custom Icon 
     };  
-	class Papa_Jhon
+	class TAS_Papa_Jhons
 	{
 		displayName = "Papa Jhons Employees";
 		priority = 1;
@@ -112,7 +116,7 @@ class CfgVehicles
 	//H_Cap_blu, H_PASGT_basic_black_F, H_HelmetB_TI_arid_F, H_HelmetAggressor_F
 	//V_LegStrapBag_black_F, V_TacVest_blk, V_PlateCarrier1_blk, V_PlateCarrierSpec_blk
 	//B_AssaultPack_blk, B_ViperLightHarness_blk_F
-	class Dominos_BaseUnit: B_soldier_F
+	class TAS_Dominos_BaseUnit: B_soldier_F
 	{
 		side = 1; //blufor
         author = "CatCaptain"; 
@@ -127,10 +131,10 @@ class CfgVehicles
         displayName = "Dominos Employee (Unarmed)"; 
         identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
         genericNames = "NATOMen"; //name list this unit draws from
-        faction = "Domino_Zimbabwe"; //classname of faction this belongs to,, also sets catagory
+        faction = "TAS_Dominos_Zimbabwe"; //classname of faction this belongs to,, also sets catagory
 		editorSubcategory = "TAS_SubGroup_Men";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; //Default NATO, The path to the model this character uses. 
-        uniformClass = "Dominos_Uniform"; //name of uniform
+        uniformClass = "TAS_Dominos_Uniform"; //name of uniform
         hiddenSelections[] = {"Camo","Insignia"}; //declares that model can be changed in its camo and insignia sections // List of model selections which can be changed with hiddenSelectionTextures[]
 																															// and hiddenSelectionMaterials[] properties. If empty, model textures are used.
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_pizza_uniform.paa"};  //sets camo of uniform model // The textures for the selections defined above.
@@ -147,7 +151,7 @@ class CfgVehicles
 		linkedItems[] = {H_Cap_blu, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {H_Cap_blu, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class Dominos_Employee: Dominos_BaseUnit
+	class TAS_Dominos_Employee: TAS_Dominos_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -167,7 +171,7 @@ class CfgVehicles
 		linkedItems[] = {H_Cap_blu, V_LegStrapBag_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {H_Cap_blu, V_LegStrapBag_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class Dominos_EmployeeCombat: Dominos_BaseUnit
+	class TAS_Dominos_EmployeeCombat: TAS_Dominos_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -187,7 +191,7 @@ class CfgVehicles
 		linkedItems[] = {V_TacVest_blk, H_PASGT_basic_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {V_TacVest_blk, H_PASGT_basic_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class Dominos_Manager: Dominos_BaseUnit
+	class TAS_Dominos_Manager: TAS_Dominos_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -207,7 +211,7 @@ class CfgVehicles
 		linkedItems[] = {V_PlateCarrier1_blk, H_HelmetAggressor_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {V_PlateCarrier1_blk, H_HelmetAggressor_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class Dominos_Operative: Dominos_BaseUnit
+	class TAS_Dominos_Operative: TAS_Dominos_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -230,7 +234,7 @@ class CfgVehicles
 	//************************************************************************************************************************************************************************************************
     //*****             Papa Jhons Units                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
-	class PapaJhons_BaseUnit: O_Soldier_base_F {
+	class TAS_PapaJhons_BaseUnit: O_Soldier_base_F {
 		author = "CatCaptain";
         _generalMacro = "B_soldier_F"; 
         scope = 2; 
@@ -242,10 +246,10 @@ class CfgVehicles
 			"G_IRAN_default"
 		};
         genericNames = "NATOMen"; 
-        faction = "Papa_Jhon";
+        faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Men";
         model = "\A3\characters_F\OPFOR\o_soldier_01.p3d";//Default NATO 
-        uniformClass = "Papa_Jhon_Uniform"; 
+        uniformClass = "TAS_PapaJhon_Uniform"; 
         hiddenSelections[]=
 		{
 			"camo1",
@@ -265,7 +269,7 @@ class CfgVehicles
 		linkedItems[] = {H_Cap_red, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {H_Cap_red, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class PapaJhons_Employee: PapaJhons_BaseUnit
+	class TAS_PapaJhons_Employee: TAS_PapaJhons_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -285,7 +289,7 @@ class CfgVehicles
 		linkedItems[] = {H_Cap_red, V_LegStrapBag_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {H_Cap_red, V_LegStrapBag_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class PapaJhons_EmployeeCombat: PapaJhons_BaseUnit
+	class TAS_PapaJhons_EmployeeCombat: TAS_PapaJhons_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -305,7 +309,7 @@ class CfgVehicles
 		linkedItems[] = {V_TacVest_blk, H_PASGT_basic_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {V_TacVest_blk, H_PASGT_basic_black_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class PapaJhons_Manager: PapaJhons_BaseUnit
+	class TAS_PapaJhons_Manager: TAS_PapaJhons_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -325,7 +329,7 @@ class CfgVehicles
 		linkedItems[] = {V_PlateCarrier1_blk, H_HelmetAggressor_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {V_PlateCarrier1_blk, H_HelmetAggressor_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};		// Which items the character respawns with.
     };
-	class PapaJhons_Operative: PapaJhons_BaseUnit
+	class TAS_PapaJhons_Operative: TAS_PapaJhons_BaseUnit
 	{
         author = "Guac"; 
 		/*cost = 200000;						// How likely the enemies attack this character among some others.
@@ -376,10 +380,10 @@ class CfgVehicles
 	class TAS_Dominos_Offroad: B_G_Offroad_01_F
     {
         author = "CatCaptain";
-		crew = "Dominos_Employee";
+		crew = "TAS_Dominos_Employee";
         side = 1;
         scope = 2;
-        faction = "Domino_Zimbabwe";
+        faction = "TAS_Dominos_Zimbabwe";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Dominos Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
@@ -392,10 +396,10 @@ class CfgVehicles
 	class TAS_Dominos_Offroad_HMG: B_G_Offroad_01_armed_F
     {
         author = "Guac";
-		crew = "Dominos_EmployeeCombat";
+		crew = "TAS_Dominos_EmployeeCombat";
         side = 1;
         scope = 2;
-        faction = "Domino_Zimbabwe";
+        faction = "TAS_Dominos_Zimbabwe";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Dominos Pizza Delivery Offroad (HMG)";
         hiddenSelections[] = {"Camo"};
@@ -408,10 +412,10 @@ class CfgVehicles
 	class TAS_Dominos_Offroad_AT: B_G_Offroad_01_AT_F
     {
         author = "Guac";
-		crew = "Dominos_EmployeeCombat";
+		crew = "TAS_Dominos_EmployeeCombat";
         side = 1;
         scope = 2;
-        faction = "Domino_Zimbabwe";
+        faction = "TAS_Dominos_Zimbabwe";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Dominos Pizza Delivery Offroad (AT)";
         hiddenSelections[] = {"Camo"};
@@ -427,10 +431,10 @@ class CfgVehicles
 	class TAS_PapaJhons_Offroad: O_G_Offroad_01_F
     {
         author = "CatCaptain";
-		crew = "PapaJhons_Employee";
+		crew = "TAS_PapaJhons_Employee";
         side = 0;
         scope = 2;
-        faction = "Papa_Jhon";
+        faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
@@ -443,10 +447,10 @@ class CfgVehicles
 	class TAS_PapaJhons_Offroad_HMG: O_G_Offroad_01_armed_F
     {
         author = "Guac";
-		crew = "PapaJhons_EmployeeCombat";
+		crew = "TAS_PapaJhons_EmployeeCombat";
         side = 0;
         scope = 2;
-        faction = "Papa_Jhon";
+        faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
@@ -459,10 +463,10 @@ class CfgVehicles
 	class TAS_PapaJhons_Offroad_AT: O_G_Offroad_01_AT_F
     {
         author = "Guac";
-		crew = "PapaJhons_EmployeeCombat";
+		crew = "TAS_PapaJhons_EmployeeCombat";
         side = 0;
         scope = 2;
-        faction = "Papa_Jhon";
+        faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Cars";
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
@@ -486,15 +490,16 @@ class cfgWeapons
         class ItemInfo; 
     }; 
 
-    class Dominos_Uniform: Uniform_Base 
+    class TAS_Dominos_Uniform: Uniform_Base 
     { 
         author = "Ricardo";
 		scope = 2; /// scope needs to be 2 to have a visible class
 		allowedSlots[] = {BACKPACK_SLOT}; /// where does the uniform fit to when not equipped
         displayName = "Dominos Uniform"; /// how would the stuff be displayed in inventory and on ground
 		//picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\dominos_uniform.paa";
-		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; /// preview in arsenal/inventory
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d"; /// how does the uniform look when put on ground
+		//picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; /// preview in arsenal/inventory
+        picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d"; /// how does the uniform look when put on ground
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[]=
 		{
@@ -502,18 +507,19 @@ class cfgWeapons
 		};
         class ItemInfo : UniformItem { 
 			uniformModel = "-";
-            uniformClass = "Dominos_Employee"; /// what soldier class contains parameters of the uniform (such as model, camouflage, hitpoints and others)
-            containerClass = "Supply50"; /// what fake vehicle is used to describe size of uniform container, there is quite a lot SupplyXX classes ready
-            mass = 50; /// combined weight and volume
-        }; 
-    }; 
-	class Papa_Jhon_Uniform: Uniform_Base 
-    { 
+            uniformClass = "TAS_Dominos_BaseUnit"; /// what soldier class contains parameters of the uniform (such as model, camouflage, hitpoints and others)
+            containerClass = "Supply65"; /// what fake vehicle is used to describe size of uniform container, there is quite a lot SupplyXX classes ready
+            mass = 65; /// combined weight and volume
+        };
+    };
+	class TAS_PapaJhon_Uniform: Uniform_Base 
+    {
         author = "Ricardo";
 		scope = 2; 
 		allowedSlots[] = {BACKPACK_SLOT};
         displayName = "Papa Jhon Uniform"; 
-        picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; 
+        //picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		picture = "A3\Weapons_F\Data\placeholder_co.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[]=
@@ -522,10 +528,9 @@ class cfgWeapons
 		};
         class ItemInfo : UniformItem { 
             uniformModel = "-";
-			uniformClass = "PapaJhons_Employee"; 
-            containerClass = "Supply50"; 
-            mass = 50; 
+			uniformClass = "TAS_PapaJhons_BaseUnit"; 
+            containerClass = "Supply65"; 
+            mass = 65;
         }; 
-    }; 
-    
+    };
 }; 
