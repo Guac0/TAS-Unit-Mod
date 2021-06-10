@@ -54,7 +54,8 @@ class CfgWeapons
 {
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
-	class TAS_acc_brightlite_medium: ItemCore
+	class acc_flashlight;
+	class TAS_acc_brightlite_medium: acc_flashlight
 	{
 		author = "Guac";
 		//_generalMacro = "acc_flashlight";
@@ -85,16 +86,20 @@ class CfgWeapons
 				intensity=100;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=0.7;
+				//FlareSize=0.7;
+				FlareSize=1;
 				flareMaxDistance=300;
 				onlyInNvg=0;
 				scale[]={0};
 				class Attenuation
 				{
 					start=55; //lowered 
-					constant = 0.2;
+					constant = 0;
 					linear = 0;
-					quadratic = 0;
+					quadratic = 1;
+					/*constant = 0.2;
+					linear = 0;
+					quadratic = 0;*/
 					/*
 					linear = 0.075;
 					quadratic = 0.15;
@@ -137,16 +142,20 @@ class CfgWeapons
 				intensity=100;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=0.5;
+				//FlareSize=0.5;
+				FlareSize=1;
 				flareMaxDistance=250;
 				onlyInNvg=0;
 				scale[]={0};
 				class Attenuation
 				{
 					start=20; //lowered 
-					constant = 0.2;
+					constant = 0;
 					linear = 0;
-					quadratic = 0;
+					quadratic = 1;
+					/*constant = 0.2;
+					linear = 0;
+					quadratic = 0;*/
 					/*constant=1;
 					linear=1;
 					quadratic=1;*/
@@ -182,16 +191,20 @@ class CfgWeapons
 				intensity=100;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=0.9;
+				//FlareSize=0.9;
+				FlareSize=1;
 				flareMaxDistance=350;
 				onlyInNvg=0;
 				scale[]={0};
 				class Attenuation
 				{
 					start=120; //lowered 
-					constant = 0.2;
+					constant = 0;
 					linear = 0;
-					quadratic = 0;
+					quadratic = 1;
+					/*constant = 0.2;
+					linear = 0;
+					quadratic = 0;*/
 					/*constant=1;
 					linear=1;
 					quadratic=1;*/
@@ -226,16 +239,20 @@ class CfgWeapons
 				intensity=500;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=5;
+				//FlareSize=5;
+				FlareSize=1;
 				flareMaxDistance=3000;
 				onlyInNvg=0;
 				scale[]={0};
 				class Attenuation
 				{
 					start=6000; //lowered 
-					constant = 0.1;
+					constant = 0;
 					linear = 0;
-					quadratic = 0;
+					quadratic = 1;
+					/*constant = 0.1;
+					linear = 0;
+					quadratic = 0;*/
 					/*constant=1;
 					linear=1;
 					quadratic=1;*/
@@ -275,7 +292,8 @@ class CfgWeapons
 				intensity=100;
 				useFlare=1;
 				dayLight=1;
-				FlareSize=0.5;
+				//FlareSize=0.5;
+				FlareSize=1;
 				flareMaxDistance=150;
 				onlyInNvg=0;
 				scale[]={0};
