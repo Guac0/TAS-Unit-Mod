@@ -16,8 +16,12 @@ class CfgPatches
 			"TAS_PapaJhons_EmployeeCombat",
 			"TAS_PapaJhons_Manager",
 			"TAS_PapaJhons_Operative",
-			"Custom_Offroad_F2",
-			"Custom_Offroad_F3"
+			"TAS_Dominos_Offroad",
+			"TAS_Dominos_Offroad_HMG",
+			"TAS_Dominos_Offroad_AT",
+			"TAS_PapaJhons_Offroad",
+			"TAS_PapaJhons_Offroad_HMG",
+			"TAS_PapaJhons_Offroad_AT"
 		};
 		weapons[] = {};
 		requiredAddons[] = 
@@ -508,8 +512,8 @@ class cfgWeapons
         class ItemInfo : UniformItem { 
 			uniformModel = "-";
             uniformClass = "TAS_Dominos_BaseUnit"; /// what soldier class contains parameters of the uniform (such as model, camouflage, hitpoints and others)
-            containerClass = "Supply65"; /// what fake vehicle is used to describe size of uniform container, there is quite a lot SupplyXX classes ready
-            mass = 65; /// combined weight and volume
+            containerClass = "Supply60"; /// what fake vehicle is used to describe size of uniform container, there is quite a lot SupplyXX classes ready
+            mass = 60; /// combined weight and volume
         };
     };
 	class TAS_PapaJhon_Uniform: Uniform_Base 
@@ -529,8 +533,8 @@ class cfgWeapons
         class ItemInfo : UniformItem { 
             uniformModel = "-";
 			uniformClass = "TAS_PapaJhons_BaseUnit"; 
-            containerClass = "Supply65"; 
-            mass = 65;
+            containerClass = "Supply60"; 
+            mass = 60;
         }; 
     };
 }; 
