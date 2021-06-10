@@ -18,19 +18,26 @@ class CfgPatches
 class cfgWeapons
 {
 	class H_CrewHelmetHeli_B;
-	class TAS_TestHelmet: H_CrewHelmetHeli_B
+	class TAS_TollyHeliHelmet: H_CrewHelmetHeli_B
 	{ 
 		author = "Tolly";
-		displayName = "Tolly's Helmet";
+		displayName = "Tolly's Flight Helmet";
 		picture = "A3\Weapons_F\Data\placeholder_co.paa";
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Tolly_CrewHelm1.paa"};
 	};
 	class H_HelmetIA;
 	class TAS_TboneGroundHelmet: H_HelmetIA
 	{ 
-		author = "Tbone";
-		displayName = "Tbone's field helmet";
+		author = "TBONE";
+		displayName = "TBONE's Field Helmet";
 		picture = "A3\Weapons_F\Data\placeholder_co.paa";
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_ground_helmet.paa"};
+	};
+	class TAS_TboneMedicHelmet: H_HelmetIA
+	{ 
+		author = "TBONE";
+		displayName = "TBONE's Medic Helmet";
+		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_Medic_Helmet.paa"};
 	};
 }; 
