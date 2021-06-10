@@ -41,7 +41,8 @@ class CfgAmmo
 		simulationStep			= 0.0001;
 		triggerTime				= 0.0001;
 		triggerSpeedCoef[]		= {0.84,1.0};
-		submunitionAmmo			= rhs_ammo_12g_00buckshot_pellet;
+		//submunitionAmmo			= rhs_ammo_12g_00buckshot_pellet;
+		submunitionAmmo = TAS_ammo_12g_00buckshot_pellet;
 		submunitionConeType[]	= {"poissondisccenter", 9};
 		submunitionConeAngle	= 0.95;
 		cartridge				= "";
@@ -84,8 +85,8 @@ class CfgAmmo
 	};
 	class TAS_ammo_doomsday_buckshot: TAS_ammo_m576_buckshot
 	{
-		hit = 10; //original 9
-		indirectHit = 10; //original 9
+		hit = 10; //originally 9 (for previous doomsday before buff)
+		indirectHit = 10; //originally 9
 		indirectHitRange = 0.6;
 	};
 
@@ -107,7 +108,7 @@ class CfgAmmo
 	// HE FRAG
 	class TAS_ammo_12g_FRAG : B_12Gauge_Slug
 	{
-		hit = 7; //original 6
+		hit = 7; //originally 6 before buff
 		indirectHit = 1.5; //original 1.143
 		indirectHitRange = 2;
 		caliber = 0.2;
@@ -122,7 +123,7 @@ class CfgAmmo
 		deflecting = 0;
 		explosive = 1;
 		
-		//might not work
+		//might not work — WORKS
 		explosionEffects = "ExploAmmoExplosion";
 		//explosionEffects = "RHSUSF_12gExplosion";
 		CraterEffects = "";

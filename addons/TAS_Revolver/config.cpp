@@ -99,7 +99,7 @@ class CfgWeapons
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_co",
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
 		};
-		drySound[]=
+		/*drySound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\dry_Zubr",
 			0.39810717,
@@ -196,30 +196,31 @@ class CfgWeapons
 		{
 			"bullet1",
 			1
-		};
+		};*/
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=1.7;
 		initSpeed=480;
 		maxZeroing=100;
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		/*class WeaponSlotsInfo: WeaponSlotsInfo //inherits from cba rails
 		{
+			class asdg_SlotInfo;
+			class asdg_OpticRail: asdg_SlotInfo{};
+			class asdg_PistolOpticRail1913: asdg_OpticRail;
+			class asdg_PistolUnderRail: asdg_SlotInfo;
+			holsterScale = 0.85;
+			class CowsSlot: asdg_PistolOpticRail1913
+			{
+				iconPosition[] = {0.4, 0.3};
+				iconScale = 0.15;
+			};
+			class PointerSlot: asdg_PistolUnderRail
+			{
+				iconPosition[] = {0.35, 0.6};
+				iconScale = 0.3;
+			};
 			mass=30;
-			holsterScale=0.85000002;
-			class CowsSlot: CowsSlot_Rail_Pistol
-			{
-				iconPosition[]={0.40000001,0.30000001};
-				iconScale=0.15000001;
-			};
-			class MuzzleSlot
-			{
-			};
-			class PointerSlot: PointerSlot_Pistol
-			{
-				iconPosition[]={0.34999999,0.60000002};
-				iconScale=0.30000001;
-			};
-		};
+		};*/
 	};
 	class TAS_hgun_revolver_Yorris_F: TAS_hgun_revolver
 	{
