@@ -206,8 +206,8 @@ class CfgVehicles
         canDeactivateMines = true;				// Can this character deactivate mines?
 		engineer = true;						// Can this character repair vehicles?
 		attendant = 1;							// Can this character heal soldiers?
-		weapons[] = {arifle_TRG21_GL_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character has.
-        respawnWeapons[] = {arifle_TRG21_GL_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character respawns with.
+		weapons[] = {arifle_TRG21_GL_MRCO_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character has.
+        respawnWeapons[] = {arifle_TRG21_GL_MRCO_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character respawns with.
         Items[] = {MAG_3(FirstAidKit)};				// Which items the character has.
 		RespawnItems[] = {MAG_3(FirstAidKit)};			// Which items the character respawns with.
 		magazines[] = {MAG_6(30Rnd_556x45_Stanag_red),MAG_2(11Rnd_45ACP_Mag), MAG_2(SmokeShell), MAG_2(SmokeShellRed), MAG_2(SmokeShellBlue), MAG_7(1Rnd_HE_Grenade_shell), MAG_4(1Rnd_Smoke_Grenade_shell), MAG_4(UGL_FlareWhite_F), MAG_2(Chemlight_green), MAG_2(HandGrenade)};				// What ammunition the character has.
@@ -230,7 +230,7 @@ class CfgVehicles
         respawnWeapons[] = {arifle_SPAR_02_blk_ERCO_Pointer_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character respawns with.
         Items[] = {MAG_3(FirstAidKit)};				// Which items the character has.
 		RespawnItems[] = {MAG_3(FirstAidKit)};			// Which items the character respawns with.
-		magazines[] = {MAG_3(150Rnd_556x45_Drum_Mag_Tracer_F),11Rnd_45ACP_Mag, MAG_2(SmokeShell), MAG_1(SmokeShellRed), MAG_1(SmokeShellBlue), MAG_2(Chemlight_green), MAG_3(HandGrenade)};				// What ammunition the character has.
+		magazines[] = {MAG_4(150Rnd_556x45_Drum_Mag_Tracer_F),11Rnd_45ACP_Mag, MAG_2(SmokeShell), MAG_1(SmokeShellRed), MAG_1(SmokeShellBlue), MAG_2(Chemlight_green), MAG_3(HandGrenade)};				// What ammunition the character has.
 		respawnMagazines[] = {MAG_2(150Rnd_556x45_Drum_Mag_Tracer_F),11Rnd_45ACP_Mag, MAG_2(SmokeShell), MAG_1(SmokeShellRed), MAG_1(SmokeShellBlue), MAG_2(Chemlight_green), MAG_3(HandGrenade)};		// What ammunition the character respawns with.
 		linkedItems[] = {V_PlateCarrierSpec_blk, H_HelmetB_TI_arid_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};				// Which items the character has.
 		respawnLinkedItems[] = {V_PlateCarrierSpec_blk, H_HelmetB_TI_arid_F, ItemMap, ItemCompass, ItemWatch, ItemRadio};	
@@ -320,12 +320,12 @@ class CfgVehicles
 		camouflage = 1.5;					// How likely this character is spotted (smaller number = more stealthy).
 		sensitivity = 2.5;					// How likely this character spots enemies when controlled by AI.
 		threat[] = {1, 1, 0.8};*/				// Multiplier of the cost of the character in the eyes of soft, armoured and air enemies.
-        displayName = "PapaJhons Manager"; 
+        displayName = "Papa Jhons Manager"; 
         canDeactivateMines = true;				// Can this character deactivate mines?
 		engineer = true;						// Can this character repair vehicles?
 		attendant = 1;							// Can this character heal soldiers?
-		weapons[] = {arifle_TRG21_GL_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character has.
-        respawnWeapons[] = {arifle_TRG21_GL_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character respawns with.
+		weapons[] = {arifle_TRG21_GL_MRCO_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character has.
+        respawnWeapons[] = {arifle_TRG21_GL_MRCO_F,hgun_Pistol_heavy_01_MRD_F,Throw,Put}; // Which weapons the character respawns with.
         Items[] = {MAG_3(FirstAidKit)};				// Which items the character has.
 		RespawnItems[] = {MAG_3(FirstAidKit)};			// Which items the character respawns with.
 		magazines[] = {MAG_6(30Rnd_556x45_Stanag_red),MAG_2(11Rnd_45ACP_Mag), MAG_2(SmokeShell), MAG_2(SmokeShellRed), MAG_2(SmokeShellBlue), MAG_7(1Rnd_HE_Grenade_shell), MAG_4(1Rnd_Smoke_Grenade_shell), MAG_4(UGL_FlareWhite_F), MAG_2(Chemlight_green), MAG_2(HandGrenade)};				// What ammunition the character has.
@@ -501,8 +501,8 @@ class cfgWeapons
 		allowedSlots[] = {BACKPACK_SLOT}; /// where does the uniform fit to when not equipped
         displayName = "Dominos Uniform"; /// how would the stuff be displayed in inventory and on ground
 		//picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\dominos_uniform.paa";
-		//picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; /// preview in arsenal/inventory
-        picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa"; /// preview in arsenal/inventory, is blufor combat fatigues
+        //picture = "A3\Weapons_F\Data\placeholder_co.paa"; //throws an error about "equip\w\w_a3\weapons_F\Data\placeholder_co.paa" not being found
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d"; /// how does the uniform look when put on ground
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[]=
@@ -521,9 +521,10 @@ class cfgWeapons
         author = "Ricardo";
 		scope = 2; 
 		allowedSlots[] = {BACKPACK_SLOT};
-        displayName = "Papa Jhon Uniform"; 
+        displayName = "Papa Jhons Uniform"; 
         //picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
-		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		picture = "\A3\characters_f\data\ui\icon_U_OI_CombatUniform_ocamo_ca.paa"; //csat hex fatigues
+		//picture = "A3\Weapons_F\Data\placeholder_co.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[]=
