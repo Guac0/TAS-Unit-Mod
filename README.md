@@ -1,7 +1,7 @@
 # Autismo_Seals_Unit_Mod
  Github repository for the Autismo Seals Custom Addon
 
-NOTE: ALL FILES HEREIN ARE HEAVILY WIP, EXPECT BUGS AND PLACEHOLDER ASSETS
+NOTE: ALL FILES HEREIN ARE HEAVILY WIP (except for the release build), EXPECT BUGS AND PLACEHOLDER ASSETS
 
 While the developers have avoided using copyrighted assets, either as placeholders or as release assets, we acknowledge that some of our 3rd-party-provided assets may be copyrighted without our knowledge. If you are the owner of copyrighted assets contained in this repository/addon, contact us for a swift removal.
 
