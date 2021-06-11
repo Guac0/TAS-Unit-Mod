@@ -36,7 +36,7 @@ class cfgWeapons
 	class TAS_TboneMedicHelmet: H_HelmetIA
 	{ 
 		author = "TBONE";
-		displayName = "TBONE's Medic Helmet";
+		displayName = "TBONE's Medic Helmet (Texture Currently Broken)";
 		picture = "A3\Weapons_F\Data\placeholder_co.paa";
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_Medic_Helmet.paa"};
 	};
