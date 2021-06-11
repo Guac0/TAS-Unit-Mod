@@ -663,6 +663,16 @@ class CfgMusic
 		TAS_OM_Chillout_8,
 		TAS_OM_Chillout_9,
 		TAS_OM_Chillout_10,
+		TAS_OM_Chillout_11,
+		TAS_OM_Chillout_12,
+		TAS_OM_Chillout_13,
+		TAS_OM_Chillout_14,
+		TAS_OM_Chillout_15,
+		TAS_OM_Chillout_16,
+		TAS_OM_Chillout_17,
+		TAS_OM_Chillout_18,
+		TAS_OM_Chillout_19,
+		TAS_OM_Chillout_20,
 		TAS_OM_Dance_1,
 		TAS_OM_Dance_2,
 		TAS_OM_Dance_3,
@@ -673,6 +683,18 @@ class CfgMusic
 		TAS_OM_OST_2,
 		TAS_OM_OST_3,
 		TAS_OM_OST_4,
+		TAS_OM_OST_5,
+		TAS_OM_OST_6,
+		TAS_OM_OST_7,
+		TAS_OM_OST_8,
+		TAS_OM_OST_9,
+		TAS_OM_OST_10,
+		TAS_OM_OST_11,
+		TAS_OM_OST_12,
+		TAS_OM_OST_13,
+		TAS_OM_OST_14,
+		TAS_OM_OST_15,
+		TAS_OM_OST_16,
 		TAS_OM_POP_1,
 		TAS_OM_ROCK_1,
 		TAS_OM_ROCK_2,
@@ -806,7 +828,7 @@ class CfgMusic
 		duration=265;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_Chillout_1
+	class TAS_OM_Chillout_1 //[done]
 	{
 		name	= "OM Chillout - 1";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_01.ogg", db + 0, 1.0 };
@@ -876,74 +898,74 @@ class CfgMusic
 		duration=65;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_Chillout_10
+	class TAS_OM_Chillout_11
 	{
-		name	= "OM Chillout - 10";
-		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_10.ogg", db + 0, 1.0 };
-		duration=65;
+		name	= "OM Chillout - 11";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_11.ogg", db + 0, 1.0 };
+		duration=93;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_Chillout_10
+	class TAS_OM_Chillout_12
 	{
-		name	= "OM Chillout - 10";
-		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_10.ogg", db + 0, 1.0 };
-		duration=65;
+		name	= "OM Chillout - 12";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_12.ogg", db + 0, 1.0 };
+		duration=160;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_Chillout_10
+	class TAS_OM_Chillout_13
 	{
-		name	= "OM Chillout - 10";
-		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_10.ogg", db + 0, 1.0 };
-		duration=65;
+		name	= "OM Chillout - 13";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_13.ogg", db + 0, 1.0 };
+		duration=168;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_Chillout_10
+	class TAS_OM_Chillout_14
 	{
-		name	= "OM Chillout - 10";
-		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_10.ogg", db + 0, 1.0 };
-		duration=65;
+		name	= "OM Chillout - 14";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_14.ogg", db + 0, 1.0 };
+		duration=37;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_15
 	{
 		name	= "OM Chillout - 15";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_15.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=79;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_16
 	{
 		name	= "OM Chillout - 16";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_16.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=137;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_17
 	{
 		name	= "OM Chillout - 17";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_17.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=87;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_18
 	{
 		name	= "OM Chillout - 18";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_18.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=167;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_19
 	{
 		name	= "OM Chillout - 19";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_19.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=259;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Chillout_20
 	{
 		name	= "OM Chillout - 20";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\chillout\Track_C_20.ogg", db + 0, 1.0 };
-		duration=65;
+		duration=92;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_Dance_1 //Old Man Dance Music (original?) [done]
@@ -988,7 +1010,7 @@ class CfgMusic
 		duration=245;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1 //Old Man OST Music (maybe repeated)
+	class TAS_OM_OST_1 //Old Man OST Music (maybe repeated) [done]
 	{
 		name	= "OM OST - 1";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
@@ -1016,53 +1038,214 @@ class CfgMusic
 		duration=180;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	/*class TAS_OM_OST_1
+	class TAS_OM_OST_5
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 5";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_05.ogg", db + 0, 1.0 };
+		duration=148;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1
+	class TAS_OM_OST_6
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 6";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_06.ogg", db + 0, 1.0 };
+		duration=150;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1
+	class TAS_OM_OST_7
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 7";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_07.ogg", db + 0, 1.0 };
+		duration=113;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1
+	class TAS_OM_OST_8
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 8";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_08.ogg", db + 0, 1.0 };
+		duration=89;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1
+	class TAS_OM_OST_9
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 9";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_09.ogg", db + 0, 1.0 };
+		duration=110;
 		musicClass = "TAS_OM_MusicClass";
 	};
-	class TAS_OM_OST_1
+	class TAS_OM_OST_10
 	{
-		name	= "OM OST - 1";
-		sound[]	= { "A3\Music_F_Oldman\radio\ost\Track_O_01.ogg", db + 0, 1.0 };
-		duration=265;
+		name	= "OM OST - 10";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_10.ogg", db + 0, 1.0 };
+		duration=86;
 		musicClass = "TAS_OM_MusicClass";
-	}; */
+	};
+	class TAS_OM_OST_11
+	{
+		name	= "OM OST - 11";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_11.ogg", db + 0, 1.0 };
+		duration=162;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_OST_12
+	{
+		name	= "OM OST - 12";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_12.ogg", db + 0, 1.0 };
+		duration=38;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_OST_13
+	{
+		name	= "OM OST - 13";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_13.ogg", db + 0, 1.0 };
+		duration=138;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_OST_14
+	{
+		name	= "OM OST - 14";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_14.ogg", db + 0, 1.0 };
+		duration=184;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_OST_15
+	{
+		name	= "OM OST - 15";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_15.ogg", db + 0, 1.0 };
+		duration=106;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_OST_16
+	{
+		name	= "OM OST - 16";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\ost\Track_O_16.ogg", db + 0, 1.0 };
+		duration=137;
+		musicClass = "TAS_OM_MusicClass";
+	};
 	class TAS_OM_POP_1
 	{
 		name	= "OM Pop - 1";
 		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_01.ogg", db + 0, 1.0 };
 		duration=96;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_2
+	{
+		name	= "OM Pop - 2";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_02.ogg", db + 0, 1.0 };
+		duration=242;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_3
+	{
+		name	= "OM Pop - 3";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_03.ogg", db + 0, 1.0 };
+		duration=97;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_4
+	{
+		name	= "OM Pop - 4";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_04.ogg", db + 0, 1.0 };
+		duration=146;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_5
+	{
+		name	= "OM Pop - 5";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_05.ogg", db + 0, 1.0 };
+		duration=252;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_6
+	{
+		name	= "OM Pop - 6";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_06.ogg", db + 0, 1.0 };
+		duration=95;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_7
+	{
+		name	= "OM Pop - 7";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_07.ogg", db + 0, 1.0 };
+		duration=102;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_8
+	{
+		name	= "OM Pop - 8";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_08.ogg", db + 0, 1.0 };
+		duration=47;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_9
+	{
+		name	= "OM Pop - 9";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_09.ogg", db + 0, 1.0 };
+		duration=176;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_10
+	{
+		name	= "OM Pop - 10";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_10.ogg", db + 0, 1.0 };
+		duration=97;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_11
+	{
+		name	= "OM Pop - 11";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_11.ogg", db + 0, 1.0 };
+		duration=202;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_12
+	{
+		name	= "OM Pop - 12";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_12.ogg", db + 0, 1.0 };
+		duration=132;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_13
+	{
+		name	= "OM Pop - 13";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_13.ogg", db + 0, 1.0 };
+		duration=134;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_14
+	{
+		name	= "OM Pop - 14";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_14.ogg", db + 0, 1.0 };
+		duration=41;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_15
+	{
+		name	= "OM Pop - 15";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_15.ogg", db + 0, 1.0 };
+		duration=155;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_16
+	{
+		name	= "OM Pop - 16";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_16.ogg", db + 0, 1.0 };
+		duration=86;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_17
+	{
+		name	= "OM Pop - 17";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_17.ogg", db + 0, 1.0 };
+		duration=53;
+		musicClass = "TAS_OM_MusicClass";
+	};
+	class TAS_OM_POP_18
+	{
+		name	= "OM Pop - 18";
+		sound[]	= { "\A3\Music_F_Oldman\music\radio\pop\Track_P_18.ogg", db + 0, 1.0 };
+		duration=44;
 		musicClass = "TAS_OM_MusicClass";
 	};
 	class TAS_OM_ROCK_1 //[done]
