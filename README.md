@@ -23,6 +23,8 @@ TBONE — 2D/3D Artist and Modeler
 
 Hoxxi — Junior Programmer, 2D Artist
 
+TheExiledCat — 2D Artist
+
 If you would like to contribute to this project, contact Guac.
 
 
