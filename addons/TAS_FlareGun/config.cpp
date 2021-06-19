@@ -1,22 +1,22 @@
-//AiO 20968
+//Adds a flaregun and ammo modeled by Tolly and configed by Guac
 #include "cfgMagazines.hpp" /// specific magazines for this rifle
 //#include "cfgAmmo.hpp" /// specific ammo for this rifle
 class CfgPatches
 {
 	class TAS_FlareGun
 	{
-		addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"
 		}; //also ace3 grenades but since that's not set up don't worry about it, we're always going to use ace and if not it's probably not a critical error
 		requiredVersion=0.1;
-		version = "0.3";
 		units[]={};
 		weapons[]=
 		{
 			"hgun_TAS_FlareGun"
 		};
+		author = "TAS Mod Team";
+		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 };
 class Mode_SemiAuto;
@@ -44,7 +44,7 @@ class CfgWeapons
 	{
 		author="TAS Mod Team";
 		scope=2;
-		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun4.p3d"; //WIP model, might break
+		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun.p3d"; //WIP model, might break
 		picture="A3\Weapons_F\Data\placeholder_co.paa";
 		magazines[]=
 		{
@@ -123,7 +123,8 @@ class CfgWeapons
 		inertia=0.30000001;
 		aimTransitionSpeed=1.5;
 		dexterity=3;
-		initSpeed=250;
+		initSpeed = -1;
+		//initSpeed=250;
 		maxZeroing=100;
 		/*class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -131,8 +132,9 @@ class CfgWeapons
 			holsterScale=0.85000002;
 			class CowsSlot: CowsSlot_Rail_Pistol
 			{
-				iconPosition[]={0.40000001,0.30000001};
-				iconScale=0.15000001;
+				compatibleitems[] = {};
+				//iconPosition[]={0.40000001,0.30000001};
+				//iconScale=0.15000001;
 			};
 			class MuzzleSlot
 			{
@@ -142,7 +144,7 @@ class CfgWeapons
 				iconPosition[]={0.34999999,0.60000002};
 				iconScale=0.30000001;
 			};
-		};*/
+		}; */
 	};
 };
 

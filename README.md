@@ -5,18 +5,32 @@ NOTE: ALL FILES HEREIN ARE HEAVILY WIP, EXPECT BUGS AND PLACEHOLDER ASSETS
 
 While the developers have avoided using copyrighted assets, either as placeholders or as release assets, we acknowledge that some of our 3rd-party-provided assets may be copyrighted without our knowledge. If you are the owner of copyrighted assets contained in this repository/addon, contact us for a swift removal.
 
-Because of Github file size limits compiled PBOs are not included in this repository, you will have to compile them yourself if you wish to test the WIP addon. Use PBO Manager as PboProject will fail if you don't have a workspace correctly set up, but be aware that PBO Manager will still make the PBO even if there are critical errors.
+PBOs are now included in the repository as of 6/4/21 (USA marking). Use WIP files and PBOs at your own risk, as while the code has correctly been packed into a PBO there still may be errors and WIP features within these PBOs.
+
+
 
 Credits:
 
 CatCaptain — Steam owner, initial Pizza addon creator
 
-Guac — Programmer, 2D artist
+Ricardo — Initial Pizza uniform textures
 
-Tolly — 3D artist
+Guac — Programmer, 2D Artist
 
-TBONE — 3D artist
+Tolly — 2D/3D Artist and Modeler
 
-Hoxxi — Apprentice
+TBONE — 2D/3D Artist and Modeler
+
+Hoxxi — Junior Programmer, 2D Artist
+
+TheExiledCat — 2D Artist
 
 If you would like to contribute to this project, contact Guac.
+
+
+
+Authorized Repacks Contained Within:
+
+RSPN Cave Systems for Zeus and Eden — Credit to the original RSPN team (Liv2Die and others) who have graciously allowed the Arma community to repack their mod, to Vielmond for the Eden update, and to Punished Alexander for the Zeus update. See RSPN LICENSE.txt, RSPN README.txt, and https://steamcommunity.com/sharedfiles/filedetails/?id=2372460478 for more information.
+
+Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to repack their mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1161319271 for more information.
