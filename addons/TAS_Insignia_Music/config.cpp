@@ -354,6 +354,14 @@ class CfgUnitInsignia
 		textureVehicle = "";
 		dlc = "TAS_Insignia_Music";
 	};
+	class TAS_43
+	{
+		displayName = "(TAS) Bean's Patch";
+		author = "Bean ";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3 Beanpatch.paa";
+		textureVehicle = "";
+		dlc = "TAS_Insignia_Music";
+	};
 	//SCP MTF patches
 	class MTF_1
 	{
