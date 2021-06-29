@@ -22,7 +22,7 @@ class cfgWeapons
 	{ 
 		author = "Tolly";
 		displayName = "Tolly's Flight Helmet";
-		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Tolly_CrewHelm1.paa"};
 	};
 	class H_HelmetIA;
@@ -30,14 +30,14 @@ class cfgWeapons
 	{ 
 		author = "TBONE";
 		displayName = "TBONE's Field Helmet";
-		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_ground_helmet.paa"};
 	};
 	class TAS_TboneMedicHelmet: H_HelmetIA
 	{ 
 		author = "TBONE";
 		displayName = "TBONE's Medic Helmet (Texture Currently Broken)";
-		picture = "A3\Weapons_F\Data\placeholder_co.paa";
+		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_Medic_Helmet.paa"};
 	};
 }; 
