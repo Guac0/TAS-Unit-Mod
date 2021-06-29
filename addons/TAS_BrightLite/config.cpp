@@ -5,8 +5,8 @@ class CfgPatches
 	class TAS_BrightLite
 	{
 		name = "TAS BrightLite Addon";
-		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"};
-		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper"}; //"arifle_TRG20_ACO_BrightLite_F"
+		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper","TAS_Item_acc_brightlite_pistol"};
+		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper","TAS_acc_brightlite_pistol"}; //"arifle_TRG20_ACO_BrightLite_F"
 		requiredAddons[] = {"A3_Weapons_F","cba_main"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
