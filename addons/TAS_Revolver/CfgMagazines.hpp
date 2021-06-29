@@ -7,7 +7,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "6Rnd Buckshot";
 		displayNameShort = "6Buckshot";
-		descriptionshort = "Used in: TEST PISTOL";
+		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_00buckshot";
 		count = 6;
@@ -20,7 +20,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "6Rnd Slug";
 		displayNameShort = "6Slug";
-		descriptionshort = "Used in: TEST PISTOL";
+		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_slug";
 		initSpeed = 395;
@@ -30,7 +30,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "6Rnd HE";
 		displayNameShort = "6HE";
-		descriptionshort = "Used in: TEST PISTOL";
+		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_HE";
 		count = 6;
@@ -42,7 +42,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "6rnd FRAG";
 		displayNameShort = "6FRAG";
-		descriptionshort = "Used in: TEST PISTOL";
+		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_FRAG";
 		count = 6;
@@ -55,7 +55,7 @@ class CfgMagazines
 		//scopeArsenal = 0;
 		displayName = "6rnd Doosmday Buckshot";
 		displayNameShort = "6DOOMSDAY";
-		descriptionshort = "Used in: TEST PISTOL";
+		descriptionshort = "Used in: THE Revolver.";
 		ammo = "TAS_ammo_doomsday_buckshot";
 		count = 6;
 		mass = 	12;
