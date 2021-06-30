@@ -340,6 +340,22 @@ class CfgUnitInsignia
 		textureVehicle = "";
 		
 	};
+	class TAS_43
+	{
+		displayName = "(TAS) CL Army";
+		author = "Guac";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4clarmy.paa";
+		textureVehicle = "";
+		
+	};
+	class TAS_44
+	{
+		displayName = "(TAS) Norwegian Armed Forces Emblem";
+		author = "Guac";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Norwegian_Armed_Forces.paa";
+		textureVehicle = "";
+		
+	};
 	//SCP MTF patches
 	class MTF_1
 	{
@@ -651,7 +667,11 @@ class CfgMusic
 		TAS_Music_11,
 		TAS_Music_12,
 		TAS_Music_13,
-		TAS_Music_14,
+		TAS_AShamaluev_1,
+		TAS_AShamaluev_2,
+		TAS_AShamaluev_3,
+		TAS_AShamaluev_4,
+		TAS_AShamaluev_5,
 		TAS_OM_1,
 		TAS_OM_Chillout_1,
 		TAS_OM_Chillout_2,
@@ -751,77 +771,112 @@ class CfgMusic
 		duration=199;
 		musicClass = "TASMusicClass";
 	};
+	
 	class TAS_Music_5
-	{
-		name	= "Epic Battle Trailer — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\EpicBattleTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
-		duration=326;
-		musicClass = "TASMusicClass";
-	};
-	class TAS_Music_6
 	{
 		name	= "Eye of the Storm — Watt White";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\EyeOfTheStormWattWhite.ogg", db + 0, 1.0 };
 		duration=199;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_7
+	class TAS_Music_6
 	{
 		name	= "Fucking Bullshit";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\FuckingBullshit.ogg", db + 0, 1.0 };
 		duration=41;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_8
+	class TAS_Music_7
 	{
 		name	= "Giorno's Theme (Full)";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\GiornosThemeFull.ogg", db + 0, 1.0 };
 		duration=294;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_9
-	{
-		name	= "Hybrid Trailer — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\HybridTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
-		duration=163;
-		musicClass = "TASMusicClass";
-	};
-	class TAS_Music_10
+	class TAS_Music_8
 	{
 		name	= "Resonance — HOME";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\Resonance-Home.ogg", db + 0, 1.0 };
 		duration=212;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_11
+	class TAS_Music_9
 	{
 		name	= "Sabotage — Remi Gallego";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\Sabotage-RemiGallego.ogg", db + 0, 1.0 };
 		duration=247;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_12
+	class TAS_Music_10
 	{
 		name	= "Test Drive";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\TestDrive.ogg", db + 0, 1.0 };
 		duration=156;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_13
+	class TAS_Music_11
 	{
 		name	= "The Quickening — Cinematrik";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\TheQuickening-Cinematrik.ogg", db + 0, 1.0 };
 		duration=460;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_Music_14
+	class TAS_Music_12
 	{
 		name	= "This Is Berk";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\ThisIsBerk.ogg", db + 0, 1.0 };
 		duration=250;
 		musicClass = "TASMusicClass";
 	};
-	class TAS_OM_1 //Old Man Intro Music
+	class TAS_Music_13
+	{
+		name	= "Home Depot Theme Orchestra Remix";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\HomeDepotThemeOrchestralRemix.ogg", db + 0, 1.0 };
+		duration=66;
+		musicClass = "TASMusicClass";
+	};
+	//*********************************************
+	//*************AShamaluevMusic*****************
+	//*********************************************
+	class TAS_AShamaluev_1
+	{
+		name	= "Epic Battle Trailer — AShamaluevMusic";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\AShamaluevMusic\EpicBattleTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
+		duration=326;
+		musicClass = "TAS_AShamaluevMusic_MusicClass";
+	};
+	class TAS_AShamaluev_2
+	{
+		name	= "Hybrid Trailer — AShamaluevMusic";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\AShamaluevMusic\HybridTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
+		duration=163;
+		musicClass = "TAS_AShamaluevMusic_MusicClass";
+	};
+	class TAS_AShamaluev_3
+	{
+		name	= "Offensive — AShamaluevMusic";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\AShamaluevMusic\Offensive-AShamaluevMusic.ogg", db + 0, 1.0 };
+		duration=189;
+		musicClass = "TAS_AShamaluevMusic_MusicClass";
+	};
+	class TAS_AShamaluev_4
+	{
+		name	= "Superiority — AShamaluevMusic";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\AShamaluevMusic\Superiority-AShamaluevMusic.ogg", db + 0, 1.0 };
+		duration=197;
+		musicClass = "TAS_AShamaluevMusic_MusicClass";
+	};
+	class TAS_AShamaluev_5
+	{
+		name	= "Victorious — AShamaluevMusic";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\music\AShamaluevMusic\Victorious-AShamaluevMusic.ogg", db + 0, 1.0 };
+		duration=166;
+		musicClass = "TAS_AShamaluevMusic_MusicClass";
+	};
+	//*********************************************
+	//*************Old Man Music*******************
+	//*********************************************
+	class TAS_OM_1
 	{
 		name	= "OM Intro";
 		sound[]	= { "\A3\Music_F_Oldman\Music\intro.ogg", db + 0, 1.0 };
@@ -1428,5 +1483,9 @@ class CfgMusicClasses
 	class TAS_OM_MusicClass
 	{
 		displayName = "Old Man Music";
+	};
+	class TAS_AShamaluevMusic_MusicClass
+	{
+		displayName = "AShamaluevMusic Tracks";
 	};
 };
