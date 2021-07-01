@@ -5,8 +5,8 @@ class CfgPatches
 	class TAS_BrightLite
 	{
 		name = "TAS BrightLite Addon";
-		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper"};
-		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper"}; //"arifle_TRG20_ACO_BrightLite_F"
+		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper","TAS_Item_acc_brightlite_pistol"};
+		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper","TAS_acc_brightlite_pistol"}; //"arifle_TRG20_ACO_BrightLite_F"
 		requiredAddons[] = {"A3_Weapons_F","cba_main"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
@@ -357,7 +357,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Brightlite ( Yield)";
+		displayName = "Brightlite (Medium Yield)";
 		author = "Guac";
 		editorCategory = "EdCat_WeaponAttachments";
 		editorSubcategory = "EdSubcat_SideSlot";
@@ -401,9 +401,9 @@ class CfgVehicles
 		displayName = "Brightlite (Extreme Yield)";
 		class TransportItems
 		{
-			class TAS_acc_brightlite_extreme
+			class TAS_acc_brightlite_sniper
 			{
-				name = "TAS_acc_brightlite_extreme";
+				name = "TAS_acc_brightlite_sniper";
 				count = 1;
 			};
 		};

@@ -45,7 +45,8 @@ class CfgWeapons
 		author="TAS Mod Team";
 		scope=2;
 		model="Autismo_Seals_Unit_Mod\addons\TAS_FlareGun\flaregun.p3d"; //WIP model, might break
-		picture="A3\Weapons_F\Data\placeholder_co.paa";
+		picture = "\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\UI\gear_Pistol_heavy_02_X_CA.paa"; //revolver
+		//picture="A3\Weapons_F\Data\placeholder_co.paa"; //throws an error in inventory
 		magazines[]=
 		{
 			TAS_FlareGun_MagWhite //others defined via magWell, this is a fallback

@@ -1,4 +1,4 @@
-//Adds a new type of ammo to the official P90/ADR with a hit/caliber value of a B_762x54_Ball (Used in the Rahim), made by Guac
+//Adds a new type of ammo to the official P90/ADR with a hit/caliber value of a B_762x54_Ball (Used in the Rahim), made by Guac. Also fixes the Zubr having no suppressed weapon sound (CBA error)
 class CfgPatches {
 
 	class TAS_ConfigEdits
@@ -13,12 +13,29 @@ class CfgPatches {
 
 };
 
+class Mode_SemiAuto;
+
 class CfgWeapons
 {
 	class Rifle_Base_F;
 	class SMG_03_TR_BASE: Rifle_Base_F
 	{
 		magazines[] += {TAS_50Rnd_570x28_SMG_03};
+	};
+	class Pistol_Base_F;
+	class hgun_Pistol_heavy_02_F: Pistol_Base_F
+	{
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound", "SilencedSound"};
+			class BaseSoundModeType
+			{
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[] = {"4Five_silencerShot_SoundSet", "4Five_silencerTail_SoundSet", "4Five_silencerInteriorTail_SoundSet"};
+			};
+		};
 	};
 };
 
