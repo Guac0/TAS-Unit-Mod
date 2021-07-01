@@ -349,14 +349,14 @@ class CfgUnitInsignia
 	};
 	class TAS_44
 	{
-		displayName = "(TAS) CL Army";
+		displayName = "(TAS) Fuerza Aérea de Chile";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4clarmy.paa";
 		textureVehicle = "";
 	};
 	class TAS_45
 	{
-		displayName = "(TAS) Norwegian Armed Forces Emblem";
+		displayName = "(TAS) Sveriges våte drøm";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Norwegian_Armed_Forces.paa";
 		textureVehicle = "";
