@@ -346,8 +346,8 @@ class CfgUnitInsignia
 		author = "Bean ";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3 Beanpatch.paa";
 		textureVehicle = "";
-  };
-  class TAS_44
+	};
+	class TAS_44
 	{
 		displayName = "(TAS) CL Army";
 		author = "Guac";
