@@ -25,10 +25,10 @@ class cfgWeapons
 		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Tolly_CrewHelm1.paa"};
 	};
-	class TAS_Kommik_CrewHelmet: H_CrewHelmetHeli_B
+	class TAS_TBONE_CrewHelmet: H_CrewHelmetHeli_B
 	{ 
-		author = "Kommik";
-		displayName = "Kommik's Flight Helmet";
+		author = "TBONE";
+		displayName = "TBONE's Flight Helmet";
 		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Kommik_CrewHelm1.paa"};
 	};
