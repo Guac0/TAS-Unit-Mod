@@ -342,19 +342,24 @@ class CfgUnitInsignia
 	};
 	class TAS_43
 	{
+		displayName = "(TAS) Bean's Patch";
+		author = "Bean ";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-3 Beanpatch.paa";
+		textureVehicle = "";
+  };
+  class TAS_44
+	{
 		displayName = "(TAS) CL Army";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4clarmy.paa";
 		textureVehicle = "";
-		
 	};
-	class TAS_44
+	class TAS_45
 	{
 		displayName = "(TAS) Norwegian Armed Forces Emblem";
 		author = "Guac";
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Norwegian_Armed_Forces.paa";
 		textureVehicle = "";
-		
 	};
 	//SCP MTF patches
 	class MTF_1
