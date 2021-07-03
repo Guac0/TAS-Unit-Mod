@@ -361,6 +361,13 @@ class CfgUnitInsignia
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Norwegian_Armed_Forces.paa";
 		textureVehicle = "";
 	};
+	class TAS_46
+	{
+		displayName = "(TAS) Welsh Patch";
+		author = "Farlax";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Welsh Patch.paa";
+		textureVehicle = "";
+	};
 	//SCP MTF patches
 	class MTF_1
 	{
