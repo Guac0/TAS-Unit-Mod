@@ -365,21 +365,21 @@ class CfgUnitInsignia
 	{
 		displayName = "(TAS) Welsh Patch";
 		author = "Farlax";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Welsh Patch.paa";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Welsh Patch.paa";
 		textureVehicle = "";
 	};
 	class TAS_47
 	{
 		displayName = "(TAS) Die Liga";
 		author = "hoxxi";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\Die Liga.paa";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Die Liga.paa";
 		textureVehicle = "";
 	};
 	class TAS_48
 	{
 		displayName = "(TAS) Danish Flag";
 		author = "Guac and hoxxi";
-		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Danish_Flag.paa";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Danish_Flag.paa";
 		textureVehicle = "";
 	};
 	//SCP MTF patches
