@@ -34,3 +34,5 @@ Authorized Repacks Contained Within:
 RSPN Cave Systems for Zeus and Eden — Credit to the original RSPN team (Liv2Die and others) who have graciously allowed the Arma community to repack their mod, to Vielmond for the Eden update, and to Punished Alexander for the Zeus update. See RSPN LICENSE.txt, RSPN README.txt, and https://steamcommunity.com/sharedfiles/filedetails/?id=2372460478 for more information.
 
 Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to repack their mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1161319271 for more information.
+
+Credit to AShamaluevMusic for making his excellent music available to everyone to use. https://www.youtube.com/c/AShamaluevMusic/about
