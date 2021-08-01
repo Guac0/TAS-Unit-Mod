@@ -47,8 +47,7 @@ class CfgMusic
 		TAS_S20,
 		TAS_S21,
 		TAS_S21,
-		TAS_S22,
-		TAS_S23
+		TAS_S22
 	};
 	//Stringstorm music, see https://www.youtube.com/watch?v=u6SPFiBt_h4&t=0s , All Rights Reserved
 	class TAS_S1
@@ -165,47 +164,40 @@ class CfgMusic
 	};
 	class TAS_S17
 	{
-		name	= "Stringstorm — Rylanors Last Stand";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\RylanorsLastStand.ogg", db + 0, 1.0 };
-		duration=360;
-		musicClass = "TAS40kClass";
-	};
-	class TAS_S18
-	{
 		name	= "Stringstorm — Tallarn";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\Tallarn.ogg", db + 0, 1.0 };
 		duration=202;
 		musicClass = "TAS40kClass";
 	};
-	class TAS_S19
+	class TAS_S18
 	{
 		name	= "Stringstorm — Ten Thousand Years";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\TenThousandYears.ogg", db + 0, 1.0 };
 		duration=205;
 		musicClass = "TAS40kClass";
 	};
-	class TAS_S20
+	class TAS_S19
 	{
 		name	= "Stringstorm — Titanicus";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\Titanicus.ogg", db + 0, 1.0 };
 		duration=216;
 		musicClass = "TAS40kClass";
 	};
-	class TAS_S21
+	class TAS_S20
 	{
 		name	= "Stringstorm — TTS Theme";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\TtsTheme.ogg", db + 0, 1.0 };
 		duration=194;
 		musicClass = "TAS40kClass";
 	};
-	class TAS_S22
+	class TAS_S21
 	{
 		name	= "Stringstorm — TTS Theme Instrumental";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\TtsThemeInstrumental.ogg", db + 0, 1.0 };
 		duration=194;
 		musicClass = "TAS40kClass";
 	};
-	class TAS_S23
+	class TAS_S22
 	{
 		name	= "Stringstorm — Warriors of the God Emperor";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\WarriorsOfTheGodEmperor.ogg", db + 0, 1.0 };
