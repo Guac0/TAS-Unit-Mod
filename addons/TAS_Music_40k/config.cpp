@@ -48,14 +48,13 @@ class CfgMusic
 		TAS_S21,
 		TAS_S21,
 		TAS_S22,
-		TAS_S23,
-		TAS_S24
+		TAS_S23
 	};
 	//Stringstorm music, see https://www.youtube.com/watch?v=u6SPFiBt_h4&t=0s , All Rights Reserved
 	class TAS_S1
 	{
-		name	= "Stringstorm — Adeptus Mechanicus";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\AdeptusMechanicus.ogg", db + 0, 1.0 };
+		name	= "Stringstorm — Adeptus Mechanicum";
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\AdeptusMechanicum.ogg", db + 0, 1.0 };
 		duration=205;
 		musicClass = "TAS40kClass";
 	};
@@ -211,13 +210,6 @@ class CfgMusic
 		name	= "Stringstorm — Warriors of the God Emperor";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\WarriorsOfTheGodEmperor.ogg", db + 0, 1.0 };
 		duration=219;
-		musicClass = "TAS40kClass";
-	};
-	class TAS_S24
-	{
-		name	= "Stringstorm — Harbinger";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_40k\music\Stringstorm\Harbinger.ogg", db + 0, 1.0 };
-		duration=220;
 		musicClass = "TAS40kClass";
 	};
 };
