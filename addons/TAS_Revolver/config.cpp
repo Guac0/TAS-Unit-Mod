@@ -517,7 +517,7 @@ class CfgVehicles
 	};
 	class TAS_Weapon_hgun_revolver_y_b_s_F: TAS_Weapon_hgun_revolver
 	{
-		displayName = "Revolver (Brightlite)";
+		displayName = "Revolver (Yorris/Brightlite/Suppressor)";
 		class TransportWeapons
 		{
 			class TAS_hgun_revolver_y_b_s_F
