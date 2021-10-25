@@ -25,9 +25,9 @@ class RscDisplayMain: RscStandardDisplay {
                 class JoinTasServer: ServerBrowser {
                     idc = -1;
                     text = "TAS Server Quickjoin";
-                    tooltip = "Connect to TAS Main Server";
+                    tooltip = "Connect to the TAS Main Server";
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    onbuttonclick = "connectToServer ['194.147.122.223', 2302, '']";
+                    onbuttonclick = "connectToServer ['82.8.46.207', 2302, '']";
                 };
             };
         };
