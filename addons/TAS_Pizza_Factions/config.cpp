@@ -452,7 +452,7 @@ class CfgVehicles
         scope = 2;
         faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Cars";
-        displayName = "Papa Jhons Pizza Delivery Offroad";
+        displayName = "Papa Jhons Pizza Delivery Offroad (HMG)";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\papaJhons_offroad.paa"};
         class Eventhandlers
@@ -469,7 +469,7 @@ class CfgVehicles
         scope = 2;
         faction = "TAS_Papa_Jhons";
 		editorSubcategory = "TAS_SubGroup_Cars";
-        displayName = "Papa Jhons Pizza Delivery Offroad";
+        displayName = "Papa Jhons Pizza Delivery Offroad (AT)";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\papaJhons_offroad.paa"};
         class Eventhandlers
