@@ -1,7 +1,9 @@
 //here we define each flashlight and its light values
 
 //some definitions for easier changing both brightlite and nightlite
-//#define
+//#define NIGHT_COLOR 1,0,0
+#define NIGHT_COLOR 180, 160, 130
+#define NIGHT_AMBIENT 6,6,9
 
 class CfgWeapons
 {
@@ -30,28 +32,34 @@ class CfgWeapons
 			class FlashLight
 			{
 				//color[]={600,750,900};
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				//color[]={7000,7500,10000}; //old: 
+				color[]={180, 160, 130};
+				ambient[]={6,9,9}; //old: ambient[]={10,7.5,5};
 				position="flash dir";
 				direction="flash";
-				size=1;
-				innerAngle=10; //lowered from 25
-				outerAngle=25; //lowered from 40
-				coneFadeCoef=2; //
-				intensity=100;
-				useFlare=1;
-				dayLight=1;
-				//FlareSize=0.7;
-				FlareSize=1;
-				flareMaxDistance=300;
-				onlyInNvg=1;
-				scale[]={0};
+				size=1; //vanilla 1
+				innerAngle=15; //vanilla 5
+				outerAngle=35; //vanilla 100
+				coneFadeCoef=4; //vanilla 8
+				intensity=40; //vanilla 100
+				useFlare=1; //vanilla 1
+				dayLight=1; //vanilla 0
+				FlareSize=1; //vanilla 1.4
+				flareMaxDistance=150; //vanilla 100
+				onlyInNvg=1; //vanilla 0
+				scale[]={0}; //vanilla 0
 				class Attenuation
 				{
-					start=55; //lowered 
-					constant = 0;
-					linear = 0;
-					quadratic = 1;
+					start=1; //vanilla 0
+					constant = 0.1; //vanilla 0.5
+					linear = 0.1; //vanilla 0.1 
+					quadratic = 0.1; //vanilla 0.2
+					hardLimitStart=40; //vanilla 27
+					hardLimitEnd=65;
+					/*start=55; //vanilla 0
+					constant = 0; //vanilla 0.5
+					linear = 0; //vanilla 0.1 
+					quadratic = 1; //vanilla 0.2 */
 					/*constant = 0.2;
 					linear = 0;
 					quadratic = 0;*/
@@ -62,8 +70,8 @@ class CfgWeapons
 					/*constant=1;
 					linear=1;
 					quadratic=1;*/
-					hardLimitStart=70; //130
-					hardLimitEnd=85; //160
+					/*hardLimitStart=70; //vanilla 27
+					hardLimitEnd=85; //vanilla 34*/
 				};
 			};
 			
@@ -78,33 +86,34 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = "TAS_acc_brightlite_medium";
         MRT_SwitchItemPrevClass = "TAS_acc_brightlite_high";
         MRT_switchItemHintText = "Low Yield";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
-				position="flash dir";
-				direction="flash";
+				color[]={180, 160, 130};
 				size=1;
-				innerAngle=25;
-				outerAngle=40;
-				coneFadeCoef=2;
-				intensity=100;
-				useFlare=1;
-				dayLight=1;
+				innerAngle=45;
+				outerAngle=100;
+				coneFadeCoef=4;
+				intensity=15;
 				FlareSize=1;
 				flareMaxDistance=250;
 				scale[]={0};
 				class Attenuation
 				{
-					start=20;
+					/*start=0.1;
 					constant = 0;
 					linear = 0;
-					quadratic = 1;
-					hardLimitStart=30;
-					hardLimitEnd=40;
+					quadratic = 0.5;
+					hardLimitStart=12;
+					hardLimitEnd=20;*/
+					start = 0;
+					constant = 0.4;
+					linear = 0.1;
+					quadratic = 0.2;
+					hardLimitStart = 30;
+					hardLimitEnd = 50;
 				};
 			};		
 		};
@@ -117,36 +126,28 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = "TAS_acc_brightlite_low";
         MRT_SwitchItemPrevClass = "TAS_acc_brightlite_medium";
         MRT_switchItemHintText = "High Yield";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
-				position="flash dir";
-				direction="flash";
+				color[]={180, 160, 130};
 				size=1;
 				innerAngle=4;
 				outerAngle=12;
-				coneFadeCoef=2;
+				coneFadeCoef=4;
 				intensity=100;
-				useFlare=1;
-				dayLight=1;
-				//FlareSize=0.9;
 				FlareSize=1;
-				flareMaxDistance=350;
-				onlyInNvg=1;
+				flareMaxDistance=200;
 				scale[]={0};
-				irLight = 0;
 				class Attenuation
 				{
-					start=120;
+					start=3;
 					constant = 0;
 					linear = 0;
-					quadratic = 1;
-					hardLimitStart=140;
-					hardLimitEnd=160;
+					quadratic = 0.1;
+					hardLimitStart=70;
+					hardLimitEnd=100;
 				};
 			};
 		};
@@ -159,24 +160,18 @@ class CfgWeapons
 		//MRT_SwitchItemNextClass = "TAS_acc_brightlite_low";
         //MRT_SwitchItemPrevClass = "TAS_acc_brightlite_high";
         //MRT_switchItemHintText = "Extreme Yield";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				//color[]={600,750,900};
 				color[]={1,1,1};
 				ambient[]={10,7.5,5};
-				position="flash dir";
-				direction="flash";
 				size=1;
 				innerAngle=1; //lowered from 25
 				outerAngle=3; //lowered from 40
 				coneFadeCoef=2; //
 				intensity=500;
-				useFlare=1;
-				dayLight=1;
-				//FlareSize=5;
 				FlareSize=1;
 				flareMaxDistance=3000;
 				scale[]={0};
@@ -186,12 +181,6 @@ class CfgWeapons
 					constant = 0;
 					linear = 0;
 					quadratic = 1;
-					/*constant = 0.1;
-					linear = 0;
-					quadratic = 0;*/
-					/*constant=1;
-					linear=1;
-					quadratic=1;*/
 					hardLimitStart=8000; //130
 					hardLimitEnd=10000; //160
 				};
@@ -200,26 +189,19 @@ class CfgWeapons
 	};
 	class TAS_acc_brightlite_static: TAS_acc_brightlite_medium //a unswapable brightlite with tuned settings to make it more attractive as a plain alternative to the vanilla light.
 	{
-		displayName = "BrightLite (Static Yield)";
+		displayName = "BrightLite (Static Yield, WIP)";
 		descriptionShort = "Enhanced weapon-mounted lighting system (Static Yield).";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		scopeArsenal = 0;
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				//color[]={600,750,900};
-				//color[]={255,255,255};
-				//color[]={1,1,1};
-				//ambient[]={10,7.5,5};
-				//position="flash dir";
-				//direction="flash";
-				/*size=1; //vanilla 1
+				size=1; //vanilla 1
 				innerAngle=15; //vanilla 5
 				outerAngle=60; //vanilla 100
 				coneFadeCoef=8; //vanilla 8
-				intensity=100; //vanilla 100
-				useFlare=1; //vanilla 1
-				dayLight=1; //vanilla 0
+				intensity=10; //vanilla 100
 				FlareSize=1.4; //vanilla 1.4
 				flareMaxDistance=100; //vanilla 100
 				scale[]={0}; //vanilla 0
@@ -231,7 +213,7 @@ class CfgWeapons
 					quadratic = 0.2; //vanilla 0.2
 					hardLimitStart=30; //vanilla 27
 					hardLimitEnd=40; //vanilla 34
-				};*/
+				};
 			};		
 		};
 	};
@@ -254,30 +236,28 @@ class CfgWeapons
 			{
 				//color[]={600,750,900};
 				//color[]={255,255,255};
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				//color[]={1,1,1};
+				//ambient[]={10,7.5,5};
+				color[]={180, 160, 130};
+				ambient[]={6,9,9};
 				position="flash dir";
 				direction="flash";
 				size=1;
 				innerAngle=30;
 				outerAngle=45;
 				coneFadeCoef=2;
-				intensity=100;
+				intensity=50;
 				useFlare=1;
 				dayLight=1;
-				//FlareSize=0.5;
 				FlareSize=1;
 				flareMaxDistance=150;
 				scale[]={0};
 				class Attenuation
 				{
-					start=20;
+					start=0;
 					constant = 0.2;
-					linear = 0;
-					quadratic = 0;
-					/*constant=1;
-					linear=1;
-					quadratic=1;*/
+					linear = 0.2;
+					quadratic = 0.2;
 					hardLimitStart=30;
 					hardLimitEnd=40;
 				};
@@ -295,14 +275,37 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = "TAS_acc_nightlite_high";
         MRT_SwitchItemPrevClass = "TAS_acc_nightlite_low";
         MRT_switchItemHintText = "Medium Yield IR Light";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight //inherit everything except color and ir light from the brightlites as nightlites are the same, just for IR
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
-				//irLight = 1;
+				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
+				ambient[]={NIGHT_AMBIENT};
+				irLight = 1;
+				position="flash dir";
+				direction="flash";
+				size=1; //vanilla 1
+				innerAngle=15; //vanilla 5
+				outerAngle=35; //vanilla 100
+				coneFadeCoef=4; //vanilla 8
+				intensity=40; //vanilla 100
+				useFlare=1; //vanilla 1
+				dayLight=1; //vanilla 0
+				FlareSize=1; //vanilla 1.4
+				flareMaxDistance=150; //vanilla 100
+				onlyInNvg=1; //vanilla 0
+				scale[]={0}; //vanilla 0
+				class Attenuation
+				{
+					start=1; //vanilla 0
+					constant = 0.1; //vanilla 0.5
+					linear = 0.1; //vanilla 0.1 
+					quadratic = 0.1; //vanilla 0.2
+					hardLimitStart=40; //vanilla 27
+					hardLimitEnd=65;
+				};
+				//class Attenuation: Attenuation {}; //for some reason fails to compile if you just do "class Attenuation: Attenuation {};""
 			};
 		};
 		inertia = 0.1;
@@ -315,14 +318,32 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = "TAS_acc_nightlite_medium";
         MRT_SwitchItemPrevClass = "TAS_acc_nightlite_high";
         MRT_switchItemHintText = "Low Yield IR Light";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				color[]={NIGHT_COLOR};
+				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
+				size=1;
+				innerAngle=45;
+				outerAngle=100;
+				coneFadeCoef=4;
+				intensity=15;
+				FlareSize=1;
+				flareMaxDistance=250;
+				scale[]={0};
+				class Attenuation
+				{
+					start = 0;
+					constant = 0.4;
+					linear = 0.1;
+					quadratic = 0.2;
+					hardLimitStart = 30;
+					hardLimitEnd = 50;
+				};
+				//class Attenuation: Attenuation {};
 			};		
 		};
 	};
@@ -334,14 +355,32 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = "TAS_acc_nightlite_low";
         MRT_SwitchItemPrevClass = "TAS_acc_nightlite_medium";
         MRT_switchItemHintText = "High Yield IR Light";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				color[]={NIGHT_COLOR};
+				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
+				size=1;
+				innerAngle=4;
+				outerAngle=12;
+				coneFadeCoef=4;
+				intensity=100;
+				FlareSize=1;
+				flareMaxDistance=200;
+				scale[]={0};
+				class Attenuation
+				{
+					start=3;
+					constant = 0;
+					linear = 0;
+					quadratic = 0.1;
+					hardLimitStart=70;
+					hardLimitEnd=100;
+				};
+				//class Attenuation: Attenuation {};
 			};
 		};
 	};
@@ -353,29 +392,49 @@ class CfgWeapons
 		//MRT_SwitchItemNextClass = "TAS_acc_nightlite_low";
         //MRT_SwitchItemPrevClass = "TAS_acc_nightlite_high";
         //MRT_switchItemHintText = "Extreme Yield IR Light";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				color[]={NIGHT_COLOR};
+				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
+				class Attenuation: Attenuation {};
 			};		
 		};
 	};
 	class TAS_acc_nightlite_static: TAS_acc_brightlite_static //a unswapable nightlite with tuned settings to make it more attractive as a plain alternative to the vanilla light.
 	{
-		displayName = "NightLite (Static Yield)";
+		displayName = "NightLite (Static Yield, WIP)";
 		descriptionShort = "Enhanced weapon-mounted IR lighting system (Static Yield).";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		scopeArsenal = 0;
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				size=1; //vanilla 1
+				innerAngle=15; //vanilla 5
+				outerAngle=60; //vanilla 100
+				coneFadeCoef=8; //vanilla 8
+				intensity=100; //vanilla 100
+				FlareSize=1.4; //vanilla 1.4
+				//flareMaxDistance=100; //vanilla 100
+				//scale[]={0}; //vanilla 0
+				class Attenuation
+				{
+					start=20; //vanilla 0
+					constant = 0.5; //vanilla 0.5
+					linear = 0.1; //vanilla 0.1 
+					quadratic = 0.2; //vanilla 0.2
+					hardLimitStart=30; //vanilla 27
+					hardLimitEnd=40; //vanilla 34
+				};
+				//color[]={NIGHT_COLOR};
+				//ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
+				//class Attenuation: Attenuation {};
 			};		
 		};
 	};
@@ -390,14 +449,36 @@ class CfgWeapons
 		//MRT_SwitchItemNextClass = "TAS_acc_nightlite_medium";
         //MRT_SwitchItemPrevClass = "TAS_acc_nightlite_high";
         //MRT_switchItemHintText = "Low Yield, Adjustable, Adjustable";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight
+			class FlashLight: Flashlight
 			{
-				color[]={1,1,1};
-				ambient[]={10,7.5,5};
+				color[]={NIGHT_COLOR};
+				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
+				position="flash dir";
+				direction="flash";
+				size=1;
+				innerAngle=30;
+				outerAngle=45;
+				coneFadeCoef=2;
+				intensity=50;
+				useFlare=1;
+				dayLight=1;
+				FlareSize=1;
+				flareMaxDistance=150;
+				scale[]={0};
+				class Attenuation
+				{
+					start=0;
+					constant = 0.2;
+					linear = 0.2;
+					quadratic = 0.2;
+					hardLimitStart=30;
+					hardLimitEnd=40;
+				};
+				//class Attenuation: Attenuation {};
 			};		
 		};
 		inertia = 0.1;
