@@ -33,6 +33,8 @@ class CfgPatches
 	};
 };
 
+class CBA_Extended_EventHandlers_base; //we'll use this for the vehicles' CBA compat later (units already have compat, perhaps through inheritance that didn't work for vics?)
+
 //************************************************************************************************************************************************************************************************
 //*****             Definitions                *********************************************************************************************************************************************************
 //************************************************************************************************************************************************************************************************
@@ -133,7 +135,7 @@ class CfgVehicles
 		sensitivity = 2.5;					// How likely this character spots enemies when controlled by AI.
 		threat[] = {1, 1, 0.8};*/				// Multiplier of the cost of the character in the eyes of soft, armoured and air enemies.
         displayName = "Dominos Employee (Unarmed)"; 
-        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
+        identityTypes[] = {"LanguageENG_F", "Head_NATO", "G_NATO_default"}; 
         genericNames = "NATOMen"; //name list this unit draws from
         faction = "TAS_Dominos_Zimbabwe"; //classname of faction this belongs to,, also sets catagory
 		editorSubcategory = "TAS_SubGroup_Men";
@@ -359,27 +361,15 @@ class CfgVehicles
 	//********************************************************************************************************************************************************************************************
     //*****            Vehicles              *****************************************************************************************************************************************************
     //********************************************************************************************************************************************************************************************
-	class I_G_Offroad_01_F;
-	class I_G_Offroad_01_armed_F;
-	class I_G_Offroad_01_AT_F;
-	class B_G_Offroad_01_F: I_G_Offroad_01_F {
-        class EventHandlers;
-    };
-	class B_G_Offroad_01_armed_F: I_G_Offroad_01_armed_F {
-        class EventHandlers;
-    };
-	class B_G_Offroad_01_AT_F: I_G_Offroad_01_AT_F {
-        class EventHandlers;
-    };
-	class O_G_Offroad_01_F {
-        class EventHandlers;
-    };
-	class O_G_Offroad_01_armed_F {
-        class EventHandlers;
-    };
-	class O_G_Offroad_01_AT_F {
-        class EventHandlers;
-    };
+
+	//we'll use these in a minute for inheritance
+	class B_G_Offroad_01_F;
+	class B_G_Offroad_01_armed_F;
+	class B_G_Offroad_01_AT_F;
+	class O_G_Offroad_01_F;
+	class O_G_Offroad_01_armed_F;
+	class O_G_Offroad_01_AT_F;
+
 	//********************************************************************************************************************************************************************************************
     //*****            Dominos Vehicles              *****************************************************************************************************************************************************
     //********************************************************************************************************************************************************************************************
@@ -394,9 +384,10 @@ class CfgVehicles
         displayName = "Dominos Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_offroad.paa"};
-        class Eventhandlers: EventHandlers //inherit so that CBA Extended Event Handlers works
+        class Eventhandlers //inherit so that CBA Extended Event Handlers works
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
 	class TAS_Dominos_Offroad_HMG: B_G_Offroad_01_armed_F
@@ -410,9 +401,10 @@ class CfgVehicles
         displayName = "Dominos Pizza Delivery Offroad (HMG)";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_offroad.paa"};
-        class Eventhandlers: EventHandlers
+        class Eventhandlers
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         }; 
     };
 	class TAS_Dominos_Offroad_AT: B_G_Offroad_01_AT_F
@@ -426,9 +418,10 @@ class CfgVehicles
         displayName = "Dominos Pizza Delivery Offroad (AT)";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\dominos_offroad.paa"};
-        class Eventhandlers: EventHandlers
+        class Eventhandlers
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
 	//********************************************************************************************************************************************************************************************
@@ -445,9 +438,10 @@ class CfgVehicles
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\papaJhons_offroad.paa"};
-        class Eventhandlers: EventHandlers
+        class Eventhandlers
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
 	class TAS_PapaJhons_Offroad_HMG: O_G_Offroad_01_armed_F
@@ -461,9 +455,10 @@ class CfgVehicles
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\papaJhons_offroad.paa"};
-        class Eventhandlers: EventHandlers
+        class Eventhandlers
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
 	class TAS_PapaJhons_Offroad_AT: O_G_Offroad_01_AT_F
@@ -477,9 +472,10 @@ class CfgVehicles
         displayName = "Papa Jhons Pizza Delivery Offroad";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\papaJhons_offroad.paa"};
-        class Eventhandlers: EventHandlers
+        class Eventhandlers
         {
             init = "(_this select 0) setVariable [""BIS_enableRandomization"", false];";
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
 };
