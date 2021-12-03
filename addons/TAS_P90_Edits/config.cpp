@@ -20,7 +20,7 @@ class CfgWeapons
 	class Rifle_Base_F;
 	class SMG_03_TR_BASE: Rifle_Base_F //all p90s inherit from this one
 	{
-		magazines[] += {"TAS_50Rnd_570x28_EP_SMG_03","TAS_50Rnd_570x28_EP_Pink_SMG_03","TAS_50Rnd_570x28_Pink_SMG_03"};
+		magazines[] += {"TAS_50Rnd_570x28_EP_SMG_03"};
 	};
 	class SMG_03C_TR_black;
 	class TAS_P90_TR_Pink: SMG_03C_TR_black
@@ -58,9 +58,9 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class TAS_50Rnd_570x28_Pink_SMG_03
+			class TAS_50Rnd_570x28_EP_SMG_03
 			{
-				magazine = "TAS_50Rnd_570x28_Pink_SMG_03";
+				magazine = "TAS_50Rnd_570x28_EP_SMG_03";
 				count = 1;
 			};
 		};
@@ -83,24 +83,6 @@ class CfgMagazines
 		tracersEvery = 0;
 		descriptionShort = "A P90 magazine containing 50 Enhanced Performance rounds.";
 		mass = 12;
-	};
-	class TAS_50Rnd_570x28_EP_Pink_SMG_03: TAS_50Rnd_570x28_EP_SMG_03
-	{
-		author = "Guac and Phantom";
-		displayName = "5.7mm 50Rnd EP Magazine (Pink)";
-		picture = "Autismo_Seals_Unit_Mod\addons\TAS_P90_Edits\Textures\mag_picture_pink.paa";
-		descriptionShort = "A Pink P90 magazine containing 50 Enhanced Performance rounds.";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_P90_Edits\Textures\mag_pink.paa"};
-	};
-	class TAS_50Rnd_570x28_Pink_SMG_03: 50Rnd_570x28_SMG_03
-	{
-		author = "Guac and Phantom";
-		displayName = "5.7mm 50Rnd Magazine (Pink)";
-		picture = "Autismo_Seals_Unit_Mod\addons\TAS_P90_Edits\Textures\mag_picture_pink.paa";
-		descriptionShort = "A Pink P90 magazine containing 50 standard rounds.";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_P90_Edits\Textures\mag_pink.paa"};
 	};
 };
 
