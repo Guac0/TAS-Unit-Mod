@@ -70,7 +70,7 @@ class CfgVehicles
 class CfgMagazines
 {
 	class CA_Magazine;
-	//class 50Rnd_570x28_SMG_03;
+	class 50Rnd_570x28_SMG_03;
 	class TAS_50Rnd_570x28_EP_SMG_03: CA_Magazine
 	{
 		author = "Guac";
@@ -92,11 +92,9 @@ class CfgAmmo
 	class TAS_570x28_EP_Ball: BulletBase
 	{
 		//caliber = 0.559441;
-		//caliber = 1.6;
-		caliber = 1.1;
+		caliber = 1.6;
 		//hit = 8;
-		//hit = 12;
-		hit = 10;
+		hit = 12;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		typicalSpeed = 715;
