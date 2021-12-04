@@ -8,8 +8,20 @@ class CfgPatches
 			"A3_Weapons_F"
 		}; //A3_Weapons_F_Ammoboxes
 		requiredVersion=0.1;
-		units[]={};
-		weapons[]={};
+		units[]={
+			"TAS_Headgear_TollyHeliHelmet",
+			"TAS_Headgear_TBONE_CrewHelmet",
+			"TAS_Headgear_TboneGroundHelmet",
+			"TAS_Headgear_TboneMedicHelmet",
+			"TAS_Headgear_TboneFemboyHelmet"
+		};
+		weapons[]={
+			"TAS_TollyHeliHelmet",
+			"TAS_TBONE_CrewHelmet",
+			"TAS_TboneGroundHelmet",
+			"TAS_TboneMedicHelmet",
+			"TAS_TboneFemboyHelmet"
+		};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -28,7 +40,7 @@ class cfgWeapons
 	class TAS_TBONE_CrewHelmet: H_CrewHelmetHeli_B
 	{ 
 		author = "TBONE";
-		displayName = "TBONE's Flight Helmet";
+		displayName = "Kommik's Flight Helmet (Texture Currently Broken)";
 		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
 		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_Kommik_CrewHelm1.paa"};
 	};
@@ -38,14 +50,21 @@ class cfgWeapons
 		author = "TBONE";
 		displayName = "TBONE's Field Helmet";
 		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
-		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_ground_helmet.paa"};
+		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_TBONE_GroundHelmet.paa"};
 	};
 	class TAS_TboneMedicHelmet: H_HelmetIA
 	{ 
 		author = "TBONE";
 		displayName = "TBONE's Medic Helmet (Texture Currently Broken)";
 		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
-		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TBONE_Medic_Helmet.paa"};
+		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_TBONE_MedicHelmet.paa"};
+	};
+	class TAS_TboneFemboyHelmet: H_CrewHelmetHeli_B
+	{ 
+		author = "TBONE";
+		displayName = "TBONE's Femboy Helmet";
+		//picture = "A3\Weapons_F\Data\placeholder_co.paa"; //doesnt work as an inventory picture
+		hiddenSelectionsTextures[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Headgear\Textures\TAS_TBONE_FemboyCrewHelm.paa"};
 	};
 };
 
@@ -73,7 +92,7 @@ class cfgVehicles
 	};
 	class TAS_Headgear_Kommik_CrewHelmet: TAS_Headgear_TollyHeliHelmet
 	{
-		displayName = "Kommik's Flight Helmet";
+		displayName = "Kommik's Flight Helmet (Texture Currently Broken)";
 		class TransportItems
 		{
 			class TAS_Kommik_CrewHelmet
@@ -97,12 +116,24 @@ class cfgVehicles
 	};
 	class TAS_Headgear_TboneMedicHelmet: TAS_Headgear_TollyHeliHelmet
 	{
-		displayName = "TBONE's Medic Helmet (Texture Currently Broken)";
+		displayName = "TBONE's Medic Helmet";
 		class TransportItems
 		{
 			class TAS_TboneMedicHelmet
 			{
 				name = "TAS_TboneMedicHelmet";
+				count = 1;
+			};
+		};
+	};
+	class TAS_Headgear_TboneFemboyHelmet: TAS_Headgear_TollyHeliHelmet
+	{
+		displayName = "TBONE's Femboy  Helmet";
+		class TransportItems
+		{
+			class TAS_TboneFemboyHelmet
+			{
+				name = "TAS_TboneFemboyHelmet";
 				count = 1;
 			};
 		};
