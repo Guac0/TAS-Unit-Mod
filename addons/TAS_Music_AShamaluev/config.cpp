@@ -26,7 +26,7 @@ class CfgMusic
 	//	name	= "My first track";
 
 		// filename, volume, pitch
-	//	sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\filename.ogg", db + 0, 1.0 };
+	//	sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\filename.ogg", db + 0, 1.0 };
 	//};
 	tracks[] = {
 		TAS_AShamaluev_1,
@@ -44,56 +44,56 @@ class CfgMusic
 	class TAS_AShamaluev_1
 	{
 		name	= "Epic Battle Trailer — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\EpicBattleTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\EpicBattleTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=326;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_2
 	{
 		name	= "Hybrid Trailer — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\HybridTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\HybridTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=163;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_3
 	{
 		name	= "Offensive — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Offensive-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Offensive-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=189;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_4
 	{
 		name	= "Superiority — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Superiority-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Superiority-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=197;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_5
 	{
 		name	= "Victorious — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Victorious-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Victorious-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=166;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_6
 	{
 		name	= "Evolution — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Evolution-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Evolution-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=187;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_7
 	{
 		name	= "Fortress — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Fortress-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Fortress-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=174;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};
 	class TAS_AShamaluev_8
 	{
 		name	= "Forward — AShamaluevMusic";
-		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_MusicAShamaluev\music\Forward-AShamaluevMusic.ogg", db + 0, 1.0 };
+		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Forward-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=189;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
 	};

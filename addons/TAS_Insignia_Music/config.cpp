@@ -50,7 +50,6 @@ class CfgMusic
 		TAS_Music_14,
 		TAS_Music_15,
 		TAS_Music_16,
-		TAS_Music_17,
 		TAS_OM_1,
 		TAS_OM_Chillout_1,
 		TAS_OM_Chillout_2,
