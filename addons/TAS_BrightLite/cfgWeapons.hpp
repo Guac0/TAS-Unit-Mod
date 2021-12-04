@@ -4,6 +4,25 @@
 //#define NIGHT_COLOR 1,0,0
 #define NIGHT_COLOR 180, 160, 130
 #define NIGHT_AMBIENT 6,6,9
+/*#define LOW_ATTENUATION start = 0; \
+					constant = 0.4; \
+					linear = 0.1; \
+					quadratic = 0.2; \
+					hardLimitStart = 35; \
+					hardLimitEnd = 50;
+#define MEDIUM_ATTENUATION start=1; //vanilla 0 \
+					constant = 0.05; //vanilla 0.5 \
+					linear = 0.05; //vanilla 0.1 \
+					quadratic = 0.05; //vanilla 0.2 \
+					hardLimitStart=80; //vanilla 27 \
+					hardLimitEnd=100;
+#define HIGH_ATTENUATION start=3; \
+					constant = 0; \
+					linear = 0; \
+					quadratic = 0.05; \
+					hardLimitStart=100; \
+					hardLimitEnd=120;*/
+
 
 class CfgWeapons
 {
@@ -38,24 +57,25 @@ class CfgWeapons
 				position="flash dir";
 				direction="flash";
 				size=1; //vanilla 1
-				innerAngle=15; //vanilla 5
-				outerAngle=35; //vanilla 100
+				innerAngle=30; //vanilla 5
+				outerAngle=60; //vanilla 100
 				coneFadeCoef=4; //vanilla 8
-				intensity=40; //vanilla 100
+				intensity=200; //vanilla 100
 				useFlare=1; //vanilla 1
 				dayLight=1; //vanilla 0
 				FlareSize=1; //vanilla 1.4
-				flareMaxDistance=150; //vanilla 100
-				onlyInNvg=1; //vanilla 0
+				flareMaxDistance=200; //vanilla 100
+				onlyInNvg=0; //vanilla 0
 				scale[]={0}; //vanilla 0
 				class Attenuation
 				{
-					start=1; //vanilla 0
-					constant = 0.1; //vanilla 0.5
-					linear = 0.1; //vanilla 0.1 
-					quadratic = 0.1; //vanilla 0.2
-					hardLimitStart=40; //vanilla 27
-					hardLimitEnd=65;
+					//MEDIUM_ATTENUATION
+					start=0.1; //vanilla 0
+					constant = 0; //vanilla 0.5
+					linear = 0; //vanilla 0.1 
+					quadratic = 0.01; //vanilla 0.2
+					hardLimitStart=75; //vanilla 27
+					hardLimitEnd=100;
 					/*start=55; //vanilla 0
 					constant = 0; //vanilla 0.5
 					linear = 0; //vanilla 0.1 
@@ -93,27 +113,28 @@ class CfgWeapons
 			{
 				color[]={180, 160, 130};
 				size=1;
-				innerAngle=45;
-				outerAngle=100;
+				innerAngle=65;
+				outerAngle=130;
 				coneFadeCoef=4;
-				intensity=15;
+				intensity=70;
 				FlareSize=1;
-				flareMaxDistance=250;
+				flareMaxDistance=150;
 				scale[]={0};
 				class Attenuation
 				{
-					/*start=0.1;
+					//LOW_ATTENUATION
+					start=0.1;
 					constant = 0;
 					linear = 0;
-					quadratic = 0.5;
-					hardLimitStart=12;
-					hardLimitEnd=20;*/
-					start = 0;
+					quadratic = 0.1;
+					hardLimitStart=40;
+					hardLimitEnd=60;
+					/*start = 0;
 					constant = 0.4;
 					linear = 0.1;
 					quadratic = 0.2;
 					hardLimitStart = 30;
-					hardLimitEnd = 50;
+					hardLimitEnd = 50;*/
 				};
 			};		
 		};
@@ -131,28 +152,30 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
+				//color[]={600,750,900};
 				color[]={180, 160, 130};
 				size=1;
-				innerAngle=4;
-				outerAngle=12;
+				innerAngle=10;
+				outerAngle=25;
 				coneFadeCoef=4;
-				intensity=100;
+				intensity=2000;
 				FlareSize=1;
-				flareMaxDistance=200;
+				flareMaxDistance=250;
 				scale[]={0};
 				class Attenuation
 				{
-					start=3;
+					//HIGH_ATTENUATION
+					start=1;
 					constant = 0;
 					linear = 0;
 					quadratic = 0.1;
-					hardLimitStart=70;
-					hardLimitEnd=100;
+					hardLimitStart=150; //fades on its own
+					hardLimitEnd=220;
 				};
 			};
 		};
 	};
-	class TAS_acc_brightlite_sniper: TAS_acc_brightlite_medium
+	class TAS_acc_brightlite_sniper: TAS_acc_brightlite_medium //player addPrimaryWeaponItem "TAS_acc_brightlite_sniper";
 	{
 		displayName = "BrightLite (Extreme Yield)";
 		descriptionShort = "OverGUACed weapon-mounted lighting system (Extreme Yield).";
