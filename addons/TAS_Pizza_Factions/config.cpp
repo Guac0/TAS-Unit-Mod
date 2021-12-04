@@ -21,12 +21,17 @@ class CfgPatches
 			"TAS_Dominos_Offroad_AT",
 			"TAS_PapaJhons_Offroad",
 			"TAS_PapaJhons_Offroad_HMG",
-			"TAS_PapaJhons_Offroad_AT"
+			"TAS_PapaJhons_Offroad_AT",
+			"TAS_RationPizza_Item"
 		};
-		weapons[] = {};
+		weapons[] = 
+		{
+			"TAS_RationPizza"
+		};
 		requiredAddons[] = 
 		{
-			"A3_Characters_F"
+			"A3_Characters_F",
+			"ace_field_rations"
 		};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
@@ -478,6 +483,25 @@ class CfgVehicles
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };  
     };
+	class Item_Base_F;
+	//class ACE_Humanitarian_Ration_Item: Item_Base_F;
+	//class ACE_Humanitarian_Ration_Item;
+	class TAS_RationPizza_Item: Item_Base_F
+	{
+		author = "Guac";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Pizza";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			class TAS_RationPizza
+			{
+				name = "TAS_RationPizza";
+				count = 1;
+			};
+		};
+	};
 };
 
 class CfgGroups
@@ -1341,4 +1365,23 @@ class cfgWeapons
             mass = 60;
         }; 
     };
+	//class ACE_Humanitarian_Ration;
+	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class TAS_RationPizza: ACE_ItemCore
+	{
+		author = "Guac";
+		displayName = "Pizza";
+		descriptionShort = "Pizza";
+		model = "\z\ace\addons\field_rations\data\mre_human.p3d";
+		picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\item_mre_pizza_co.paa";
+		scope = 2;
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 25;
+		};
+		acex_field_rations_consumeTime = 5;
+		acex_field_rations_hungerSatiated = 20;
+		acex_field_rations_consumeText = "Eww, broccoli on pizza?";
+	};
 }; 
