@@ -6,8 +6,8 @@ class CfgPatches
 	class TAS_BrightLite
 	{
 		name = "TAS BrightLite Addon";
-		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper","TAS_Item_acc_brightlite_static","TAS_Item_acc_brightlite_pistol","TAS_Item_acc_nightlite_medium","TAS_Item_acc_nightlite_low","TAS_Item_acc_nightlite_high","TAS_Item_acc_nightlite_sniper","TAS_Item_acc_nightlite_static","TAS_Item_acc_nightlite_pistol"};
-		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper","TAS_acc_brightlite_static","TAS_acc_brightlite_pistol","TAS_acc_nightlite_medium","TAS_acc_nightlite_low","TAS_acc_nightlite_high","TAS_acc_nightlite_sniper","TAS_acc_nightlite_static","TAS_acc_nightlite_pistol"}; //"arifle_TRG20_ACO_BrightLite_F"
+		units[] = {"TAS_Item_acc_brightlite_medium","TAS_Item_acc_brightlite_low","TAS_Item_acc_brightlite_high","TAS_Item_acc_brightlite_sniper","TAS_Item_acc_brightlite_static","TAS_Item_acc_brightlite_pistol","TAS_Item_acc_nightlite_medium","TAS_Item_acc_nightlite_low","TAS_Item_acc_nightlite_high","TAS_Item_acc_nightlite_sniper","TAS_Item_acc_nightlite_static","TAS_Item_acc_nightlite_pistol","TAS_Item_acc_pointer_IR"};
+		weapons[] = {"TAS_acc_brightlite_medium","TAS_acc_brightlite_low","TAS_acc_brightlite_high","TAS_acc_brightlite_sniper","TAS_acc_brightlite_static","TAS_acc_brightlite_pistol","TAS_acc_nightlite_medium","TAS_acc_nightlite_low","TAS_acc_nightlite_high","TAS_acc_nightlite_sniper","TAS_acc_nightlite_static","TAS_acc_nightlite_pistol","TAS_acc_pointer_IR"}; //"arifle_TRG20_ACO_BrightLite_F"
 		requiredAddons[] = {"A3_Weapons_F","cba_main"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";

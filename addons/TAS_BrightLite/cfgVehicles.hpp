@@ -2,10 +2,31 @@
 
 class CfgVehicles
 {
+	class Item_Base_F;
+	//******************************************************************
+	//*************** LASER TEST **************************************
+	//******************************************************************
+	class TAS_Item_acc_pointer_IR: Item_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Laser Test";
+		author = "Guac";
+		editorCategory = "EdCat_WeaponAttachments";
+		editorSubcategory = "EdSubcat_SideSlot";
+		vehicleClass = "WeaponAccessories";
+		class TransportItems
+		{
+			class TAS_acc_pointer_IR
+			{
+				name = "TAS_acc_pointer_IR";
+				count = 1;
+			};
+		};
+	};
 	//******************************************************************
 	//*************** BRIGHTLITES **************************************
 	//******************************************************************
-	class Item_Base_F;
 	class TAS_Item_acc_brightlite_medium: Item_Base_F
 	{
 		scope = 2;

@@ -21,6 +21,7 @@ class asdg_FrontSideRail: asdg_SlotInfo {
 		TAS_acc_nightlite_high = 1;
 		TAS_acc_nightlite_sniper = 1;
 		TAS_acc_nightlite_static = 1;
+		TAS_acc_pointer_IR = 1; //remove if doesnt work
     };
 };
 
@@ -49,5 +50,6 @@ class PointerSlot_Rail: PointerSlot {
 		TAS_acc_nightlite_high = 1;
 		TAS_acc_nightlite_sniper = 1;
 		TAS_acc_nightlite_static = 1;
+		TAS_acc_pointer_IR = 1; //remove if doesnt work
     };
 };

@@ -28,6 +28,63 @@ class CfgWeapons
 {
 	class InventoryFlashLightItem_Base_F;
 	class acc_flashlight;
+	class acc_pointer_IR;
+	
+	//******************************************************************
+	//*************** LASER TEST ***************************************
+	//******************************************************************
+	class TAS_acc_pointer_IR: acc_pointer_IR
+	{
+		author = "Guac";
+		_generalMacro = "acc_pointer_IR";
+		scope = 2;
+		displayName = "Test IR Laser Pointer";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Turn IR Laser ON/OFF";
+		picture = "\A3\weapons_F\Data\UI\gear_accv_pointer_CA.paa";
+		model = "\A3\weapons_f\acc\accv_pointer_F";
+		descriptionShort = "Emits light visible in the image intensification mode (night vision).";
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 6;
+			class Pointer
+			{
+				irLaserPos = "laser pos";
+				irLaserEnd = "laser dir";
+				irDistance = 5;
+			};
+			class FlashLight //copy and paste from medium nightlite except for pos/direction
+			{
+				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
+				ambient[]={NIGHT_AMBIENT};
+				irLight = 1;
+				//position="flash dir";
+				//direction="flash";
+				position="laser pos";
+				direction="laser dir";
+				size=1; //vanilla 1
+				innerAngle=15; //vanilla 5
+				outerAngle=35; //vanilla 100
+				coneFadeCoef=4; //vanilla 8
+				intensity=40; //vanilla 100
+				useFlare=1; //vanilla 1
+				dayLight=1; //vanilla 0
+				FlareSize=1; //vanilla 1.4
+				flareMaxDistance=150; //vanilla 100
+				onlyInNvg=1; //vanilla 0
+				scale[]={0}; //vanilla 0
+				class Attenuation
+				{
+					start=1; //vanilla 0
+					constant = 0.1; //vanilla 0.5
+					linear = 0.1; //vanilla 0.1 
+					quadratic = 0.1; //vanilla 0.2
+					hardLimitStart=40; //vanilla 27
+					hardLimitEnd=65;
+				};
+			};
+		};
+		inertia = 0.1;
+	};
 	//******************************************************************
 	//*************** BRIGHTLITES **************************************
 	//******************************************************************
@@ -301,7 +358,7 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			mass = 4;
-			class FlashLight: Flashlight //inherit everything except color and ir light from the brightlites as nightlites are the same, just for IR
+			class FlashLight: Flashlight //inherit everything except color and ir light from the brightlites as nightlites are the same, just for IR. This doesn't actually work for some reason.
 			{
 				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
 				ambient[]={NIGHT_AMBIENT};
@@ -329,6 +386,14 @@ class CfgWeapons
 					hardLimitEnd=65;
 				};
 				//class Attenuation: Attenuation {}; //for some reason fails to compile if you just do "class Attenuation: Attenuation {};""
+			};
+			class Pointer //should hopefully allow this attachment to have both a IR laser and a flashlight
+			{
+				//irLaserPos = "laser pos"; //change these since flashlight model doesnt' have these memory points
+				//irLaserEnd = "laser dir";
+				irLaserPos = "flash dir"; //naming is different, see class Flashlight. Confirmed by dedmen to be inverse but can't fix it this late in a3's dev cycle. Main arma discord convo: https://discord.com/channels/105462288051380224/105465701543723008/847467434994696243
+				irLaserEnd = "flash";
+				irDistance = 5; //according to dedmen, this is leftover from A2, no effect, shouldn't use. Main arma discord convo: https://discord.com/channels/105462288051380224/105465701543723008/847446523733213224
 			};
 		};
 		inertia = 0.1;
