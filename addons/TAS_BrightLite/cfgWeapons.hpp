@@ -1,28 +1,133 @@
 //here we define each flashlight and its light values
+//NOTES: Balancing is messed up because your own flashlight is less bright than other players' flashlights. Also, nightlites need another buff
 
 //some definitions for easier changing both brightlite and nightlite
+//basically, the inheriting flashlight configs is broken somehow so gotta do it this way
 //#define NIGHT_COLOR 1,0,0
 #define NIGHT_COLOR 180, 160, 130
 #define NIGHT_AMBIENT 6,6,9
-/*#define LOW_ATTENUATION start = 0; \
-					constant = 0.4; \
-					linear = 0.1; \
-					quadratic = 0.2; \
-					hardLimitStart = 35; \
-					hardLimitEnd = 50;
-#define MEDIUM_ATTENUATION start=1; //vanilla 0 \
-					constant = 0.05; //vanilla 0.5 \
-					linear = 0.05; //vanilla 0.1 \
-					quadratic = 0.05; //vanilla 0.2 \
-					hardLimitStart=80; //vanilla 27 \
-					hardLimitEnd=100;
-#define HIGH_ATTENUATION start=3; \
-					constant = 0; \
-					linear = 0; \
-					quadratic = 0.05; \
-					hardLimitStart=100; \
-					hardLimitEnd=120;*/
 
+//semicolons in defines is bad form but we need it for this to work as quasi-inherit
+#define FLASHLIGHT_MEDIUM \
+	position="flash dir"; \
+	direction="flash"; \
+	size=1; \
+	innerAngle=30; \
+	outerAngle=60; \
+	coneFadeCoef=4; \
+	intensity=200; \
+	dayLight=1; \
+	FlareSize=1; \
+	flareMaxDistance=200; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start = 0.1; \
+		constant = 0; \
+		linear = 0; \
+		quadratic = 0.01; \
+		hardLimitStart = 75; \
+		hardLimitEnd = 100; \
+	};
+	
+#define FLASHLIGHT_LOW \
+	size=1; \
+	innerAngle=65; \
+	outerAngle=130; \
+	coneFadeCoef=4; \
+	intensity=70; \
+	FlareSize=1; \
+	flareMaxDistance=150; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start = 0.1; \
+		constant = 0; \
+		linear = 0; \
+		quadratic = 0.1; \
+		hardLimitStart = 40; \
+		hardLimitEnd = 60; \
+	};
+
+#define FLASHLIGHT_HIGH \
+	size=1; \
+	innerAngle=10; \
+	outerAngle=25; \
+	coneFadeCoef=4; \
+	intensity=2000; \
+	FlareSize=1; \
+	flareMaxDistance=250; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start = 1; \
+		constant = 0; \
+		linear = 0; \
+		quadratic = 0.1; \
+		hardLimitStart = 150; \
+		hardLimitEnd = 220; \
+	};
+
+#define FLASHLIGHT_PISTOL \
+	position="flash dir"; \
+	direction="flash"; \
+	size=1; \
+	innerAngle=70; \
+	outerAngle=130; \
+	coneFadeCoef=2; \
+	intensity=70; \
+	dayLight=1; \
+	FlareSize=1; \
+	flareMaxDistance=150; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start=0; \
+		constant = 0; \
+		linear = 0; \
+		quadratic = 0.1; \
+		hardLimitStart=30; \
+		hardLimitEnd=40; \
+	};
+
+#define FLASHLIGHT_SNIPER \
+	size=1; \
+	innerAngle=1; \
+	outerAngle=3; \
+	coneFadeCoef=2; \
+	intensity=500; \
+	FlareSize=1; \
+	flareMaxDistance=3000; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start=6000; \
+		constant = 0; \
+		linear = 0; \
+		quadratic = 1; \
+		hardLimitStart=8000; \
+		hardLimitEnd=10000; \
+	};
+
+//deprecated
+#define FLASHLIGHT_STATIC \
+	size=1; \
+	innerAngle=15; \
+	outerAngle=60; \
+	coneFadeCoef=8; \
+	intensity=10; \
+	FlareSize=1.4; \
+	flareMaxDistance=100; \
+	scale[]={0}; \
+	class Attenuation \
+	{ \
+		start=20; \
+		constant = 0.5; \
+		linear = 0.1; \
+		quadratic = 0.2; \
+		hardLimitStart=30; \
+		hardLimitEnd=40; \
+	};
 
 class CfgWeapons
 {
@@ -50,9 +155,14 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight
 			{
+				color[] = {180, 160, 130};
+				ambient[] = {6,9,9};
+				useFlare = 1;
+				irLight = 0;
+				onlyInNvg = 0;
 				//color[]={600,750,900};
 				//color[]={7000,7500,10000}; //old: 
-				color[]={180, 160, 130};
+				/*color[]={180, 160, 130};
 				ambient[]={6,9,9}; //old: ambient[]={10,7.5,5};
 				position="flash dir";
 				direction="flash";
@@ -69,30 +179,9 @@ class CfgWeapons
 				scale[]={0}; //vanilla 0
 				class Attenuation
 				{
-					//MEDIUM_ATTENUATION
-					start=0.1; //vanilla 0
-					constant = 0; //vanilla 0.5
-					linear = 0; //vanilla 0.1 
-					quadratic = 0.01; //vanilla 0.2
-					hardLimitStart=75; //vanilla 27
-					hardLimitEnd=100;
-					/*start=55; //vanilla 0
-					constant = 0; //vanilla 0.5
-					linear = 0; //vanilla 0.1 
-					quadratic = 1; //vanilla 0.2 */
-					/*constant = 0.2;
-					linear = 0;
-					quadratic = 0;*/
-					/*
-					linear = 0.075;
-					quadratic = 0.15;
-					*/
-					/*constant=1;
-					linear=1;
-					quadratic=1;*/
-					/*hardLimitStart=70; //vanilla 27
-					hardLimitEnd=85; //vanilla 34*/
-				};
+					MEDIUM_ATTENUATION
+				};*/
+				FLASHLIGHT_MEDIUM
 			};
 			
 		};
@@ -111,31 +200,7 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
-				color[]={180, 160, 130};
-				size=1;
-				innerAngle=65;
-				outerAngle=130;
-				coneFadeCoef=4;
-				intensity=70;
-				FlareSize=1;
-				flareMaxDistance=150;
-				scale[]={0};
-				class Attenuation
-				{
-					//LOW_ATTENUATION
-					start=0.1;
-					constant = 0;
-					linear = 0;
-					quadratic = 0.1;
-					hardLimitStart=40;
-					hardLimitEnd=60;
-					/*start = 0;
-					constant = 0.4;
-					linear = 0.1;
-					quadratic = 0.2;
-					hardLimitStart = 30;
-					hardLimitEnd = 50;*/
-				};
+				FLASHLIGHT_LOW
 			};		
 		};
 	};
@@ -153,7 +218,7 @@ class CfgWeapons
 			class FlashLight: Flashlight
 			{
 				//color[]={600,750,900};
-				color[]={180, 160, 130};
+				/*color[]={180, 160, 130};
 				size=1;
 				innerAngle=10;
 				outerAngle=25;
@@ -164,14 +229,9 @@ class CfgWeapons
 				scale[]={0};
 				class Attenuation
 				{
-					//HIGH_ATTENUATION
-					start=1;
-					constant = 0;
-					linear = 0;
-					quadratic = 0.1;
-					hardLimitStart=150; //fades on its own
-					hardLimitEnd=220;
-				};
+					HIGH_ATTENUATION
+				};*/
+				FLASHLIGHT_HIGH
 			};
 		};
 	};
@@ -190,23 +250,7 @@ class CfgWeapons
 			{
 				color[]={1,1,1};
 				ambient[]={10,7.5,5};
-				size=1;
-				innerAngle=1; //lowered from 25
-				outerAngle=3; //lowered from 40
-				coneFadeCoef=2; //
-				intensity=500;
-				FlareSize=1;
-				flareMaxDistance=3000;
-				scale[]={0};
-				class Attenuation
-				{
-					start=6000; //lowered 
-					constant = 0;
-					linear = 0;
-					quadratic = 1;
-					hardLimitStart=8000; //130
-					hardLimitEnd=10000; //160
-				};
+				FLASHLIGHT_SNIPER
 			};
 		};
 	};
@@ -220,7 +264,7 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
-				size=1; //vanilla 1
+				/*size=1; //vanilla 1
 				innerAngle=15; //vanilla 5
 				outerAngle=60; //vanilla 100
 				coneFadeCoef=8; //vanilla 8
@@ -236,7 +280,13 @@ class CfgWeapons
 					quadratic = 0.2; //vanilla 0.2
 					hardLimitStart=30; //vanilla 27
 					hardLimitEnd=40; //vanilla 34
-				};
+				};*/
+				color[] = {180, 160, 130};
+				ambient[] = {6,9,9};
+				useFlare = 1;
+				irLight = 0;
+				onlyInNvg = 0;
+				FLASHLIGHT_STATIC
 			};		
 		};
 	};
@@ -263,27 +313,8 @@ class CfgWeapons
 				//ambient[]={10,7.5,5};
 				color[]={180, 160, 130};
 				ambient[]={6,9,9};
-				position="flash dir";
-				direction="flash";
-				size=1;
-				innerAngle=30;
-				outerAngle=45;
-				coneFadeCoef=2;
-				intensity=50;
 				useFlare=1;
-				dayLight=1;
-				FlareSize=1;
-				flareMaxDistance=150;
-				scale[]={0};
-				class Attenuation
-				{
-					start=0;
-					constant = 0.2;
-					linear = 0.2;
-					quadratic = 0.2;
-					hardLimitStart=30;
-					hardLimitEnd=40;
-				};
+				FLASHLIGHT_PISTOL
 			};		
 		};
 		inertia = 0.1;
@@ -306,28 +337,9 @@ class CfgWeapons
 				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
 				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
-				position="flash dir";
-				direction="flash";
-				size=1; //vanilla 1
-				innerAngle=15; //vanilla 5
-				outerAngle=35; //vanilla 100
-				coneFadeCoef=4; //vanilla 8
-				intensity=40; //vanilla 100
-				useFlare=1; //vanilla 1
-				dayLight=1; //vanilla 0
-				FlareSize=1; //vanilla 1.4
-				flareMaxDistance=150; //vanilla 100
+				useFlare=0; //vanilla 1
 				onlyInNvg=1; //vanilla 0
-				scale[]={0}; //vanilla 0
-				class Attenuation
-				{
-					start=1; //vanilla 0
-					constant = 0.1; //vanilla 0.5
-					linear = 0.1; //vanilla 0.1 
-					quadratic = 0.1; //vanilla 0.2
-					hardLimitStart=40; //vanilla 27
-					hardLimitEnd=65;
-				};
+				FLASHLIGHT_MEDIUM
 				//class Attenuation: Attenuation {}; //for some reason fails to compile if you just do "class Attenuation: Attenuation {};""
 			};
 		};
@@ -346,27 +358,12 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
-				color[]={NIGHT_COLOR};
+				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
 				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
-				size=1;
-				innerAngle=45;
-				outerAngle=100;
-				coneFadeCoef=4;
-				intensity=15;
-				FlareSize=1;
-				flareMaxDistance=250;
-				scale[]={0};
-				class Attenuation
-				{
-					start = 0;
-					constant = 0.4;
-					linear = 0.1;
-					quadratic = 0.2;
-					hardLimitStart = 30;
-					hardLimitEnd = 50;
-				};
-				//class Attenuation: Attenuation {};
+				useFlare=0; //vanilla 1
+				onlyInNvg=1; //vanilla 0
+				FLASHLIGHT_LOW
 			};		
 		};
 	};
@@ -383,26 +380,12 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
-				color[]={NIGHT_COLOR};
+				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
 				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
-				size=1;
-				innerAngle=4;
-				outerAngle=12;
-				coneFadeCoef=4;
-				intensity=100;
-				FlareSize=1;
-				flareMaxDistance=200;
-				scale[]={0};
-				class Attenuation
-				{
-					start=3;
-					constant = 0;
-					linear = 0;
-					quadratic = 0.1;
-					hardLimitStart=70;
-					hardLimitEnd=100;
-				};
+				useFlare=0; //vanilla 1
+				onlyInNvg=1; //vanilla 0
+				FLASHLIGHT_HIGH
 				//class Attenuation: Attenuation {};
 			};
 		};
@@ -423,7 +406,7 @@ class CfgWeapons
 				color[]={NIGHT_COLOR};
 				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
-				class Attenuation: Attenuation {};
+				FLASHLIGHT_SNIPER
 			};		
 		};
 	};
@@ -437,7 +420,7 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight: Flashlight
 			{
-				size=1; //vanilla 1
+				/*size=1; //vanilla 1
 				innerAngle=15; //vanilla 5
 				outerAngle=60; //vanilla 100
 				coneFadeCoef=8; //vanilla 8
@@ -458,6 +441,13 @@ class CfgWeapons
 				//ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
 				//class Attenuation: Attenuation {};
+				*/
+				color[]={NIGHT_COLOR}; //use defines for these two so we can edit all the nightlites easily
+				ambient[]={NIGHT_AMBIENT};
+				irLight = 1;
+				useFlare = 0; //vanilla 1
+				onlyInNvg = 1; //vanilla 0
+				FLASHLIGHT_STATIC
 			};		
 		};
 	};
@@ -480,28 +470,8 @@ class CfgWeapons
 				color[]={NIGHT_COLOR};
 				ambient[]={NIGHT_AMBIENT};
 				irLight = 1;
-				position="flash dir";
-				direction="flash";
-				size=1;
-				innerAngle=30;
-				outerAngle=45;
-				coneFadeCoef=2;
-				intensity=50;
 				useFlare=1;
-				dayLight=1;
-				FlareSize=1;
-				flareMaxDistance=150;
-				scale[]={0};
-				class Attenuation
-				{
-					start=0;
-					constant = 0.2;
-					linear = 0.2;
-					quadratic = 0.2;
-					hardLimitStart=30;
-					hardLimitEnd=40;
-				};
-				//class Attenuation: Attenuation {};
+				FLASHLIGHT_PISTOL
 			};		
 		};
 		inertia = 0.1;
