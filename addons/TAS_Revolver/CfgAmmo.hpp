@@ -249,7 +249,7 @@ class CfgAmmo
 		};
 		
 	}; */
-
+	
 };
 /*		class B_45ACP_Ball: BulletBase
 		{
