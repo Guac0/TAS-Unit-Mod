@@ -44,20 +44,21 @@ class CfgFaces
     };
     class Man_A3: Default
     {
-        class Custom: Custom
-        {
+        class TAS_Bernie_Face
+		{
             author = "Guac";
-            displayname = "Custom face";
+            displayname = "Bernie Inauguration Face";
             texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_Guac_BernieFace1.paa";
-            head = "DefaultHead_A3";
-            identityTypes[] = {};
+            head = "DefaultHead_A3"; //the model
+            identityTypes[] = {"Head_NATO", "Head_Euro"}; //not sure, copied from the white heads
             material = "A3\Characters_F\Heads\Data\m_White_01.rvmat";
             materialWounded1 = "A3\Characters_F\Heads\Data\m_White_01_injury.rvmat";
-            materialWounded2 = "A3\Characters_F\Heads\Data\m_White_01_injury.rvmat";
+			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_01_injury.rvmat";
             textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
             materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
             textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
             materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
+            //disabled = 0; //no idea
         };
     };
 };
