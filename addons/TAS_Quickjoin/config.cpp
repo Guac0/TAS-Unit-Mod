@@ -29,6 +29,13 @@ class RscDisplayMain: RscStandardDisplay {
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     onbuttonclick = "connectToServer ['82.8.46.207', 2302, '']";
                 };
+                class JoinGuacServer: ServerBrowser {
+                    idc = -1;
+                    text = "TAS Primary Backup Server Quickjoin";
+                    tooltip = "Connect to the TAS Primary Backup Server";
+                    y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+                    onbuttonclick = "connectToServer ['71.126.163.78', 2302, '']";
+                };
             };
         };
     };
