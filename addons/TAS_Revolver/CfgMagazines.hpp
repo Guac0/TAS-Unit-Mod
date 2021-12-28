@@ -5,8 +5,8 @@ class CfgMagazines
 	class TAS_6Rnd_00Buck : CA_Magazine
 	{
 		scope = 2;
-		displayName = "6Rnd Buckshot";
-		displayNameShort = "6Buckshot";
+		displayName = "6rnd Buckshot";
+		displayNameShort = "6rnd Buckshot";
 		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_00buckshot";
@@ -18,8 +18,8 @@ class CfgMagazines
 	class TAS_6Rnd_Slug : TAS_6Rnd_00Buck
 	{
 		scope = 2;
-		displayName = "6Rnd Slug";
-		displayNameShort = "6Slug";
+		displayName = "6rnd Slug";
+		displayNameShort = "6rnd Slug";
 		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_slug";
@@ -41,7 +41,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "6rnd FRAG";
-		displayNameShort = "6FRAG";
+		displayNameShort = "6rnd FRAG";
 		descriptionshort = "Used in: THE Revolver.";
 		picture = "\A3\Weapons_F\Data\placeholder_co.paa";
 		ammo = "TAS_ammo_12g_FRAG";
@@ -52,9 +52,9 @@ class CfgMagazines
 	class TAS_6Rnd_doomsday_Buck : TAS_6Rnd_00Buck
 	{
 		scope = 2;
-		//scopeArsenal = 0;
+		scopeArsenal = 0;
 		displayName = "6rnd Doosmday Buckshot";
-		displayNameShort = "6DOOMSDAY";
+		displayNameShort = "6rnd DOOMSDAY";
 		descriptionshort = "Used in: THE Revolver.";
 		ammo = "TAS_ammo_doomsday_buckshot";
 		count = 6;
