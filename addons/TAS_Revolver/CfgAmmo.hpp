@@ -108,12 +108,11 @@ class CfgAmmo
 	// HE FRAG
 	class TAS_ammo_12g_FRAG : B_12Gauge_Slug
 	{
-		hit = 9; //originally 6 before buff
-		indirectHit = 2; //original 1.143
-		indirectHitRange = 2;
+		hit = 8; //originally 6 before buff
+		indirectHit = 3; //original 1.143
+		indirectHitRange = 2.5;
 		caliber = 0.2;
 		cartridge = "";
-		//rhs_cartridge = "\rhsusf\addons\rhsusf_weapons\casings\rhs_casing_12ga_hefrag";
 
 		typicalSpeed = 150;
 		airFriction = -0.0069;
@@ -123,9 +122,7 @@ class CfgAmmo
 		deflecting = 0;
 		explosive = 1;
 		
-		//might not work — WORKS
 		explosionEffects = "ExploAmmoExplosion";
-		//explosionEffects = "RHSUSF_12gExplosion";
 		CraterEffects = "";
 
 		dangerRadiusBulletClose = 16;
