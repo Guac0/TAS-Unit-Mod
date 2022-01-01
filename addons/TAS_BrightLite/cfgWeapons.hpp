@@ -12,10 +12,10 @@
 	position="flash dir"; \
 	direction="flash"; \
 	size=1; \
-	innerAngle=30; \
-	outerAngle=60; \
+	innerAngle=35; \
+	outerAngle=65; \
 	coneFadeCoef=4; \
-	intensity=200; \
+	intensity=125; \
 	dayLight=1; \
 	FlareSize=1; \
 	flareMaxDistance=200; \
@@ -35,7 +35,7 @@
 	innerAngle=65; \
 	outerAngle=130; \
 	coneFadeCoef=4; \
-	intensity=70; \
+	intensity=50; \
 	FlareSize=1; \
 	flareMaxDistance=150; \
 	scale[]={0}; \
@@ -45,8 +45,8 @@
 		constant = 0; \
 		linear = 0; \
 		quadratic = 0.1; \
-		hardLimitStart = 40; \
-		hardLimitEnd = 60; \
+		hardLimitStart = 35; \
+		hardLimitEnd = 45; \
 	};
 
 #define FLASHLIGHT_HIGH \
@@ -54,7 +54,7 @@
 	innerAngle=10; \
 	outerAngle=25; \
 	coneFadeCoef=4; \
-	intensity=2000; \
+	intensity=1250; \
 	FlareSize=1; \
 	flareMaxDistance=250; \
 	scale[]={0}; \
@@ -63,7 +63,7 @@
 		start = 1; \
 		constant = 0; \
 		linear = 0; \
-		quadratic = 0.1; \
+		quadratic = 0.05; \
 		hardLimitStart = 150; \
 		hardLimitEnd = 220; \
 	};
