@@ -38,3 +38,5 @@ Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to
 Credit to AShamaluevMusic for making his excellent music available to everyone to use. https://www.youtube.com/c/AShamaluevMusic/about
 
 Credit to Elliot740 for allowing us to repack his excellent 40k voice mods! https://steamcommunity.com/sharedfiles/filedetails/?id=2511357695
+
+Thank you to Axebeard for making his excellent Window Breaker mod available to the Arma community at large to repack! https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
