@@ -1,4 +1,5 @@
 HOW TO ADD YOUR OWN MUSIC TO THE COMMUNITY MUSIC ADDON
+
 As a note, it is encouraged copyright free music, but as long as you don't add an entire album of copyrighted music it should be fine. We'll remove any copyrighted material upon *any* requests from the license holder to do so.
 
 1. Convert the music file into the .ogg format. You can use youtube to .ogg converters like https://coconvert.com/en33/youtube-ogg-converter.html (no promises on how safe and/or legal that site is, just got it from a quick google search), or if you already have the music file in another format, you can use Audacity to change the music format to .ogg. Audicity also allows you to control the quality and file size of the outputted .ogg. Generally speaking, your .ogg file should be at most 4 megabytes for each minute of music, and preferably much less.
