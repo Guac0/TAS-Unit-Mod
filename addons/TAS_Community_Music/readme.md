@@ -1,6 +1,7 @@
 HOW TO ADD YOUR OWN MUSIC TO THE COMMUNITY MUSIC ADDON
+As a note, it is encouraged copyright free music, but as long as you don't add an entire album of copyrighted music it should be fine. We'll remove any copyrighted material upon *any* requests from the license holder to do so.
 
-1. Convert the music file into the .ogg format. You can use youtube to .ogg converters, or if you already have the music file in another format, you can use Audacity to change the music format to .ogg. Audicity also allows you to control the quality and file size of the outputted .ogg. Generally speaking, your .ogg file should be at most 4 megabytes for each minute of music, and preferably much less.
+1. Convert the music file into the .ogg format. You can use youtube to .ogg converters like https://coconvert.com/en33/youtube-ogg-converter.html (no promises on how safe and/or legal that site is, just got it from a quick google search), or if you already have the music file in another format, you can use Audacity to change the music format to .ogg. Audicity also allows you to control the quality and file size of the outputted .ogg. Generally speaking, your .ogg file should be at most 4 megabytes for each minute of music, and preferably much less.
 2. Move the converted .ogg file into this addon. If you don't already have a folder for yourself, make one with your name in \TAS_Community_Music\music. Then move the .ogg into your folder (For example, it should be\TAS_Community_Music\music\Guac\MyMusic1.ogg).
 3. Open config.cpp found in the root TAS_Community_Music folder with an advanced text editor, like notepad++ or Visual Studio Code.
 4. Follow the instructions given there to copy/paste andwrite your music tracks' configs.
