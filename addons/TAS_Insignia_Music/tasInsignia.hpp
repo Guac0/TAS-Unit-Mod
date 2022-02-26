@@ -367,3 +367,17 @@
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-4Danish_Flag.paa";
 		textureVehicle = "";
 	};
+	class TAS_49
+	{
+		displayName = "(TAS) Collateral Damage";
+		author = "Guac";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-collateralDamage.paa";
+		textureVehicle = "";
+	};
+	class TAS_50
+	{
+		displayName = "(TAS) Doge Hound";
+		author = "Guac";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-dogeHound.paa";
+		textureVehicle = "";
+	};
