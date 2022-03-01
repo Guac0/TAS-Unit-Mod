@@ -25,9 +25,7 @@ Hoxxi — Junior Programmer, 2D Artist
 
 TheExiledCat — 2D Artist
 
-If you would like to contribute to this project, contact Guac.
-
-
+If you would like to contribute to this project, or have complaints about it or its content, contact Guac#5223 on Discord. He can provide a link to the Autismo Seals discord server upon request (not given here/publicly to avoid the possibility of raids)
 
 Authorized Repacks Contained Within:
 
