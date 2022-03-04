@@ -43,8 +43,8 @@ class RscDisplayMain: RscStandardDisplay {
                     text = "TAS Backup Arma Server Quickjoin";
                     tooltip = "Connect to the Backup TAS Arma Server. Scroll downwards for the backup server's Teamspeak quickjoin.";
                     y = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
-                    onbuttonclick = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                    onbuttonclick = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                    //onbuttonclick = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                 };
                 class JoinGuacTeamspeak: ServerBrowser {
                     idc = -1;
@@ -59,7 +59,7 @@ class RscDisplayMain: RscStandardDisplay {
     };
 };
 
-class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considered obsolete since SPOTREP #00064
+class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight works but is considered obsolete since SPOTREP #00064
 {
 	/*class CoopCampaign
 	{
@@ -88,7 +88,8 @@ class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considere
 		condition = "true";
 	};*/
     class JoinTasServer {
-        text = "Connect to<br />TAS Arma Server";
+        text = "Connect to Main TAS Arma Server";
+        //text = "Connect to<br />TAS Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
@@ -96,8 +97,9 @@ class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considere
         actionText = "Connect to the Main TAS Arma Server";
         condition = "true";
     };
-    class JoinTasTeamspeak {
-        text = "Connect to<br />TAS Teamspeak Server";
+    /*class JoinTasTeamspeak {
+        text = "Connect to TAS Teamspeak Server";
+        //text = "Connect to<br />TAS Teamspeak Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         //action = "(_this select 1) ctrlSetURL 'http://arma3.com/';";
@@ -107,19 +109,22 @@ class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considere
         //_ctrlMenuStrip menuSetURL [[0,0,1], "https://arma3.com/"];
         //(_this select 1) ctrlSetURL "http://arma3.com/";
         //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
-    };
+    };*/
     class JoinGuacServer {
-        text = "Connect to<br />TAS Backup<br />Arma Server";
+        text = "Connect to TAS Backup Arma Server";
+        //text = "Connect to<br />TAS Backup<br />Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         //action = "connectToServer ['***REMOVED***', 2302, '***REMOVED***']";
+        //action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
         action = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
         actionText = "Connect to the Backup TAS Arma Server. Scroll downwards for the backup Teamspeak quickjoin.";
         condition = "true";
         //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
     };
-    class JoinGuacTeamspeak {
-        text = "Connect to<br />TAS Backup<br />Teamspeak Server";
+    /*class JoinGuacTeamspeak {
+        text = "Connect to TAS Backup Teamspeak Server";
+        //text = "Connect to<br />TAS Backup<br />Teamspeak Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         //action = "connectToServer ['127.0.0.1', 2302, '']";
@@ -128,5 +133,5 @@ class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considere
         url = "http://arma3.com/";
         condition = "true";
         //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
-    };
+    };*/
 };
