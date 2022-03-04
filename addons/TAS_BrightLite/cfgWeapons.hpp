@@ -5,7 +5,7 @@
 //basically, the inheriting flashlight configs is broken somehow so gotta do it this way
 //#define NIGHT_COLOR 1,0,0
 #define NIGHT_COLOR 180, 160, 130
-#define NIGHT_AMBIENT 6,6,9
+#define NIGHT_AMBIENT 6,9,9
 
 //semicolons in defines is bad form but we need it for this to work as quasi-inherit
 #define FLASHLIGHT_MEDIUM \
@@ -15,7 +15,7 @@
 	innerAngle=35; \
 	outerAngle=65; \
 	coneFadeCoef=4; \
-	intensity=125; \
+	intensity=175; \
 	dayLight=1; \
 	FlareSize=1; \
 	flareMaxDistance=200; \
@@ -25,9 +25,9 @@
 		start = 0.1; \
 		constant = 0; \
 		linear = 0; \
-		quadratic = 0.01; \
-		hardLimitStart = 75; \
-		hardLimitEnd = 100; \
+		quadratic = 0.025; \
+		hardLimitStart = 80; \
+		hardLimitEnd = 110; \
 	};
 	
 #define FLASHLIGHT_LOW \
@@ -44,9 +44,9 @@
 		start = 0.1; \
 		constant = 0; \
 		linear = 0; \
-		quadratic = 0.1; \
-		hardLimitStart = 35; \
-		hardLimitEnd = 45; \
+		quadratic = 0.05; \
+		hardLimitStart = 30; \
+		hardLimitEnd = 40; \
 	};
 
 #define FLASHLIGHT_HIGH \
@@ -63,9 +63,9 @@
 		start = 1; \
 		constant = 0; \
 		linear = 0; \
-		quadratic = 0.05; \
-		hardLimitStart = 150; \
-		hardLimitEnd = 220; \
+		quadratic = 0.01; \
+		hardLimitStart = 170; \
+		hardLimitEnd = 225; \
 	};
 
 #define FLASHLIGHT_PISTOL \
