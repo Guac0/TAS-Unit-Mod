@@ -88,13 +88,13 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
 		condition = "true";
 	};*/
     class JoinTasServer {
-        text = "Connect to Main TAS Arma Server";
+        text = "TAS Arma Server";
         //text = "Connect to<br />TAS Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
         //action = "connectToServer ['***REMOVED***', 2302, '***REMOVED***']"; //Cat: ***REMOVED***
-        actionText = "Connect to the Main TAS Arma Server";
+        actionText = "You should connect to it... NOW";
         condition = "true";
     };
     /*class JoinTasTeamspeak {
@@ -110,18 +110,18 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
         //(_this select 1) ctrlSetURL "http://arma3.com/";
         //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
     };*/
-    class JoinGuacServer {
+    /*class JoinGuacServer {
         text = "Connect to TAS Backup Arma Server";
         //text = "Connect to<br />TAS Backup<br />Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         //action = "connectToServer ['***REMOVED***', 2302, '***REMOVED***']";
-        //action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
-        action = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+        action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+        //action = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
         actionText = "Connect to the Backup TAS Arma Server. Scroll downwards for the backup Teamspeak quickjoin.";
         condition = "true";
         //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
-    };
+    };*/
     /*class JoinGuacTeamspeak {
         text = "Connect to TAS Backup Teamspeak Server";
         //text = "Connect to<br />TAS Backup<br />Teamspeak Server";
