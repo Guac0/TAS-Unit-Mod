@@ -1,6 +1,0 @@
-//<'weapons_f_mod.pbo' properties via Mikero's dos tools, dll version 7.97>
-prefix=a3\weapons_f_mod;
-product=Arma 3;
-version=149339;
-//PboType=Arma Addon;
-//</properties>
