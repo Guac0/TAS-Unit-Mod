@@ -8,7 +8,7 @@ params
     ["_IP", "127.0.0.1"],
     ["_PORT", "2302"],
     ["_PASS", ""],
-    ["_TIMEOUT", 30]
+    ["_TIMEOUT", 90]
 ];
 
 ctrlactivate ((ctrlparent (_buttons # 0)) displayctrl 105);

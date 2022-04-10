@@ -4,14 +4,8 @@
 //some definitions for easier changing both brightlite and nightlite
 //basically, the inheriting flashlight configs is broken somehow so gotta do it this way
 //#define NIGHT_COLOR 1,0,0
-//color[] = {180,160,130};
-//ambient[] = {0.9,0.81,0.7};
-//#define NORMAL_COLOR 
-//#define NORMAL_AMBIENT
-//#define NIGHT_COLOR 180, 160, 130	//normal
-#define NIGHT_COLOR 170,60,80	//age
-//#define NIGHT_AMBIENT 6,9,9			//normal
-#define NIGHT_AMBIENT 0.9,0.81,0.7  //age
+#define NIGHT_COLOR 180, 160, 130
+#define NIGHT_AMBIENT 6,9,9
 
 //semicolons in defines is bad form but we need it for this to work as quasi-inherit
 #define FLASHLIGHT_MEDIUM \
@@ -161,10 +155,8 @@ class CfgWeapons
 			mass = 4;
 			class FlashLight
 			{
-				//color[] = {180, 160, 130}; //normal
-				color[] = {170,60,80}; //age
-				//ambient[] = {6,9,9}; //normal
-				ambient[] = {0.9,0.81,0.7}; //age
+				color[] = {180, 160, 130};
+				ambient[] = {6,9,9};
 				useFlare = 1;
 				irLight = 0;
 				onlyInNvg = 0;

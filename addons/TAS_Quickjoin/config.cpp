@@ -27,15 +27,15 @@ class RscDisplayMain: RscStandardDisplay {
                     text = "TAS Arma Server Quickjoin";
                     tooltip = "Connect to the Main TAS Arma Server";
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    //onbuttonclick = "connectToServer ['d404.nl', 2302, '']"; //Cat: 82.8.46.207
-                    onbuttonclick = "0 = [_this, 'd404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                    //onbuttonclick = "connectToServer ['arma.d404.nl', 2302, '']"; //Cat: 82.8.46.207
+                    onbuttonclick = "0 = [_this, 'arma.d404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                 };
                 class JoinTasTeamspeak: ServerBrowser {
                     idc = -1;
                     text = "TAS Teamspeak Server Quickjoin";
                     tooltip = "Connect to the Main TAS Teamspeak Server";
                     y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    url = "ts3server://d404.nl?port=9987&password=cheese";
+                    url = "ts3server://arma.d404.nl?port=9987&password=cheese";
                     //onbuttonclick = "connectToServer ['71.126.163.78', 2302, '']";
                 };
                 class JoinGuacServer: ServerBrowser {
@@ -92,8 +92,8 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
         //text = "Connect to<br />TAS Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
-        action = "0 = [_this, 'd404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
-        //action = "connectToServer ['d404.nl', 2302, 'cheese']"; //Cat: 82.8.46.207
+        action = "0 = [_this, 'arma.d404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+        //action = "connectToServer ['arma.d404.nl', 2302, 'cheese']"; //Cat: 82.8.46.207
         actionText = "You should connect to it... NOW";
         condition = "true";
     };
@@ -104,7 +104,7 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
         //action = "(_this select 1) ctrlSetURL 'http://arma3.com/';";
         actionText = "Connect to the Main TAS Teamspeak Server";
-        url = "ts3server://d404.nl?port=9987&password=cheese";
+        url = "ts3server://arma.d404.nl?port=9987&password=cheese";
         condition = "true";
         //_ctrlMenuStrip menuSetURL [[0,0,1], "https://arma3.com/"];
         //(_this select 1) ctrlSetURL "http://arma3.com/";
