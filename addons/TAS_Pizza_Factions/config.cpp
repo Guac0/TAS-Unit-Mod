@@ -488,11 +488,13 @@ class CfgVehicles
 	//class ACE_Humanitarian_Ration_Item;
 	class TAS_RationPizza_Item: Item_Base_F
 	{
-		author = "Guac";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Pizza";
+		author = "Guac";
 		vehicleClass = "Items";
+		//picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\item_mre_pizza_co.paa";
+		//model = "\A3\Weapons_f\dummyweapon.p3d";
 		class TransportItems
 		{
 			class TAS_RationPizza
@@ -1366,6 +1368,7 @@ class cfgWeapons
         }; 
     };
 	//class ACE_Humanitarian_Ration;
+	class Item_Base_F;
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
 	class TAS_RationPizza: ACE_ItemCore
@@ -1374,8 +1377,11 @@ class cfgWeapons
 		displayName = "Pizza";
 		descriptionShort = "Pizza";
 		model = "\z\ace\addons\field_rations\data\mre_human.p3d";
-		picture = "Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\item_mre_pizza_co.paa";
+		//picture = "\z\ace\addons\field_rations\ui\item_mre_human_co.paa";
+		picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Pizza_Factions\Data\UI\item_mre_pizza_co.paa";
 		scope = 2;
+		icon = "iconObject_circle"; //unsure what this does
+		mapSize = 0.034;
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 25;
