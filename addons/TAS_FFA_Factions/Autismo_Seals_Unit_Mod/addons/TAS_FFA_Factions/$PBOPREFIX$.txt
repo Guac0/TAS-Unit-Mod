@@ -1,6 +1,0 @@
-//<'TAS_FFA_Factions (1).pbo' properties via Mikero's dos tools, dll version 8.35>
-prefix=Autismo_Seals_Unit_Mod\addons\TAS_FFA_Factions;
-Mikero=DePbo.dll.7.97;
-version=21072119;
-//PboType=Arma Addon;
-//</properties>
