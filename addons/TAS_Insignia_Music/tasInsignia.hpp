@@ -388,3 +388,10 @@
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-36thUlsterDivision.paa";
 		textureVehicle = "";
 	};
+	class TAS_51
+	{
+		displayName = "(TAS) Pleng";
+		author = "Zulgeorge";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-pleng.paa";
+		textureVehicle = "";
+	};
