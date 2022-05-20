@@ -22,27 +22,43 @@ class RscDisplayMain: RscStandardDisplay {
 			h = "(6 * 	1.5) * 	(pixelH * pixelGrid * 2)";
             class Controls: Controls {
                 class ServerBrowser;
-                class JoinTasServer: ServerBrowser {
+                    class ViewOcap: ServerBrowser {
                     idc = -1;
-                    text = "TAS Arma Server Quickjoin";
-                    tooltip = "Connect to the Main TAS Arma Server";
+                    text = "TAS OCAP AAR Tool";
+                    tooltip = "Connect to the OCAP AAR Tool.";
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']"; //Cat: ***REMOVED***
-                    onbuttonclick = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                    url = "http://***REMOVED***:5000/";
+                    //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
                 };
                 class JoinTasTeamspeak: ServerBrowser {
                     idc = -1;
                     text = "TAS Teamspeak Server Quickjoin";
-                    tooltip = "Connect to the Main TAS Teamspeak Server";
+                    tooltip = "Connect to the Main TAS Teamspeak Server.";
                     y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     url = "ts3server://***REMOVED***?port=9987&password=***REMOVED***";
                     //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
                 };
+                class ScrollDown: ServerBrowser {
+                    idc = -1;
+                    text = "Scroll down for more!";
+                    tooltip = "More options available below.";
+                    y = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+                    //url = "ts3server://***REMOVED***?port=9987&password=***REMOVED***";
+                    //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
+                };
+                class JoinTasServer: ServerBrowser {
+                    idc = -1;
+                    text = "TAS Arma Server Quickjoin";
+                    tooltip = "Connect to the Main TAS Arma Server.";
+                    y = "(6 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+                    //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']"; //Cat: ***REMOVED***
+                    onbuttonclick = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                };
                 class JoinGuacServer: ServerBrowser {
                     idc = -1;
                     text = "TAS Backup Arma Server Quickjoin";
-                    tooltip = "Connect to the Backup TAS Arma Server. Scroll downwards for the backup server's Teamspeak quickjoin.";
-                    y = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+                    tooltip = "Connect to the Backup TAS Arma Server.";
+                    y = "(7 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     onbuttonclick = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                     //onbuttonclick = "0 = [_this, '127.0.0.1', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                 };
@@ -50,7 +66,7 @@ class RscDisplayMain: RscStandardDisplay {
                     idc = -1;
                     text = "TAS Backup Teamspeak Server Quickjoin";
                     tooltip = "Connect to the Backup TAS Teamspeak Server";
-                    y = "(6 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+                    y = "(8 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     url = "ts3server://***REMOVED***?port=9987&password=***REMOVED***";
                     //onbuttonclick = "connectToServer ['***REMOVED***', 2302, '']";
                 };
