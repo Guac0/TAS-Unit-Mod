@@ -7,7 +7,7 @@ class CfgPatches
 		name = "TAS BrightLite Addon";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"ace_interact_menu"};
+		requiredAddons[] = {"ace_interact_menu","vurtual_seat"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -33,6 +33,13 @@ class CfgVehicles {
 					condition = "((stance ACE_player) == 'PRONE') && (ACE_player == (vehicle ACE_player))"; //only if prone and on foot (check if prone handles check by itself)
 					exceptions[] = {};
 					statement = "ACE_player playActionNow 'medic'; [6, [], {_obj = createVehicle ['Land_ClutterCutter_medium_F', position ACE_player, [], 0, 'CAN_COLLIDE'];}, {ACE_player playActionNow 'medicstop';}, 'Removing clutter...'] call ace_common_fnc_progressBar";
+					//icon = ""; //might add a custom icon later, for now let's see what default looks like
+				};
+				class TAS_DigFoxhole {
+					displayName = "Dig Foxhole";
+					condition = "_player call ace_trenches_fnc_canDigTrench"; //let ace handle checking
+					exceptions[] = {};
+					statement = "ACE_player playActionNow 'AinvPknlMstpSnonWnonDnon_medic4'; [10, [], {_obj = createVehicle ['vurtual_foxhole', position ACE_player, [], 0, 'CAN_COLLIDE']; _obj enableSimulationGlobal true;}, {ACE_player playActionNow 'medicstop';}, 'Digging Foxhole...'] call ace_common_fnc_progressBar";
 					//icon = ""; //might add a custom icon later, for now let's see what default looks like
 				};
 			};
