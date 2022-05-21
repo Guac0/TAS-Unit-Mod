@@ -12,12 +12,19 @@ class CfgPatches
 			"TAS_FFA_Sidearm",
 			"TAS_FFA_Rifleman",
 			"TAS_FFA_TeamLeader",
-			"TAS_FFA_Operative"
+			"TAS_FFA_Operative",
+			"TAS_FFA_Medic",
+			"TAS_FFA_Radioman",
+			"TAS_FFA_Machinegunner",
+			"TAS_FFA_Rifleman_AT",
+			"TAS_FFA_Marksman",
+			"TAS_FFA_Juggernaut"
 		};
 		weapons[] = {
 			"TAS_FFA_uniformSoldier",
 			"TAS_FFA_uniformOfficer",
-			"TAS_FFA_Helmet"
+			"TAS_FFA_Helmet",
+			"TAS_B_FieldPack_blk_Medic"
 		};
 		requiredAddons[] = {
 			"A3_Characters_F"
@@ -52,7 +59,7 @@ class cfgFactionClasses
 {  
 	class TAS_FFA_Faction
     { 
-        displayName = "FFA"; 
+        displayName = "Forced Feminisation Agency"; 
         priority = 1; 	// Position in list. 
         side = 2; 		// Opfor = 0, Blufor = 1, Indep = 2. 
         icon = ""; 		//Custom Icon 
@@ -66,7 +73,7 @@ class CfgEditorSubcategories
 {
 	class TAS_FFAA_SubGroup_Men // Category class, you point to it in editorSubcategory property
 	{
-		displayName = "FFA Men"; // Name visible in the list
+		displayName = "FFA... Men?"; // Name visible in the list
 	};
 	/*class TAS_FFAA_SubGroup_Cars
 	{

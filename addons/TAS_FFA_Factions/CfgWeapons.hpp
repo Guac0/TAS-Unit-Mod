@@ -19,7 +19,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "TAS_FFA_Soldier";
+			uniformClass = "TAS_FFA_BaseUnit";
 			containerClass = "Supply60";
 			mass = 60;
 		};
