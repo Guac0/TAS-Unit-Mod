@@ -1,1 +1,0 @@
-Only body_pink.paa is used in this mod as the others are for parts that cannot be retextured via config as they don't have hiddenSelections.
