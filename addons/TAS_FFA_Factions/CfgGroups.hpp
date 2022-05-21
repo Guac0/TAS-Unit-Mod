@@ -58,7 +58,7 @@ class CfgGroups
 				};
 				class TAS_FFA_FireteamNoUgl
 				{
-					name = "FFA Light Fireteam (No UGLs)";
+					name = "FFA Light Fireteam (Riflemen)";
 					side = 2;
 					faction = "TAS_FFA_Faction";
 					icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
@@ -98,7 +98,7 @@ class CfgGroups
 						position[] = {-10, -10, 0};
 					};
 				};
-				class TAS_FFA_HeavyFireteam
+				/*class TAS_FFA_HeavyFireteam
 				{
 					name = "FFA Heavy Fireteam (All UGLs)";
 					side = 2;
@@ -139,7 +139,7 @@ class CfgGroups
 						rank = "PRIVATE";
 						position[] = {-10, -10, 0};
 					};
-				};
+				};*/
 				class TAS_FFA_OperativeTeam
 				{
 					name = "FFA Operative Team";
@@ -198,28 +198,28 @@ class CfgGroups
 					class Unit1
 					{
 						side = 2;
-						vehicle = "TAS_FFA_Rifleman";
+						vehicle = "TAS_FFA_Radioman";
 						rank = "PRIVATE";
 						position[] = {5, -5, 0};
 					};
 					class Unit2
 					{
 						side = 2;
-						vehicle = "TAS_FFA_Rifleman";
+						vehicle = "TAS_FFA_Medic";
 						rank = "PRIVATE";
 						position[] = {-5, -5, 0};
 					};
 					class Unit3
 					{
 						side = 2;
-						vehicle = "TAS_FFA_Rifleman";
+						vehicle = "TAS_FFA_Machinegunner";
 						rank = "PRIVATE";
 						position[] = {10, -10, 0};
 					};
 					class Unit4
 					{
 						side = 2;
-						vehicle = "TAS_FFA_Rifleman";
+						vehicle = "TAS_FFA_Rifleman_AT";
 						rank = "PRIVATE";
 						position[] = {-10, -10, 0};
 					};
