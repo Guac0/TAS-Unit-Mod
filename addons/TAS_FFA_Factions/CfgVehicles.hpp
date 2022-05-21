@@ -329,7 +329,7 @@ class CfgVehicles
 		camouflage = 1.5;					// How likely this character is spotted (smaller number = more stealthy).
 		sensitivity = 2.5;					// How likely this character spots enemies when controlled by AI.
 		threat[] = {1, 1, 0.8};*/				// Multiplier of the cost of the character in the eyes of soft, armoured and air enemies.
-        displayName = "Juggernaut"; 
+        displayName = "Juggernaut [Increased Health Currently Broken]"; 
         canDeactivateMines = true;				// Can this character deactivate mines?
 		engineer = true;						// Can this character repair vehicles?
 		attendant = 1;							// Can this character heal soldiers?
