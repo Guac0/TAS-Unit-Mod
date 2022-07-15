@@ -40,3 +40,5 @@ Credit to Elliot740 for allowing us to repack his excellent 40k voice mods! http
 Thank you to Axebeard for making his excellent Window Breaker mod available to the Arma community at large to repack! https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
+
+Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
