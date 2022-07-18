@@ -1,0 +1,4 @@
+//<'MG8_core.pbo' properties via Mikero's dos tools, dll version 8.35>
+prefix=MG8_core;
+//PboType=Arma Addon;
+//</properties>

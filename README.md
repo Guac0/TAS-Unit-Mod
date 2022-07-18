@@ -42,3 +42,5 @@ Thank you to Axebeard for making his excellent Window Breaker mod available to t
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
 
 Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
+
+Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
