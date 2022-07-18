@@ -48,3 +48,5 @@ Credit to ArmedVeteran (and by extension Needles) for allowing the Arma communit
 Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his nice mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
 
 Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their amazing mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
+
+Credit to Kettle/Myke_Towers for their exceptional Aurora Labs mod, which they have given to the Arma community for use and improvement. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651
