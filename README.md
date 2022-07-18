@@ -39,6 +39,8 @@ Credit to Elliot740 for allowing us to repack his excellent 40k voice mods! http
 
 Credit to Silence for allowing his to repack his great X26 Taser mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2515852876
 
+Credit to FanOfReproductiveSystem (Rep) for allowing us to repack his amazing V308 mod with our fixes! https://steamcommunity.com/sharedfiles/filedetails/?id=2823872536
+
 Thank you to Axebeard for making his excellent Window Breaker mod available to the Arma community at large to repack! https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
