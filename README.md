@@ -31,20 +31,20 @@ Authorized Repacks Contained Within:
 
 RSPN Cave Systems for Zeus and Eden — Credit to the original RSPN team (Liv2Die and others) who have graciously allowed the Arma community to repack their mod, to Vielmond for the Eden update, and to Punished Alexander for the Zeus update. See RSPN LICENSE.txt, RSPN README.txt, and https://steamcommunity.com/sharedfiles/filedetails/?id=2372460478 for more information.
 
-Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to repack their mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1161319271 for more information.
+Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to repack their great mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1161319271 for more information.
 
 Credit to AShamaluevMusic for making his excellent music available to everyone to use. https://www.youtube.com/c/AShamaluevMusic/about
 
-Credit to Elliot740 for allowing us to repack his excellent 40k voice mods! https://steamcommunity.com/sharedfiles/filedetails/?id=2511357695
+Credit to Elliot740 for allowing us to repack his fantastic 40k voice mods! https://steamcommunity.com/sharedfiles/filedetails/?id=2511357695
 
-Credit to Silence for allowing his to repack his great X26 Taser mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2515852876
+Credit to Silence for allowing us to repack his great X26 Taser mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2515852876
 
 Credit to FanOfReproductiveSystem (Rep) for allowing us to repack his amazing V308 mod with our fixes! https://steamcommunity.com/sharedfiles/filedetails/?id=2823872536
 
-Thank you to Axebeard for making his excellent Window Breaker mod available to the Arma community at large to repack! https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
+Credit to Axebeard for making his nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
-Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
+Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their great M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
 
-Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
+Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his nice mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
 
-Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
+Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their amazing mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
