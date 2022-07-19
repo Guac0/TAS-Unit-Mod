@@ -1,5 +1,6 @@
 //Halves the weight of mortar ammunition, allowing for greater loads to be carried (both for convience for transferring between crate and gun, and to make entirely man-portable mortars easier)
-//Additionally, adds ACE trenches compatibility to Scottish Highlands map
+//~~Additionally, adds ACE trenches compatibility to Scottish Highlands map~~ Temp removed
+//Lowers weapon sway to 50%
 //Made by Guac
 class CfgPatches {
 
@@ -166,3 +167,120 @@ class cfgMagazines {
 	};
 };
 */
+
+class CfgImprecision
+{
+	class Primary
+	{
+		verticalRadius = 0.25; //0.25
+		horizontalRadius = 0.05; //0.05
+	};
+	class Secondary
+	{
+		verticalRadius = 0.05; //0.05
+		horizontalRadius = 0.25; //0.25
+	};
+
+	/*
+	//Vanilla
+	class Primary
+	{
+		fatigue = 1;
+		verticalRadius = 0.5;
+		horizontalRadius = 0.1;
+		size = 1;
+		maxSize = 10;
+		speed = 0.2;
+		maxSpeed = 2;
+		damage = 5;
+		inertia = 0;
+		breathing = 0.1;
+	};
+	class Secondary
+	{
+		fatigue = 1;
+		verticalRadius = 0.1;
+		horizontalRadius = 0.5;
+		size = 1;
+		maxSize = 40;
+		speed = 0.4;
+		maxSpeed = 0.4;
+		damage = 10;
+		inertia = 1;
+		breathing = 1;
+	};
+	//50%
+	class Primary
+	{
+		verticalRadius = 0.25; //0.25
+		horizontalRadius = 0.05; //0.05
+	};
+	class Secondary
+	{
+		verticalRadius = 0.05; //0.05
+		horizontalRadius = 0.25; //0.25
+	};
+	
+	//10%
+	class CfgImprecision
+	{
+		class Primary
+		{
+			verticalRadius = 0.15;
+			horizontalRadius = 0.1;
+		};
+		class Secondary
+		{
+			verticalRadius = 0.15;
+			horizontalRadius = 0.1;
+		};
+	};
+
+	//0%
+	class CfgImprecision
+	{
+		class Primary
+		{
+			verticalRadius = 0;
+			horizontalRadius = 0;
+		};
+		class Secondary
+		{
+			verticalRadius = 0;
+			horizontalRadius = 0;
+		};
+	};
+	*/
+};
+
+
+class CfgBreathing
+{
+	maxHoldTime = 10;
+	coefSpeed = 5;
+	outOfBreathCoef = 10;
+	/*
+	//vanilla
+	maxHoldTime = 8;
+	inhaleDuration = 1.5;
+	coefSpeed = 10;
+	outOfBreathCoef = 20;
+	*/
+};
+class CfgWeaponHandling
+{
+	class SwayDistortion
+	{
+		rate = 10;
+		decay = 5;
+		maximum = 7;
+		//gunnerCoef = 1.2;
+		/*
+		//vanilla
+		rate = 14;
+		decay = 7;
+		maximum = 10;
+		gunnerCoef = 1.2;
+		*/
+	};
+};
