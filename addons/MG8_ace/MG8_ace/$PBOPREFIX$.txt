@@ -1,4 +1,0 @@
-//<'MG8_ace.pbo' properties via Mikero's dos tools, dll version 8.35>
-prefix=MG8_ace;
-//PboType=Arma Addon;
-//</properties>
