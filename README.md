@@ -41,6 +41,8 @@ Credit to Silence for allowing us to repack his great X26 Taser mod! https://ste
 
 Credit to FanOfReproductiveSystem (Rep) for allowing us to repack his amazing V308 mod with our fixes! https://steamcommunity.com/sharedfiles/filedetails/?id=2823872536
 
+Credit to Elimin-8 and H-Finch-404/Weedse for releasing their XIM's Dynamic Music mod under the LGPL and allowing us to playtest beta versions of it! (Note: XIM_Core PBO is under the LGPL) https://steamcommunity.com/sharedfiles/filedetails/?id=2127841273
+
 Credit to Axebeard for making his nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their great M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
