@@ -1,5 +1,5 @@
 # Autismo_Seals_Unit_Mod
-Github repository for the Autismo Seals Custom Addon
+Github repository for the Autismo Seals Custom Addon.
 
 NOTE: Files contained in MAIN may contain bugs or WIP features. MAIN also contains various non-release PBOs. Never clone MAIN except for dev purposes, always take an archived release for use if you don't want to use Steam Workshop.
 
@@ -12,14 +12,20 @@ This mod contains PBOs from other mods. These are always authorized repacks, and
 ## Developer Credits:
 
 CatCaptain — Steam owner, initial Pizza addon creator
+
 Ricardo — Initial Pizza uniform textures
+
 Guac — Lead Programmer, 2D Artist
+
 Tolly — 2D/3D Artist and Modeler
+
 TBONE — 2D/3D Artist and Modeler
+
 Hoxxi — Junior Programmer, 2D Artist
+
 TheExiledCat — 2D Artist
 
-If you would like to contribute to this project, or have complaints about it or its content, contact Guac#5223 on Discord. He can provide a link to the Autismo Seals discord server upon request (not given here/publicly to avoid the possibility of raids).
+If you would like to contribute to this project, or have complaints about it or its content, contact Guac#5223 on Discord or submit an issue on Github (Discord will have a better response time). He can provide a link to the Autismo Seals discord server upon request (not given out in this readme to avoid the possibility of raids).
 
 
 
@@ -27,8 +33,11 @@ If you would like to contribute to this project, or have complaints about it or 
 This applies only to our original work and not to other mod repacks and Arma 3 Samples data contained within this repository.
 
 You are authorized to:
+
 Learn using the code provided inside this mod and ask Guac#5223 for special permissions not explicitly listed here as allowed (don't be afraid, I'll probably say yes).
+
 You are not authorized to:
+
 Copy models, large sections of code, PBOs, or any other materials from this mod without explicit written permission from Guac#5223/Guac0.
 
 
