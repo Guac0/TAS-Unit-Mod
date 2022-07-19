@@ -5,7 +5,7 @@ NOTE: Files contained in MAIN may contain bugs or WIP features. MAIN also contai
 
 While the developers have avoided using copyrighted assets, either as placeholders or as release assets, we acknowledge that some of our 3rd-party-provided assets (repacked addons, guest developer contributions) may be copyrighted without our knowledge. If you are the owner of copyrighted assets contained in this repository, contact us for a swift removal.
 
-This mod contains PBOs from other mods. These are always authorized repacks, and no edits to them have been made unless otherwise specified. For our original PBOs, we may occasionally look at other scripts/mods for learning how to do things so some code may be similar, but we take pride in figuring out how to make things ourselves.
+This mod contains PBOs from other mods. These are always authorized repacks, and no edits to them have been made unless otherwise specified. For our original PBOs, we may occasionally look at other scripts/mods for learning how to do things so some code may be similar, but the end product is our own.
 
 
 
