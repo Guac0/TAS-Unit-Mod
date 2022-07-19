@@ -8,7 +8,7 @@ class CfgPatches {
 		name = "TAS Config Edits";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches","oski_corran"};
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches",/*"oski_corran"*/};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -88,10 +88,10 @@ class cfgMagazines {
     };
 };
 
-class cfgSurfaces {
+/*class cfgSurfaces {
 	class Default{};
-	/*class oski_corran_thistle_stony_Surface: Default
-	{
+	//class oski_corran_thistle_stony_Surface: Default
+	//{
 		files = "oski_corran_thistle_stony_*";
 		rough = 0.08;
 		maxSpeedCoef = 0.75;
@@ -103,156 +103,46 @@ class cfgSurfaces {
 		impact = "hitgroundsoft";
 		lucidity = 4;
 		grassCover = 0.1;
-	};*/
+	};
 	class oski_corran_wildgrass_Surface: Default
 	{
-		/*files = "oski_corran_wildgrass_*";
-		rough = 0.08;
-		maxSpeedCoef = 0.75;
-		dust = 0.05;
-		soundEnviron = "forest";
-		surfaceFriction = 1.8;
-		character = "oski_corran_wildgrass_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 4;
-		grassCover = 0.1;*/
 		ACE_canDig = 1;
 	};
 	class oski_corran_ground_forest_Surface: Default
 	{
-		/*files = "oski_corran_ground_forest_*";
-		rough = 0.08;
-		maxSpeedCoef = 0.6;
-		dust = 0;
-		soundEnviron = "forest";
-		surfaceFriction = 1.8;
-		character = "oski_corran_ground_forest_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 4;
-		grassCover = 0.1;*/
 		ACE_canDig = 1;
 	};
 	class oski_corran_leaves_Surface: Default
 	{
-		/*files = "oski_corran_leaves_*";
-		rough = 0.08;
-		maxSpeedCoef = 0.6;
-		dust = 0;
-		soundEnviron = "forest";
-		surfaceFriction = 1.8;
-		character = "oski_corran_leaves_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 4;
-		grassCover = 0.1;*/
 		ACE_canDig = 1;
 	};
 	class oski_corran_wornground_Surface: Default
 	{
-		/*files = "oski_corran_wornground_*";
-		rough = 0.09;
-		maxSpeedCoef = 0.9;
-		dust = 0.6;
-		soundEnviron = "dirt";
-		surfaceFriction = 1.8;
-		character = "oski_corran_wornground_Character";
-		soundHit = "hard_ground";
-		impact = "hitgroundsoft";
-		lucidity = 0.7;
-		grassCover = 0.0;*/
 		ACE_canDig = 1;
 	};
 	class oski_corran_strdirt_Surface: Default
 	{
-		/*files = "oski_corran_strdirt_*";
-		rough = 0.09;
-		maxSpeedCoef = 0.6;
-		dust = 0.6;
-		soundEnviron = "dirt";
-		surfaceFriction = 1.8;
-		character = "oski_corran_strdirt_Character";
-		soundHit = "hard_ground";
-		impact = "hitgroundsoft";
-		lucidity = 3;
-		grassCover = 0.0;*/
 		ACE_canDig = 1;
 	};
-	/*class oski_corran_concrete_Surface: Default
-	{
-		files = "oski_corran_concrete_*";
-		rough = 0.09;
-		maxSpeedCoef = 1;
-		dust = 0.0;
-		soundEnviron = "concrete";
-		surfaceFriction = 2.5;
-		character = "Empty";
-		soundHit = "concrete";
-		impact = "hitconcrete";
-		lucidity = 0.3;
-		grassCover = 0.05;
-	};*/
+	//class oski_corran_concrete_Surface: Default
+	//{
+	//};
 	class oski_corran_beach_Surface: Default
 	{
-		/*files = "oski_corran_beach_*";
-		rough = 0.09;
-		maxSpeedCoef = 0.75;
-		dust = 0.6;
-		soundEnviron = "sand";
-		surfaceFriction = 1.8;
-		character = "oski_corran_beach_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 0.7;
-		grassCover = 0.03;*/
 		ACE_canDig = 1;
 	};
 	class oski_corran_grass_green_Surface: Default
 	{
-		/*files = "oski_corran_grass_green_*";
-		rough = 0.09;
-		maxSpeedCoef = 0.75;
-		dust = 0.05;
-		soundEnviron = "grass";
-		surfaceFriction = 1.8;
-		character = "oski_corran_grass_green_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 3.5;
-		grassCover = 0.03;*/
 		ACE_canDig = 1;
 	};
-	/*class oski_corran_asphalt_Surface: Default
+	class oski_corran_asphalt_Surface: Default
 	{
-		files = "oski_corran_asphalt_*";
-		rough = 0.09;
-		maxSpeedCoef = 1;
-		dust = 0.05;
-		surfaceFriction = 2.5;
-		soundEnviron = "tarmac";
-		character = "oski_corran_asphalt_Character";
-		soundHit = "concrete";
-		impact = "hitconcrete";
-		lucidity = 0.3;
-		grassCover = 1.0;
-	};*/
+	};
 	class oski_corran_mud_Surface: Default
 	{
-		/*files = "oski_corran_mud_*";
-		rough = 0.08;
-		maxSpeedCoef = 0.6;
-		dust = 0;
-		soundEnviron = "forest";
-		surfaceFriction = 1.8;
-		character = "oski_corran_mud_Character";
-		soundHit = "soft_ground";
-		impact = "hitgroundsoft";
-		lucidity = 4;
-		grassCover = 0.1;*/
 		ACE_canDig = 1;
 	};
-	/*class oski_main_road_surface: oski_corran_asphalt_Surface
+	class oski_main_road_surface: oski_corran_asphalt_Surface
 	{
 		character = "empty";
 		files = "oski_main_road*";
@@ -261,17 +151,18 @@ class cfgSurfaces {
 	{
 		character = "empty";
 		files = "oski_roadtarmac_highway*";
-	};*/
+	};
 	class oski_roaddirt_path_surface: oski_corran_wornground_Surface
 	{
-		/*character = "empty";
-		files = "oski_roaddirt_path*";*/
+		character = "empty";
+		files = "oski_roaddirt_path*";
 		ACE_canDig = 1;
 	};
 	class oski_roaddirt_road_surface: oski_corran_wornground_Surface
 	{
-		/*character = "empty";
-		files = "oski_roaddirt_road*";*/
+		character = "empty";
+		files = "oski_roaddirt_road*";
 		ACE_canDig = 1;
 	};
 };
+*/
