@@ -172,13 +172,13 @@ class CfgImprecision
 {
 	class Primary
 	{
-		verticalRadius = 0.25; //0.25
-		horizontalRadius = 0.05; //0.05
+		verticalRadius = 0.175; //0.5
+		horizontalRadius = 0.035; //0.1
 	};
 	class Secondary
 	{
-		verticalRadius = 0.05; //0.05
-		horizontalRadius = 0.25; //0.25
+		verticalRadius = 0.035; //0.1
+		horizontalRadius = 0.175; //0.5
 	};
 
 	/*
@@ -256,9 +256,9 @@ class CfgImprecision
 
 class CfgBreathing
 {
-	maxHoldTime = 10;
-	coefSpeed = 5;
-	outOfBreathCoef = 10;
+	maxHoldTime = 12;
+	coefSpeed = 2.5;
+	outOfBreathCoef = 5;
 	/*
 	//vanilla
 	maxHoldTime = 8;
@@ -271,9 +271,9 @@ class CfgWeaponHandling
 {
 	class SwayDistortion
 	{
-		rate = 10;
-		decay = 5;
-		maximum = 7;
+		rate = 7;
+		decay = 3;
+		maximum = 5;
 		//gunnerCoef = 1.2;
 		/*
 		//vanilla
