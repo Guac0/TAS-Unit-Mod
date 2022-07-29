@@ -5,7 +5,7 @@ class CfgPatches {
 		name = "TAS How To Train Your Dragon Music";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {};
+		requiredAddons[] = {"XIMCore"};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -65,12 +65,16 @@ class CfgMusic
 		TAS_HTTYD_30,*/
 
 	};
-	class TAS_HTTYD_1
+	class TAS_HTTYD_1	
 	{
-		name	= "This Is Berk";
+	    name	= "This Is Berk";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\ThisIsBerk.ogg", db + 0, 1.0 };
 		duration=250;
 		musicClass = "TASHttydMusicClass";
+        moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_2
 	{
@@ -78,6 +82,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\DragonBattle.ogg", db + 0, 1.0 };
 		duration=116;
 		musicClass = "TASHttydMusicClass";
+        moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_3
 	{
@@ -85,6 +93,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TheDownedDragon.ogg", db + 0, 1.0 };
 		duration=258;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "dark"
+		};
 	};
 	class TAS_HTTYD_4
 	{
@@ -92,6 +104,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\DragonTraining.ogg", db + 0, 1.0 };
 		duration=192;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_5
 	{
@@ -99,6 +115,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\Wounded.ogg", db + 0, 1.0 };
 		duration=87;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "calm"
+		};
 	};
 	class TAS_HTTYD_6
 	{
@@ -106,6 +126,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TheDragonBook.ogg", db + 0, 1.0 };
 		duration=144;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "dark"
+		};
 	};
 	class TAS_HTTYD_7
 	{
@@ -113,6 +137,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\FocusHiccup.ogg", db + 0, 1.0 };
 		duration=127;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_8
 	{
@@ -120,6 +148,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\ForbiddenFriendship.ogg", db + 0, 1.0 };
 		duration=252;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "calm"
+		};
 	};
 	class TAS_HTTYD_9
 	{
@@ -127,6 +159,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\NewTail.ogg", db + 0, 1.0 };
 		duration=169;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "calm"
+		};
 	};
 	class TAS_HTTYD_10
 	{
@@ -134,6 +170,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\SeeYouTomorrow.ogg", db + 0, 1.0 };
 		duration=235;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "calm"
+		};
+		//first half is intense, split at 2:01 then calm
 	};
 	class TAS_HTTYD_11
 	{
@@ -141,6 +182,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TestDrive.ogg", db + 0, 1.0 };
 		duration=157;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_12
 	{
@@ -148,6 +193,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\NotSoFireproof.ogg", db + 0, 1.0 };
 		duration=74;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "dark"
+			"calm"
+		};
 	};
 	class TAS_HTTYD_13
 	{
@@ -155,6 +205,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\ThisTimeForSure.ogg", db + 0, 1.0 };
 		duration=45;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
+		//split in the middle to calm/dark
 	};
 	class TAS_HTTYD_14
 	{
@@ -162,6 +217,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\AstridGoesForASpin.ogg", db + 0, 1.0 };
 		duration=45;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_15
 	{
@@ -169,6 +228,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\RomanticFlight.ogg", db + 0, 1.0 };
 		duration=118;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+		{
+        	"dark",
+			"calm"
+		};
 	};
 	class TAS_HTTYD_16
 	{
@@ -176,6 +240,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\DragonsDen.ogg", db + 0, 1.0 };
 		duration=150;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_17
 	{
@@ -183,6 +251,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TheCove.ogg", db + 0, 1.0 };
 		duration=72;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+		{
+        	"calm",
+			"dark"
+		};
 	};
 	class TAS_HTTYD_18
 	{
@@ -190,6 +263,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TheKillRing.ogg", db + 0, 1.0 };
 		duration=270;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_19
 	{
@@ -197,6 +274,11 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\ReadyTheShips.ogg", db + 0, 1.0 };
 		duration=315;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
+		//1.20 split, dark
 	};
 	class TAS_HTTYD_20
 	{
@@ -204,6 +286,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\BattlingTheGreenDeath.ogg", db + 0, 1.0 };
 		duration=380;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_21
 	{
@@ -211,6 +297,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\CounterAttack.ogg", db + 0, 1.0 };
 		duration=187;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_22
 	{
@@ -218,6 +308,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\WheresHiccup.ogg", db + 0, 1.0 };
 		duration=165;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "dark"
+		};
 	};
 	class TAS_HTTYD_23
 	{
@@ -225,6 +319,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\ComingBackAround.ogg", db + 0, 1.0 };
 		duration=172;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "intense"
+		};
 	};
 	class TAS_HTTYD_24
 	{
@@ -232,6 +330,10 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_HTTYD_Music\music\TheVikingsHaveTheirTea.ogg", db + 0, 1.0 };
 		duration=125;
 		musicClass = "TASHttydMusicClass";
+		moods[] = 
+        {
+            "calm"
+		};
 	};
 	/*class TAS_HTTYD_25
 	{
