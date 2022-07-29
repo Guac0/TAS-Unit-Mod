@@ -9,7 +9,7 @@ class CfgPatches {
 		name = "TAS Config Edits";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches",/*"oski_corran"*/};
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -283,4 +283,21 @@ class CfgWeaponHandling
 		gunnerCoef = 1.2;
 		*/
 	};
+};
+
+class CfgMovesBasic;
+class CfgMovesMaleSdr: CfgMovesBasic
+{
+	class States
+	{
+		class LadderCivilStatic;
+		class LadderCivilUpLoop: LadderCivilStatic
+		{
+			speed = "1.05/(2/3)"; //unsure exactly, but google is my friend and it compiles
+		};
+	};
+};
+class CfgAnimation
+{
+	ladderSpeed = "0.5*2"; //2x speed, obviously
 };
