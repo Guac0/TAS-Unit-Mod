@@ -60,6 +60,8 @@ Credit to Elimin-8 and H-Finch-404/Weedse for releasing their excellent XIM's Dy
 
 Credit to Hapsburg for allowing us to use their great Rifle No.9 Mk.1 mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2796036477
 
+Credit to Volodymyr Rebel for allowing us to use their MGSR-inspired eyepatch mod! (contact us for proof in a screenshot of email) https://steamcommunity.com/workshop/filedetails/?id=588179142 
+
 Credit to Axebeard for making his nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their great M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
