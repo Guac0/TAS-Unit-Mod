@@ -1,14 +1,19 @@
 params ["","_mine"];
 
+//make this compatible with eden/zeus-placed explosives somehow instead of just thru ace placement
 if (isNil "KJW_VoiceMines") then {
   KJW_VoiceMines = [_mine];
 } else {
   KJW_VoiceMines pushBack _mine;
 };
 
+//to make this MP compatible, remove the next line and run on all players
 if (isNil "KJW_VoiceMineEvt") then {
   KJW_VoiceMineEvt = ["VoiceMines", "OnSpeak", {
     params ["_unit", "_volume"];
+
+    if (count KJW_VoiceMines == 0) exitWith {};
+    
     {
       if (_unit distance _x < 5) then {
         private _randomNumber = floor(random 6); //0-5.9999, rounded down to nearest int

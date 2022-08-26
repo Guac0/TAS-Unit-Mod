@@ -7,7 +7,8 @@ class CfgPatches {
       "A3_Data_F",
       "A3_Weapons_F",
       "A3_Characters_F",
-			"ace_explosives"
+	  "tfar_core",
+		"ace_explosives"
     };
     requiredVersion=1;
 		units[] = {""};
