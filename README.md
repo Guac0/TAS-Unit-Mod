@@ -60,7 +60,7 @@ Credit to Elimin-8 and H-Finch-404/Weedse for releasing their excellent XIM's Dy
 
 Credit to Hapsburg for allowing us to use their great Rifle No.9 Mk.1 mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2796036477
 
-Credit to Volodymyr Rebel for allowing us to use their MGSR-inspired eyepatch mod! (contact us for proof in a screenshot of email) https://steamcommunity.com/workshop/filedetails/?id=588179142 
+Credit to Volodymyr Rebel for allowing us to use their nice MGSR-inspired eyepatch mod! (contact us for proof in a screenshot of email) https://steamcommunity.com/workshop/filedetails/?id=588179142 
 
 Credit to Axebeard for making his nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
@@ -71,3 +71,5 @@ Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing th
 Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their amazing mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
 
 Credit to Kettle/Myke_Towers for their exceptional Aurora Labs mod, which they have given to the Arma community for use and improvement. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651
+
+Credit to WillKMJ for making their great Voice-Activated Mines mod available to others to use and improve upon. https://steamcommunity.com/sharedfiles/filedetails/?id=2844971099
