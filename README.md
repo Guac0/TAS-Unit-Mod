@@ -73,3 +73,5 @@ Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and a
 Credit to Kettle/Myke_Towers for their exceptional Aurora Labs mod, which they have given to the Arma community for use and improvement. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651
 
 Credit to WillKMJ for making their great Voice-Activated Mines mod available to others to use and improve upon. https://steamcommunity.com/sharedfiles/filedetails/?id=2844971099
+
+Credit to POLPOX for making their two amazing relief map mods available to the public. https://steamcommunity.com/sharedfiles/filedetails/?id=2161118954&searchtext=relief+map+collection
