@@ -9,11 +9,62 @@ class CfgPatches {
 		name = "TAS Config Edits";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder","WBK_DifferentRobotics_1","JLTS_C_core","lsd_armor_redfor","ls_armor_redfor","lsd_units_redfor"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 
+};
+
+class cfgWeapons {
+	class ls_redforUniform_base;
+	class lsd_cis_oomPilot_uniform;
+	class ls_redforUniform_inherit;
+	class ls_cis_b1Droid_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class ls_cis_b1Hologram_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_cis_bxDroid_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_hologram_bxDroid_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_activeCamo_bxDroid_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class ls_cis_b1Simulation_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_cis_b2Droid_uniform: ls_redforUniform_base {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_cis_oomOfficer_uniform: lsd_cis_oomPilot_uniform {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
+	class lsd_cis_bxCaptainDroid_uniform: ls_redforUniform_inherit {
+		JLTS_isDroid = 1; //indicates that this is a droid uniform
+        JLTS_hasEMPProtection = 0; //indicates that this droid is not protected from EMP at all
+        JLTS_deathSounds = "DeathDroid"; //Use "DeathDroid" if you want to get the ones in the mod
+	};
 };
 
 class cfgMagazines {
