@@ -75,3 +75,5 @@ Credit to Kettle/Myke_Towers for their exceptional Aurora Labs mod, which they h
 Credit to WillKMJ for making their great Voice-Activated Mines mod available to others to use and improve upon. https://steamcommunity.com/sharedfiles/filedetails/?id=2844971099
 
 Credit to POLPOX for making their two amazing relief map mods available to the public. https://steamcommunity.com/sharedfiles/filedetails/?id=2161118954&searchtext=relief+map+collection
+
+Credit to Root and ALIAS for their effects, anomalies, and zeus ports thereof! https://steamcommunity.com/sharedfiles/filedetails/?id=2797232351 https://steamcommunity.com/sharedfiles/filedetails/?id=2792615372
