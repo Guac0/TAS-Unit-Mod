@@ -8,7 +8,10 @@ class CfgPatches {
 	{
 		name = "TAS Config Edits";
 		units[] = {};
-		weapons[] = {};
+		weapons[] = {
+			"TAS_ViperHelmet_hex_NoThermals",
+			"TAS_ViperHelmet_ghex_NoThermals"
+		};
 		requiredAddons[] = {"ace_mk6mortar","ace_trenches","cwr3_intro","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
@@ -20,6 +23,24 @@ class Extended_DisplayLoad_EventHandlers {
     class RscDisplayMain {
         cwr3_intro = ""; // CWR gets rid of the editor/multiplayer/campaign buttons for some reason
     };
+};
+
+class cfgWeapons {
+	//class H_HelmetO_ViperSP_hex_F: H_HelmetB
+	class H_HelmetO_ViperSP_hex_F;
+	class TAS_ViperHelmet_hex_NoThermals: H_HelmetO_ViperSP_hex_F {
+		//author = "Bohemia Interactive";
+		displayName = "Special Purpose Helmet (Hex) [No Thermals]";
+		subItems[] = {"Integrated_NVG_F"};
+	};
+	class TAS_ViperHelmet_ghex_NoThermals: TAS_ViperHelmet_hex
+	{
+		//author = "Bohemia Interactive";
+		displayName = "Special Purpose Helmet (Green Hex) [No Thermals]";
+		picture = "\A3\Characters_F_Exp\OPFOR\Data\UI\icon_H_HelmetO_ViperSP_ghex_F_ca.paa";
+		DLC = "Expansion";
+		hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\OPFOR\Data\headgear_vipersp_tna_co.paa"};
+	};
 };
 
 class cfgMagazines {
