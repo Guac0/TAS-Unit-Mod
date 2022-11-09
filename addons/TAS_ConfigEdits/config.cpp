@@ -9,11 +9,17 @@ class CfgPatches {
 		name = "TAS Config Edits";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches","cwr3_intro","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
 
+};
+
+class Extended_DisplayLoad_EventHandlers {
+    class RscDisplayMain {
+        cwr3_intro = ""; // CWR gets rid of the editor/multiplayer/campaign buttons for some reason
+    };
 };
 
 class cfgMagazines {
