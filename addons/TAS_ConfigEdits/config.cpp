@@ -271,9 +271,9 @@ class CfgWeaponHandling
 {
 	class SwayDistortion
 	{
-		rate = 7;
+		rate = 6;
 		decay = 3;
-		maximum = 5;
+		maximum = 4;
 		//gunnerCoef = 1.2;
 		/*
 		//vanilla
