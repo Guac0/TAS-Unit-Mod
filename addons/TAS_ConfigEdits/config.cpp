@@ -10,7 +10,10 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {
 			"TAS_ViperHelmet_hex_NoThermals",
-			"TAS_ViperHelmet_ghex_NoThermals"
+			"TAS_ViperHelmet_ghex_NoThermals",
+			"TAS_ENVG_black_NoThermals",
+			"TAS_ENVG_green_NoThermals",
+			"TAS_ENVG_grey_NoThermals"
 		};
 		requiredAddons[] = {"ace_mk6mortar","ace_trenches","cwr3_intro","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
