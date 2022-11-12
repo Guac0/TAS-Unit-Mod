@@ -1,0 +1,6 @@
+//<'TAS_MgsTapes_Music.pbo' properties via Mikero's dos tools, dll version 8.35>
+prefix=Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music;
+Mikero=DePbo.dll.8.35;
+version=22091421;
+//PboType=Arma Addon;
+//</properties>

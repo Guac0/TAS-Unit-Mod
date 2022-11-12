@@ -1,0 +1,4 @@
+//<'TAS_Music_X.pbo' properties via Mikero's dos tools, dll version 8.35>
+prefix=TAS_Music_X;
+//PboType=Arma Addon;
+//</properties>
