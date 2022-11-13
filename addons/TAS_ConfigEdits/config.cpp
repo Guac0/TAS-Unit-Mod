@@ -13,7 +13,8 @@ class CfgPatches {
 			"TAS_ViperHelmet_ghex_NoThermals",
 			"TAS_ENVG_black_NoThermals",
 			"TAS_ENVG_green_NoThermals",
-			"TAS_ENVG_grey_NoThermals"
+			"TAS_ENVG_grey_NoThermals",
+			"TAS_Nightstalker_NoThermals"
 		};
 		requiredAddons[] = {"ace_mk6mortar","ace_trenches","cwr3_intro","A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
@@ -29,22 +30,6 @@ class Extended_DisplayLoad_EventHandlers {
 };
 
 class cfgWeapons {
-	//VIPER
-	class H_HelmetO_ViperSP_hex_F;
-	class TAS_ViperHelmet_hex_NoThermals: H_HelmetO_ViperSP_hex_F {
-		//author = "Bohemia Interactive";
-		displayName = "Special Purpose Helmet (Hex) [No Thermals]";
-		subItems[] = {"Integrated_NVG_F"};
-	};
-	class TAS_ViperHelmet_ghex_NoThermals: TAS_ViperHelmet_hex_NoThermals
-	{
-		//author = "Bohemia Interactive";
-		displayName = "Special Purpose Helmet (Green Hex) [No Thermals]";
-		picture = "\A3\Characters_F_Exp\OPFOR\Data\UI\icon_H_HelmetO_ViperSP_ghex_F_ca.paa";
-		DLC = "Expansion";
-		hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\OPFOR\Data\headgear_vipersp_tna_co.paa"};
-	};
-
 	//CTRG
 	class NVGogglesB_blk_F;
 	class TAS_ENVG_black_NoThermals: NVGogglesB_blk_F {
@@ -66,6 +51,94 @@ class cfgWeapons {
 		displayName = "ENVG-II (Grey) [No Thermals]";
 		visionMode[] = {"Normal", "NVG"};
 		thermalMode[] = {};	//default is 0
+	};
+
+	//VIPER
+	class H_HelmetO_ViperSP_hex_F;
+	class TAS_ViperHelmet_hex_NoThermals: H_HelmetO_ViperSP_hex_F {
+		//author = "Bohemia Interactive";
+		displayName = "Special Purpose Helmet (Hex) [No Thermals]";
+		//subItems[] = {"Integrated_NVG_F"};
+		subItems[] = {"TAS_ENVG_black_NoThermals"};
+	};
+	class TAS_ViperHelmet_ghex_NoThermals: TAS_ViperHelmet_hex_NoThermals
+	{
+		//author = "Bohemia Interactive";
+		displayName = "Special Purpose Helmet (Green Hex) [No Thermals]";
+		picture = "\A3\Characters_F_Exp\OPFOR\Data\UI\icon_H_HelmetO_ViperSP_ghex_F_ca.paa";
+		DLC = "Expansion";
+		hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\OPFOR\Data\headgear_vipersp_tna_co.paa"};
+	};
+
+	//nightstalker
+	class optic_Nightstalker;
+	class InventoryOpticsItem_Base_F;
+	class TAS_Nightstalker_NoThermals: optic_Nightstalker
+	{
+		//author = "Bohemia Interactive";
+
+		displayName = "Nightstalker [No Thermals]";
+		/*class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class NCTALKEP
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+			};
+		};*/
+		class ItemInfo: InventoryOpticsItem_Base_F
+			{
+				mass = 12;
+				opticType = 1;
+				optics = 1;
+				modelOptics = "\A3\Weapons_f\acc\reticle_nightstalker_F";
+				class OpticsModes
+				{
+					class NCTALKEP
+					{
+						opticsID = 1;
+						useModelOptics = 1;
+						opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+						opticsZoomMin = 0.025;
+						opticsZoomMax = 0.0625;
+						opticsZoomInit = 0.0625;
+						discreteDistance[] = {200};
+						distanceZoomMin = 100;
+						distanceZoomMax = 1000;
+						memoryPointCamera = "opticView";
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+						opticsFlare = 1;
+						opticsDisablePeripherialVision = 1;
+						cameraDir = "";
+						discreteDistanceInitIndex = 0;
+					};
+					class Iron: NCTALKEP
+					{
+						opticsID = 2;
+						useModelOptics = 0;
+						opticsPPEffects[] = {"", ""};
+						opticsFlare = 0;
+						opticsDisablePeripherialVision = 0;
+						discreteDistance[] = {200};
+						discreteDistanceInitIndex = 0;
+						opticsZoomMin = 0.25;
+						opticsZoomMax = 1.25;
+						opticsZoomInit = 0.75;
+						memoryPointCamera = "eye";
+						visionMode[] = {};
+					};
+				};
+			};
+			inertia = 0.2;
+			ACE_ScopeHeightAboveRail = 5.54325;
+			ACE_ScopeAdjust_Vertical[] = {-4, 30};
+			ACE_ScopeAdjust_Horizontal[] = {-6, 6};
+			ACE_ScopeAdjust_VerticalIncrement = 0.1;
+			ACE_ScopeAdjust_HorizontalIncrement = 0.1;
 	};
 };
 
