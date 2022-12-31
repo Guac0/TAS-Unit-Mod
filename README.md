@@ -1,5 +1,5 @@
 # Autismo_Seals_Unit_Mod
-Github repository for the Autismo Seals Custom Addon.
+Github repository for the TAS Custom Addon for Arma 3.
 
 NOTE: Files contained in MAIN may contain bugs or WIP features. MAIN also contains various non-release PBOs. Never clone MAIN except for dev purposes, always take an archived release for use if you don't want to use Steam Workshop.
 
