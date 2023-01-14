@@ -108,8 +108,8 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
         //text = "Connect to<br />TAS Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
-        action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
-        //action = "connectToServer ['***REMOVED***', 2302, '***REMOVED***']"; //Cat: ***REMOVED***
+        action = "0 = [_this, '***REMOVED***', '2302', '***REMOVED***'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServerFullRpt.sqf';";
+        //action = "connectToServer ['***REMOVED***', 2302, '***REMOVED***']"; //Cat: ***REMOVED***, tbone: ***REMOVED***
         actionText = "You should connect to it... NOW";
         condition = "true";
     };
