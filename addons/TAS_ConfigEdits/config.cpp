@@ -14,9 +14,10 @@ class CfgPatches {
 			"TAS_ENVG_black_NoThermals",
 			"TAS_ENVG_green_NoThermals",
 			"TAS_ENVG_grey_NoThermals",
-			"TAS_Nightstalker_NoThermals"
+			"TAS_Nightstalker_NoThermals",
+			"V_RebreatherB" //i guess also include this even tho its just an edit?
 		};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches",/*"cwr3_intro",*/"A3_Data_F_Sams_Loadorder"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches",/*"cwr3_intro",*/"A3_Data_F_Sams_Loadorder","A3_Characters_F"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -141,6 +142,49 @@ class cfgWeapons {
 		ACE_ScopeAdjust_VerticalIncrement = 0.1;
 		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
 	};
+
+
+	////////////////////////////////////////////////////
+	////////////////// Rebreather //////////////////////
+	////////////////////////////////////////////////////
+	//armor isnt edited so advised that you increase player health
+	class ItemCore;
+	class Vest_Camo_Base: ItemCore
+	{
+		class ItemInfo;
+	};
+	class V_RebreatherB: Vest_Camo_Base //NATO rebreather that other ones inherit from.
+	{
+		class ItemInfo: ItemInfo
+		{
+			containerClass = "Supply100"; //bandalier is supply 80, carrier special rig is 100, LBV Grenadier harness is 120, carrier rig is supply 140
+		};
+	};
+	
+
+	/* how aegis does it
+	class ItemCore;
+	class VestItem;
+	class Vest_Camo_Base: ItemCore
+	{
+		class ItemInfo;
+	};
+	class Vest_NoCamo_Base: ItemCore
+	{
+		class ItemInfo;
+	};
+	class V_Rangemaster_belt: Vest_NoCamo_Base
+	{
+		displayName = "$STR_A3_A_CfgWeapons_V_Rangemaster_belt0";
+		picture = "\A3_Aegis\Characters_F_Aegis\Vests\Data\UI\icon_V_Rangemaster_belt_CA.paa";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3_Aegis\Characters_F_Aegis\Vests\Data\vests_rgr_CO.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	*/
 };
 
 class cfgMagazines {
