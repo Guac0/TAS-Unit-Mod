@@ -47,6 +47,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\EpicBattleTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=326;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_2
 	{
@@ -54,6 +55,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\HybridTrailer-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=163;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_3
 	{
@@ -61,6 +63,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Offensive-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=189;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_4
 	{
@@ -68,6 +71,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Superiority-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=197;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_5
 	{
@@ -75,6 +79,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Victorious-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=166;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_6
 	{
@@ -82,6 +87,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Evolution-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=187;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_7
 	{
@@ -89,6 +95,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Fortress-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=174;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_AShamaluev_8
 	{
@@ -96,6 +103,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_AShamaluev\music\Forward-AShamaluevMusic.ogg", db + 0, 1.0 };
 		duration=189;
 		musicClass = "TAS_AShamaluevMusic_MusicClass";
+		moods[] = {"intense"};
 	};
 };
 
