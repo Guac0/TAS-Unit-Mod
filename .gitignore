@@ -1,8 +1,8 @@
 # *.pbo
 # /TAS_Insignia_Music.pbo
 # above file is too big for normal github — not any longer, all restrictions removed
-addons/TAS_Media/GayFrogs.ogv
-addons/TAS_Media/GayFrogs_Silent.ogv
+# addons/TAS_Media/GayFrogs.ogv
+# addons/TAS_Media/GayFrogs_Silent.ogv
 addons/TAS_Media.pbo
 addons/TAS_MgsTapes_Music.pbo
 addons/TAS_GenerationKill_Music.pbo
