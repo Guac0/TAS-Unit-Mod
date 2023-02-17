@@ -56,7 +56,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Killing In the Name.ogg","db + 0",1.0};
 		duration = 313;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intence"};
+		moods[] = {"intense"};
 	};
 	class TAS_GenKill_5
 	{
@@ -83,7 +83,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Sk8er Boi.ogg","db + 0",1.0};
 		duration = 218;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intence"};
+		moods[] = {"intense"};
 	};
 	class TAS_GenKill_8
 	{
@@ -107,7 +107,7 @@ class CfgMusic
 	{
 		name = "Can I Kick It？";
 		artist = "A Tribe Called Quest";
-		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Can I Kick It？.ogg","db + 0",1.0};
+		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Can I Kick It.ogg","db + 0",1.0};
 		duration = 235;
 		musicClass = "TASGenKillMusicClass";
 		moods[] = {"calm"};
@@ -119,7 +119,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Hot In Herre.ogg","db + 0",1.0};
 		duration = 228;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intence"};
+		moods[] = {"intense"};
 	};
 	class TAS_GenKill_12
 	{
@@ -128,7 +128,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\All Star.ogg","db + 0",1.0};
 		duration = 200;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intence"};
+		moods[] = {"intense"};
 	};
 };
 class CfgMusicClasses
