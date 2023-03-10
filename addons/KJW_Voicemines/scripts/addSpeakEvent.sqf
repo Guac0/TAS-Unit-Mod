@@ -1,7 +1,13 @@
 //executed on all players
+
+private _debug = false;
+if (_debug) then {systemChat "running addSpeakEvent.sqf"};
+
 if (isNil "KJW_VoiceMineEvt") then { //only add if it doesnt already exist
   KJW_VoiceMineEvt = ["VoiceMines", "OnSpeak", {
     params ["_unit", "_volume"];
+
+	if (_debug) then {systemChat "checking for voicemine activation"};
 
     if (count KJW_VoiceMines == 0) exitWith {};
     

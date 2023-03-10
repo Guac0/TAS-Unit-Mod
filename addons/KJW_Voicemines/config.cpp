@@ -18,7 +18,22 @@ class CfgPatches {
 
 class CfgMagazines { //This is the supported explosives for the Voice trigger
 	class CA_Magazine;
-	class DemoCharge_Remote_Mag;
+	class SatchelCharge_Remote_Mag: CA_Magazine  {
+        class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "SatchelCharge_Remote_Ammo";
+		 };
+	 };
+    };
+	class DemoCharge_Remote_Mag: SatchelCharge_Remote_Mag {
+        class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "DemoCharge_Remote_Ammo";
+		 };
+	 };
+    };
 	class ATMine_Range_Mag: CA_Magazine {
 		class ACE_Triggers {
 			SupportedTriggers[]+= {"Voice"};
@@ -91,7 +106,40 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 		 };
 	 };
  };
+ class APERSMineDispenser_Mag: SatchelCharge_Remote_Mag {
+        class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "APERSMineDispenser_Ammo";
+		 };
+	 };
+    };
+    class TrainingMine_Mag: APERSMine_Range_Mag {
+        class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "TrainingMine_Ammo";
+		 };
+	 };
+    };
+	class APERSTripMine_Wire_Mag: ATMine_Range_Mag {
+       class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "APERSTripMine_Wire_Ammo";
+		 };
+	 };
+    };
+	class ACE_FlareTripMine_Mag: APERSTripMine_Wire_Mag {
+        class ACE_Triggers {
+		 SupportedTriggers[]+= {"Voice"};
+		 class Voice {
+			 ammo = "ACE_FlareTripMine_Wire_Ammo";
+		 };
+	 };
+    };
 };
+
 class ACE_Triggers {
 	class Voice {
 		isAttachable = 1;
@@ -99,5 +147,6 @@ class ACE_Triggers {
 		picture = "Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\data\TalkyMan.paa";
 		onPlace = "[_this,""Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\scripts\VoiceMine.sqf""] remoteExec [""execVM"",2]; false";
 		onSetup = "false";
+		//https://github.com/acemod/ACE3/blob/c83caa63b476dcf99c93383c6cd9781e2c98f20e/addons/explosives/ACE_Triggers.hpp
 	};
 };
