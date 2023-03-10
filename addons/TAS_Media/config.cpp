@@ -17,8 +17,31 @@ class CfgPatches {
 /*
 Code Stash
 https://community.bistudio.com/wiki/BIS_fnc_playVideo
+
 private _path = "Autismo_Seals_Unit_Mod\addons\TAS_Media\GayFrogs_Silent.ogv";
 private _pathAudio = "Autismo_Seals_Unit_Mod\addons\TAS_Media\GayFrogs.ogg";
+private _object = screen1;
+_object setObjectTexture [0, _path];
+[_path, [10, 10]] call BIS_fnc_playVideo;
+playSound3D [_pathAudio, _object, false, getPosASL _object, 5, 1, 0, 0, true];
+
+_object = screen2;
+_object setObjectTexture [0, _path];
+[_path, [10, 10]] call BIS_fnc_playVideo;
+playSound3D [_pathAudio, _object, false, getPosASL _object, 5, 1, 0, 0, true];
+
+_object = screen2_1;
+_object setObjectTexture [0, _path];
+[_path, [10, 10]] call BIS_fnc_playVideo;
+
+_object = screen2_2;
+_object setObjectTexture [0, _path];
+[_path, [10, 10]] call BIS_fnc_playVideo;
+
+_object = screen2_3;
+_object setObjectTexture [0, _path];
+[_path, [10, 10]] call BIS_fnc_playVideo;
+
 
 
 [_path] remoteExec ["BIS_fnc_playVideo"];
