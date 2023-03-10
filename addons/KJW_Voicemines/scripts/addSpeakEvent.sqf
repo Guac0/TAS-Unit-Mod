@@ -1,3 +1,4 @@
+//executed on all players
 if (isNil "KJW_VoiceMineEvt") then { //only add if it doesnt already exist
   KJW_VoiceMineEvt = ["VoiceMines", "OnSpeak", {
     params ["_unit", "_volume"];
@@ -29,6 +30,6 @@ if (isNil "KJW_VoiceMineEvt") then { //only add if it doesnt already exist
         };
       };
       */
-    } forEach KJW_VoiceMines;
+    } forEach KJW_VoiceMines; //probably bad for performance
   }, player] call TFAR_fnc_addEventHandler;
 };
