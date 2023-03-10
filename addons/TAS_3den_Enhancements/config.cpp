@@ -33,12 +33,17 @@ class display3DEN {
         class MenuStrip: ctrlMenuStrip {
             class Items {
                 class Tools {
-                    items[] += {"TAS_copyMapName_Button"};
+                    items[] += {"TAS_copyMapName_Button","TAS_exportLayersToSqf_Button"};
                 };
                 class TAS_copyMapName_Button {
                     text = "Copy Mapname to Clipboard";
 					picture = "Autismo_Seals_Unit_Mod\addons\TAS_3den_Enhancements\media\logo256x256.paa"; // Item picture
                     action = "call compile preprocessFileLineNumbers 'Autismo_Seals_Unit_Mod\addons\TAS_3den_Enhancements\functions\getWorldName.sqf'";
+            	};
+				class TAS_exportLayersToSqf_Button {
+                    text = "Export Selected Layers to SQF [game will freeze for a second]";
+					picture = "Autismo_Seals_Unit_Mod\addons\TAS_3den_Enhancements\media\logo256x256.paa"; // Item picture
+                    action = "call compile preprocessFileLineNumbers 'Autismo_Seals_Unit_Mod\addons\TAS_3den_Enhancements\functions\exportLayerToSqf.sqf'";
             	};
         	};
     	};
