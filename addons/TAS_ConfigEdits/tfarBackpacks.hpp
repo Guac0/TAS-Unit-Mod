@@ -25,6 +25,19 @@ B_RadioBag_01_base_F: maximumLoad = 80;
 
 class TFAR_Bag_Base;
 
+class TFAR_bussole: TFAR_Bag_Base {
+	maximumLoad = 60;
+};
+class TFAR_rt1523g: TFAR_Bag_Base {
+	maximumLoad = 60;
+};
+class TFAR_rt1523g_bwmod: TFAR_rt1523g {
+	maximumLoad = 60;
+};
+class TFAR_rt1523g_rhs: TFAR_rt1523g {
+	maximumLoad = 60;
+};
+
 class TFAR_anarc164: TFAR_Bag_Base {
 	maximumLoad = 160;
 };
@@ -34,31 +47,18 @@ class TFAR_anarc210: TFAR_Bag_Base {
 class TFAR_mr6000l: TFAR_Bag_Base {
 	maximumLoad = 160;
 };
-class TFAR_rt1523g_sage: TFAR_Bag_Base {
+class TFAR_rt1523g_sage: TFAR_rt1523g {
 	maximumLoad = 160;
 };
 
 class TFAR_anprc155: TFAR_Bag_Base {
-	maximumLoad = 240;
+	maximumLoad = 200;
 };
 class TFAR_mr3000: TFAR_Bag_Base {
-	maximumLoad = 240;
+	maximumLoad = 200;
 };
-class TFAR_rt1523g_big: TFAR_Bag_Base {
-	maximumLoad = 240;
-};
-
-class TFAR_bussole: TFAR_Bag_Base {
-	maximumLoad = 80;
-};
-class TFAR_rt1523g: TFAR_Bag_Base {
-	maximumLoad = 80;
-};
-class TFAR_rt1523g_bwmod: TFAR_Bag_Base {
-	maximumLoad = 80;
-};
-class TFAR_rt1523g_rhs: TFAR_Bag_Base {
-	maximumLoad = 80;
+class TFAR_rt1523g_big: TFAR_rt1523g {
+	maximumLoad = 200;
 };
 
 class B_RadioBag_01_base_F: TFAR_Bag_Base {
