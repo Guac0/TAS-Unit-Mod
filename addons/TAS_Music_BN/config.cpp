@@ -46,6 +46,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\scoutingEnemyTerritory.ogg", db + 0, 1.0 };
 		duration=96;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"calm","intense"};
 	};
 	class TAS_BN_2
 	{
@@ -53,6 +54,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\exoskeleton.ogg", db + 0, 1.0 };
 		duration=220;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"calm"};
 	};
 	class TAS_BN_3
 	{
@@ -60,6 +62,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\intoBattle.ogg", db + 0, 1.0 };
 		duration=228;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_BN_4
 	{
@@ -67,6 +70,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\skirmisher.ogg", db + 0, 1.0 };
 		duration=138;
 		musicClass = "TAS_BN_MusicClass";
+		//mix
 	};
 	class TAS_BN_5
 	{
@@ -74,6 +78,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\ambush.ogg", db + 0, 1.0 };
 		duration=351;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"intense"};
 	};
 	class TAS_BN_6
 	{
@@ -81,6 +86,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\takenCaptive.ogg", db + 0, 1.0 };
 		duration=215;
 		musicClass = "TAS_BN_MusicClass";
+		//mix
 	};
 	class TAS_BN_7
 	{
@@ -88,6 +94,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\familyPhoto.ogg", db + 0, 1.0 };
 		duration=220;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"calm"};
 	};
 	class TAS_BN_8
 	{
@@ -95,6 +102,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\tortueChamber.ogg", db + 0, 1.0 };
 		duration=217;
 		musicClass = "TAS_BN_MusicClass";
+		//mix
 	};
 	class TAS_BN_9
 	{
@@ -102,6 +110,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\disfigured.ogg", db + 0, 1.0 };
 		duration=298;
 		musicClass = "TAS_BN_MusicClass";
+		//too electronic
 	};
 	class TAS_BN_10
 	{
@@ -109,6 +118,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\rescueMission.ogg", db + 0, 1.0 };
 		duration=182;
 		musicClass = "TAS_BN_MusicClass";
+		//mix
 	};
 	class TAS_BN_11
 	{
@@ -116,6 +126,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\facingTheBeast.ogg", db + 0, 1.0 };
 		duration=279;
 		musicClass = "TAS_BN_MusicClass";
+		//mix
 	};
 	class TAS_BN_12
 	{
@@ -123,6 +134,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_BN\music\ambush\Homecoming.ogg", db + 0, 1.0 };
 		duration=79;
 		musicClass = "TAS_BN_MusicClass";
+		moods[] = {"calm","intense"};
 	};
 };
 

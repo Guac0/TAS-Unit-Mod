@@ -19,6 +19,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_01_UFODEFENSE.ogg","db + 0",1.0};
 		duration = 184;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"calm","intense"};
 	};
 	class TAS_XCOML_02
 	{
@@ -26,6 +27,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_02_GEOSCAPE.ogg","db + 0",1.0};
 		duration = 222;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"calm"};
 	};
 	class TAS_XCOML_03
 	{
@@ -33,6 +35,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_03_INTERCEPT.ogg","db + 0",1.0};
 		duration = 176;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"intense"};
 	};
 	class TAS_XCOML_04
 	{
@@ -40,6 +43,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_04_SCANNINGPROTOCOL.ogg","db + 0",1.0};
 		duration = 168;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"calm","dark"};
 	};
 	class TAS_XCOML_05
 	{
@@ -47,6 +51,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_05_RESISTANCE.ogg","db + 0",1.0};
 		duration = 168;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"intense"};
 	};
 	class TAS_XCOML_06
 	{
@@ -54,6 +59,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_06_SLEEPINGCHRYSSALIDS.ogg","db + 0",1.0};
 		duration = 141;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"calm","dark"};
 	};
 	class TAS_XCOML_07
 	{
@@ -61,6 +67,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_07_KILLITWITHFIRE.ogg","db + 0",1.0};
 		duration = 193;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"intense"};
 	};
 	class TAS_XCOML_08
 	{
@@ -68,6 +75,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_Music_X\music\X\XCOML_08_BLACKSITE.ogg","db + 0",1.0};
 		duration = 133;
 		musicClass = "TASXCOMClass";
+		//moods[] = {"calm","dark"};
 	};
 	class TAS_XCOML_09
 	{

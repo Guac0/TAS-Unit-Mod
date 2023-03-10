@@ -54,13 +54,14 @@ class CfgMusic
 		TAS_OE12,
 		TAS_OE13,
 	};
-	//Overlord OST, see https://www.youtube.com/watch?v=u6SPFiBt_h4&t=0s , All Rights Reserved
+	//Overlord OST, see https://www.youtube.com/watch?v=u6SPFiBt_h4
 	class TAS_O1
 	{
 		name	= "(O1) Scepter — Overlord OST";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O1_Scepter.ogg", db + 0, 1.0 };
 		duration=172;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O2
 	{
@@ -68,6 +69,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O2_Woods.ogg", db + 0, 1.0 };
 		duration=148;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm","dark"};
 	};
 	class TAS_O3
 	{
@@ -75,6 +77,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O3_Damnation.ogg", db + 0, 1.0 };
 		duration=288;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O4
 	{
@@ -82,6 +85,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O4_CleanUp.ogg", db + 0, 1.0 };
 		duration=80;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O5
 	{
@@ -89,6 +93,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O5_NewTranscendentalists.ogg", db + 0, 1.0 };
 		duration=70;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O6
 	{
@@ -96,6 +101,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O6_PlayMe.ogg", db + 0, 1.0 };
 		duration=71;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O7
 	{
@@ -103,6 +109,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O7_Camera.ogg", db + 0, 1.0 };
 		duration=45;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O8
 	{
@@ -110,6 +117,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O8_Symbols.ogg", db + 0, 1.0 };
 		duration=92;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O9
 	{
@@ -117,6 +125,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O9_Tic.ogg", db + 0, 1.0 };
 		duration=98;
 		musicClass = "TASOverlordClass";
+		//moods[] = {"dark"}; //bit too intense for ambient
 	};
 	class TAS_O10
 	{
@@ -124,6 +133,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O10_PostMortem.ogg", db + 0, 1.0 };
 		duration=146;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O11
 	{
@@ -131,6 +141,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O11_Treeline.ogg", db + 0, 1.0 };
 		duration=29;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O12
 	{
@@ -138,6 +149,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O12_1234.ogg", db + 0, 1.0 };
 		duration=97;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O13
 	{
@@ -145,6 +157,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O13_PanicRoom.ogg", db + 0, 1.0 };
 		duration=144;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_O14
 	{
@@ -152,6 +165,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O14_Mirror.ogg", db + 0, 1.0 };
 		duration=119;
 		musicClass = "TASOverlordClass";
+		//moods[] = {"dark"}; //bit too intense for ambient
 	};
 	class TAS_O15
 	{
@@ -159,14 +173,16 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\O\O15_Overlord.ogg", db + 0, 1.0 };
 		duration=153;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
-	//Overlord OST Extras: see https://www.youtube.com/watch?v=RcAGiS3_sPg , All Rights Reserved
+	//Overlord OST Extras: see https://www.youtube.com/watch?v=RcAGiS3_sPg
 	class TAS_OE1
 	{
 		name	= "(OE1) Trailer — Overlord OST Extras";
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE1_Trailer.ogg", db + 0, 1.0 };
 		duration=62;
 		musicClass = "TASOverlordClass";
+		moods[] = {"intense"};
 	};
 	class TAS_OE2
 	{
@@ -174,6 +190,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE2_OverlordAlt.ogg", db + 0, 1.0 };
 		duration=171;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_OE3
 	{
@@ -181,6 +198,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE3_AnotherDay.ogg", db + 0, 1.0 };
 		duration=74;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm"};
 	};
 	class TAS_OE4
 	{
@@ -188,6 +206,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE4_DansSketchbook.ogg", db + 0, 1.0 };
 		duration=459;
 		musicClass = "TASOverlordClass";
+		//moods[] = {"dark"}; //mix of dark and calm
 	};
 	class TAS_OE5
 	{
@@ -195,6 +214,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE5_NewEngland.ogg", db + 0, 1.0 };
 		duration=125;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm"};
 	};
 	class TAS_OE6
 	{
@@ -202,6 +222,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE6_MissingPersons.ogg", db + 0, 1.0 };
 		duration=78;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm"};
 	};
 	class TAS_OE7
 	{
@@ -209,6 +230,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE7_WatchYourStep.ogg", db + 0, 1.0 };
 		duration=108;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm"};
 	};
 	class TAS_OE8
 	{
@@ -216,6 +238,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE8_ThoughtLEader.ogg", db + 0, 1.0 };
 		duration=135;
 		musicClass = "TASOverlordClass";
+		moods[] = {"calm"};
 	};
 	class TAS_OE9
 	{
@@ -223,6 +246,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE9_Commune.ogg", db + 0, 1.0 };
 		duration=177;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_OE10
 	{
@@ -230,6 +254,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE10_Ascend.ogg", db + 0, 1.0 };
 		duration=68;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_OE11
 	{
@@ -237,6 +262,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE11_HumanoidTarget.ogg", db + 0, 1.0 };
 		duration=129;
 		musicClass = "TASOverlordClass";
+		moods[] = {"dark"};
 	};
 	class TAS_OE12
 	{
@@ -244,6 +270,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE12_InvisibleKnife.ogg", db + 0, 1.0 };
 		duration=135;
 		musicClass = "TASOverlordClass";
+		//moods[] = {"dark"}; //too intense
 	};
 	class TAS_OE13
 	{
@@ -251,6 +278,7 @@ class CfgMusic
 		sound[]	= { "Autismo_Seals_Unit_Mod\addons\TAS_Music_O\music\OE\OE13_YourSensesDecieve.ogg", db + 0, 1.0 };
 		duration=147;
 		musicClass = "TASOverlordClass";
+		//lyrical
 	};
 };
 
