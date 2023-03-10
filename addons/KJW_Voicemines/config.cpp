@@ -97,7 +97,7 @@ class ACE_Triggers {
 		isAttachable = 1;
 		displayName = "Voice";
 		picture = "Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\data\TalkyMan.paa";
-		onPlace = "_this execVM ""Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\scripts\VoiceMine.sqf""; false";
+		onPlace = "[_this,""Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\scripts\VoiceMine.sqf""] remoteExec [""execVM"",2]; false";
 		onSetup = "false";
 	};
 };
