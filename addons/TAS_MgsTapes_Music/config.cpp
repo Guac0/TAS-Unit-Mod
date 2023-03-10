@@ -29,7 +29,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\You Spin Me Round.ogg","db + 0",1.0};
 		duration = 196;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_MGSV_2
 	{
@@ -38,7 +38,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Dancing With Tears In My Eyes.ogg","db + 0",1.0};
 		duration = 263;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_3
 	{
@@ -47,7 +47,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\The Final Countdown.ogg","db + 0",1.0};
 		duration = 311;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_MGSV_4
 	{
@@ -56,7 +56,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Take on Me.ogg","db + 0",1.0};
 		duration = 244;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_5
 	{
@@ -65,7 +65,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\True.ogg","db + 0",1.0};
 		duration = 317;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_6
 	{
@@ -74,7 +74,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\She Blinded Me With Science.ogg","db + 0",1.0};
 		duration = 221;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_7
 	{
@@ -83,7 +83,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Rebel Yell.ogg","db + 0",1.0};
 		duration = 286;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_MGSV_8
 	{
@@ -92,7 +92,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Quiet Life.ogg","db + 0",1.0};
 		duration = 291;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_9
 	{
@@ -101,7 +101,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Only Time Will Tell.ogg","db + 0",1.0};
 		duration = 284;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_10
 	{
@@ -110,7 +110,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\The Man Who Sold The World.ogg","db + 0",1.0};
 		duration = 343;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_11
 	{
@@ -119,7 +119,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Maneater.ogg","db + 0",1.0};
 		duration = 271;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_12
 	{
@@ -128,7 +128,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Kids In America.ogg","db + 0",1.0};
 		duration = 206;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_MGSV_13
 	{
@@ -137,7 +137,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Love Will Tear Us Apart.ogg","db + 0",1.0};
 		duration = 204;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_MGSV_14
 	{
@@ -146,7 +146,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_MgsTapes_Music\music\Gloria.ogg","db + 0",1.0};
 		duration = 295;
 		musicClass = "TASMgsvMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 };
 class CfgMusicClasses

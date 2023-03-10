@@ -29,7 +29,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Teenage Dirtbag.ogg","db + 0",1.0};
 		duration = 246;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_2
 	{
@@ -38,7 +38,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Tainted Love.ogg","db + 0",1.0};
 		duration = 180;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_3
 	{
@@ -47,7 +47,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Walkin' On The Sun.ogg","db + 0",1.0};
 		duration = 205;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_4
 	{
@@ -56,7 +56,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Killing In the Name.ogg","db + 0",1.0};
 		duration = 313;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_GenKill_5
 	{
@@ -65,7 +65,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\The Man Comes Around.ogg","db + 0",1.0};
 		duration = 266;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm","dark"};
+		//moods[] = {"calm","dark"};
 	};
 	class TAS_GenKill_6
 	{
@@ -74,7 +74,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Fresh Prince of Bel Air.ogg","db + 0",1.0};
 		duration = 177;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_7
 	{
@@ -83,7 +83,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Sk8er Boi.ogg","db + 0",1.0};
 		duration = 218;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_GenKill_8
 	{
@@ -92,7 +92,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Complicated.ogg","db + 0",1.0};
 		duration = 253;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_9
 	{
@@ -101,7 +101,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\loving you.ogg","db + 0",1.0};
 		duration = 199;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_10
 	{
@@ -110,7 +110,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Can I Kick It.ogg","db + 0",1.0};
 		duration = 235;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"calm"};
+		//moods[] = {"calm"};
 	};
 	class TAS_GenKill_11
 	{
@@ -119,7 +119,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\Hot In Herre.ogg","db + 0",1.0};
 		duration = 228;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 	class TAS_GenKill_12
 	{
@@ -128,7 +128,7 @@ class CfgMusic
 		sound[] = {"Autismo_Seals_Unit_Mod\addons\TAS_GenerationKill_Music\music\All Star.ogg","db + 0",1.0};
 		duration = 200;
 		musicClass = "TASGenKillMusicClass";
-		moods[] = {"intense"};
+		//moods[] = {"intense"};
 	};
 };
 class CfgMusicClasses
