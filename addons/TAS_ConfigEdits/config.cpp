@@ -16,8 +16,9 @@ class CfgPatches {
 			"TAS_ENVG_grey_NoThermals",
 			"TAS_Nightstalker_NoThermals",
 			"V_RebreatherB" //i guess also include this even tho its just an edit?
+			//include tfar packs???
 		};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder","A3_Characters_F"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
+		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder","A3_Characters_F","tfar_backpacks"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
@@ -39,6 +40,8 @@ class cfgMagazines {
 
 class cfgVehicles {
 	#include "battleBelt.hpp"
+
+	#include "tfarBackpacks.hpp"
 };
 
 #include "weaponSway.hpp" 
