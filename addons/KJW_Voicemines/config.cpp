@@ -4,7 +4,8 @@ class CfgPatches {
     author="KJW";
     requiredAddons[]=
     {
-      "A3_Data_F",
+      "cba_settings",
+	  "A3_Data_F",
       "A3_Weapons_F",
       "A3_Characters_F",
 	  "tfar_core",
@@ -20,7 +21,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	class CA_Magazine;
 	class SatchelCharge_Remote_Mag: CA_Magazine  {
         class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {/*"Timer", "Command", "MK16_Transmitter", "DeadmanSwitch",*/ "Voice"}; //voice, timer, rams
 		 class Voice {
 			 ammo = "SatchelCharge_Remote_Ammo";
 		 };
@@ -28,7 +29,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
     };
 	class DemoCharge_Remote_Mag: SatchelCharge_Remote_Mag {
         class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {"Timer", "Command", "MK16_Transmitter", "DeadmanSwitch", "Voice"}; //voice
 		 class Voice {
 			 ammo = "DemoCharge_Remote_Ammo";
 		 };
@@ -36,7 +37,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
     };
 	class ATMine_Range_Mag: CA_Magazine {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {"PressurePlate","Voice"}; //voice, 
 			class Voice {
 				ammo = "ATMine_Range_Ammo";
 			};
@@ -44,7 +45,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class SLAMDirectionalMine_Wire_Mag: ATMine_Range_Mag {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {/*"IRSensor", "PressurePlate", "Timer", "Command", "MK16_Transmitter",*/ "Voice"};
 			class Voice {
 				ammo = "ACE_SLAMDirectionalMine_Command_Ammo";
 			};
@@ -52,7 +53,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class ClaymoreDirectionalMine_Remote_Mag: CA_Magazine {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {"Command", /*"MK16_Transmitter",*/ "Voice"}; //voice, rams
 			class Voice {
 				ammo = "ClaymoreDirectionalMine_Remote_Ammo";
 			};
@@ -60,7 +61,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class APERSBoundingMine_Range_Mag: ATMine_Range_Mag {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {/*"PressurePlate",*/"Voice"};
 			class Voice {
 				ammo = "APERSBoundingMine_Range_Ammo";
 			};
@@ -68,7 +69,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class APERSMine_Range_Mag: ATMine_Range_Mag {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {/*"PressurePlate",*/"Voice"}; //voice, pressure
 			class Voice {
 				ammo = "APERSMine_Range_Ammo";
 			};
@@ -76,7 +77,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class IEDLandBig_Remote_Mag: DemoCharge_Remote_Mag {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {"Command", "DeadmanSwitch", "Cellphone", "PressurePlate", "Voice"}; //voice
 			class Voice {
 				ammo = "ACE_IEDLandBig_Command_Ammo";
 			};
@@ -84,7 +85,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
 	class IEDUrbanBig_Remote_Mag: DemoCharge_Remote_Mag {
 		class ACE_Triggers {
-			SupportedTriggers[]+= {"Voice"};
+			SupportedTriggers[]+= {/*"Command", "DeadmanSwitch", "Cellphone", "PressurePlate", */ "Voice"};
 			class Voice {
 				ammo = "ACE_IEDUrbanBig_Command_Ammo";
 			};
@@ -92,7 +93,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
 	};
  class IEDLandSmall_Remote_Mag: DemoCharge_Remote_Mag {
 	 class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {"Command", "DeadmanSwitch", "Cellphone", "PressurePlate", "Voice"};
 		 class Voice {
 			 ammo = "ACE_IEDLandSmall_Command_Ammo";
 		 };
@@ -100,7 +101,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
  };
  class IEDUrbanSmall_Remote_Mag: DemoCharge_Remote_Mag {
 	 class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {/*"Command", "DeadmanSwitch", "Cellphone", "PressurePlate",*/ "Voice"};
 		 class Voice {
 			 ammo = "ACE_IEDUrbanSmall_Command_Ammo";
 		 };
@@ -108,7 +109,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
  };
  class APERSMineDispenser_Mag: SatchelCharge_Remote_Mag {
         class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {/*"Timer", "Command", "MK16_Transmitter",*/ "Voice"};
 		 class Voice {
 			 ammo = "APERSMineDispenser_Ammo";
 		 };
@@ -116,7 +117,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
     };
     class TrainingMine_Mag: APERSMine_Range_Mag {
         class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {/*"PressurePlate",*/ "Voice"};
 		 class Voice {
 			 ammo = "TrainingMine_Ammo";
 		 };
@@ -124,7 +125,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
     };
 	class APERSTripMine_Wire_Mag: ATMine_Range_Mag {
        class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {/*"Tripwire",*/"Voice"}; //voice
 		 class Voice {
 			 ammo = "APERSTripMine_Wire_Ammo";
 		 };
@@ -132,7 +133,7 @@ class CfgMagazines { //This is the supported explosives for the Voice trigger
     };
 	class ACE_FlareTripMine_Mag: APERSTripMine_Wire_Mag {
         class ACE_Triggers {
-		 SupportedTriggers[]+= {"Voice"};
+		 SupportedTriggers[]+= {"Tripwire","Voice"}; //voice
 		 class Voice {
 			 ammo = "ACE_FlareTripMine_Wire_Ammo";
 		 };
@@ -149,4 +150,12 @@ class ACE_Triggers {
 		onSetup = "false";
 		//https://github.com/acemod/ACE3/blob/c83caa63b476dcf99c93383c6cd9781e2c98f20e/addons/explosives/ACE_Triggers.hpp
 	};
+};
+
+class Extended_PreInit_EventHandlers 
+{
+    class KJW_Voicemine_Settings // preinit event handler
+    {
+        init = "call compile preprocessFileLineNumbers 'Autismo_Seals_Unit_Mod\addons\KJW_Voicemines\XEH_PreInit.sqf'";
+    };
 };
