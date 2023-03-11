@@ -61,22 +61,17 @@ class CfgFaces
             materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
             disabled = false; //no idea. Appears to entirely disable face from being selected except by script. // always TRUE/1 for inherited camo faces
         };
-        class TAS_Wuckles_Face
+        class TAS_Wuckles_Face: TAS_Bernie_Face
 		{
             author = "Wuckles";
             displayname = "Wuckles";
             texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_Wuckles_WucklesFace1.paa";
-            head = "DefaultHead_A3"; //the model
-            identityTypes[] = {"Default"}; //changed to Default only in attempt to make AI stop spawning with it, but probably won't work since some units (especially modded) probably use default identity
-            //identityTypes[] = {"Head_NATO", "Head_Euro"}; //not sure, copied from the white heads. Appears to make it a valid candidate for automatic identity setting for NATO units
-            material = "A3\Characters_F\Heads\Data\m_White_01.rvmat";
-            materialWounded1 = "A3\Characters_F\Heads\Data\m_White_01_injury.rvmat";
-			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_01_injury.rvmat";
-            textureHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
-            materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
-            textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
-            materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
-            disabled = false; //no idea. Appears to entirely disable face from being selected except by script. // always TRUE/1 for inherited camo faces
+        };
+        class TAS_Colors_Face: TAS_Bernie_Face
+		{
+            author = "Colors";
+            displayname = "Colors";
+            texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_Colors_ColorsFace1.paa";
         };
     };
 };
