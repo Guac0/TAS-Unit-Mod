@@ -19,6 +19,7 @@ if (isNil "KJW_VoiceMineEvt") then { //only add if it doesnt already exist
           if (_randomNumber == 0) then {
             _x setDamage 1; //explode if unlucky (1 in CHANCE)
             KJW_VoiceMines = KJW_VoiceMines - [_x];
+            publicVariable "KJW_VoiceMines";
           } else {
             playSound3D ["a3\sounds_f\missions\invalidcoords.ogg", _x]; //warning beep if lucky
           };
@@ -55,6 +56,7 @@ if (isNil "KJW_VoiceMineEvt") then { //only add if it doesnt already exist
           if (_randomNumber == 0) then {
             _x setDamage 1; //explode if unlucky (1 in CHANCE)
             KJW_VoiceMines = KJW_VoiceMines - [_x];
+            publicVariable "KJW_VoiceMines";
           } else {
             playSound3D ["a3\sounds_f\missions\invalidcoords.ogg", _x]; //warning beep if lucky
           };
