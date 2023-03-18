@@ -48,13 +48,15 @@ RSPN Cave Systems for Zeus and Eden — Credit to the original RSPN team (Liv2Di
 
 Xin Ponds — Credit to Xindrum who has graciously allowed the Arma community to repack their great mod, see https://steamcommunity.com/sharedfiles/filedetails/?id=1161319271 for more information.
 
-Credit to AShamaluevMusic for making his excellent music available to everyone to use. https://www.youtube.com/c/AShamaluevMusic/about
+Credit to AShamaluevMusic for making their excellent music available to everyone to use. https://www.youtube.com/c/AShamaluevMusic/about
 
-Credit to Elliot740 for allowing us to repack his fantastic 40k voice mods! https://steamcommunity.com/sharedfiles/filedetails/?id=2511357695
+Credit to Elliot740 for allowing us to repack their fantastic 40k voice mods! https://steamcommunity.com/sharedfiles/filedetails/?id=2511357695
 
-Credit to Silence for allowing us to repack his great X26 Taser mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2515852876
+Credit to Silence for allowing us to repack their great X26 Taser mod! https://steamcommunity.com/sharedfiles/filedetails/?id=2515852876
 
-Credit to FanOfReproductiveSystem (Rep) for allowing us to repack his amazing V308 mod with our fixes! https://steamcommunity.com/sharedfiles/filedetails/?id=2823872536
+Credit to FanOfReproductiveSystem (Rep) for allowing us to repack their amazing V308 mod with our fixes! https://steamcommunity.com/sharedfiles/filedetails/?id=2823872536
+
+Credit to Rebel for allowing us to repack their great Immersion Cigs mod! https://steamcommunity.com/sharedfiles/filedetails/?id=753946944
 
 Credit to Elimin-8 and H-Finch-404/Weedse for releasing their excellent XIM's Dynamic Music mod under the LGPL and allowing us to playtest beta versions of it! (Note: XIM_Core PBO is under the LGPL) https://steamcommunity.com/sharedfiles/filedetails/?id=2127841273
 
@@ -62,13 +64,13 @@ Credit to Hapsburg for allowing us to use their great Rifle No.9 Mk.1 mod! https
 
 Credit to Volodymyr Rebel for allowing us to use their nice MGSR-inspired eyepatch mod! (contact us for proof in a screenshot of email) https://steamcommunity.com/workshop/filedetails/?id=588179142 
 
-Credit to Axebeard for making his nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
+Credit to Axebeard for making their nice Window Breaker mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800
 
 Credit to ArmedVeteran (and by extension Needles) for allowing the Arma community to repack their great M224 Mortar mod. https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935
 
-Credit to MrSanchez for releasing his Headlamps mod under APL-SA and allowing the Arma community to repack his nice mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
+Credit to MrSanchez for releasing their Headlamps mod under APL-SA and allowing the Arma community to repack their nice mod. https://steamcommunity.com/sharedfiles/filedetails/?id=930264602
 
-Credit to Zabuzard for releasing his Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their amazing mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
+Credit to Zabuzard for releasing their Mighty GAU-8 Avenger mod under GPL_v3 and allowing the Arma community to repack their amazing mod. https://steamcommunity.com/sharedfiles/filedetails/?id=784218341
 
 Credit to Kettle/Myke_Towers for their exceptional Aurora Labs mod, which they have given to the Arma community for use and improvement. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651
 
