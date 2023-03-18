@@ -78,6 +78,8 @@ Credit to WillKMJ for making their great Voice-Activated Mines mod available to 
 
 Credit to POLPOX for making their two amazing relief map mods available to the public. https://steamcommunity.com/sharedfiles/filedetails/?id=2161118954&searchtext=relief+map+collection
 
-Credit to NorX Aengell for making their XENO - Taru Pod Mod available to the community to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=365549234&searchtext=taru+pod 
+Credit to NorX Aengell for making their XENO - Taru Pod Mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=365549234&searchtext=taru+pod 
 
-Credit to Chaz for making their Sefrou-Ramal Civilians mod available to the community to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=2659665807
+Credit to Chaz for making their Sefrou-Ramal Civilians mod available to the Arma community at large to repack. https://steamcommunity.com/sharedfiles/filedetails/?id=2659665807
+
+Credit to Vespade for making their Immersion Crayons mod available to the Arma community at large to repack (under the terms of CC BY 4.0). https://steamcommunity.com/sharedfiles/filedetails/?id=2311516767
