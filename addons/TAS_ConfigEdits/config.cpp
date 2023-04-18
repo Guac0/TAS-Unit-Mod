@@ -18,7 +18,7 @@ class CfgPatches {
 			"V_RebreatherB" //i guess also include this even tho its just an edit?
 			//include tfar packs???
 		};
-		requiredAddons[] = {"ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder","A3_Characters_F","tfar_backpacks"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
+		requiredAddons[] = {"ace_medical_treatment","ace_mk6mortar","ace_trenches","A3_Data_F_Sams_Loadorder","A3_Characters_F","tfar_backpacks"/*"oski_corran"*/}; //TODO: find updated loadorder for old man
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
