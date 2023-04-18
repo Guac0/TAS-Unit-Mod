@@ -85,3 +85,5 @@ Credit to Chaz for making their Sefrou-Ramal Civilians mod available to the Arma
 Credit to Vespade for making their Immersion Crayons mod available to the Arma community at large to repack (under the terms of CC BY 4.0). https://steamcommunity.com/sharedfiles/filedetails/?id=2311516767
 
 Credit to Seth Duda for making their Advanced * mods (Rappeling, Urban Rappeling, Towing) available to the Arma community at large to repack under the terms of the MIT license. https://github.com/sethduda/AdvancedRappelling https://github.com/sethduda/AdvancedUrbanRappelling https://github.com/sethduda/AdvancedTowing
+
+Credit to Vurtual for releasing their Car Seat and Stretcher mod to the public to edit and repack under the terms of the Arma Public License. https://steamcommunity.com/sharedfiles/filedetails/?id=1381327410
