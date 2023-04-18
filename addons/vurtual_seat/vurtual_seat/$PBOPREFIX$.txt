@@ -1,4 +1,0 @@
-//<'vurtual_seat.pbo' properties via Mikero's dos tools, dll version 8.35>
-prefix=vurtual_seat;
-//PboType=Arma Addon;
-//</properties>
