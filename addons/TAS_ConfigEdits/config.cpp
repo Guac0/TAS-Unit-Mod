@@ -49,3 +49,5 @@ class cfgVehicles {
 #include "stamina.hpp" 
 
 #include "ladderSpeedup.hpp" 
+
+#include "aceBandageSpeedTweak.hpp"
