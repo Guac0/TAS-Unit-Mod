@@ -4,11 +4,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 {
 	class States
 	{
-		class LadderCivilStatic;
+		/*class LadderCivilStatic;
 		class LadderCivilUpLoop: LadderCivilStatic
 		{
 			speed = "1.05/(2/3)"; //unsure exactly, but google is my friend and it compiles
-		};
+		};*/
 		
 		//swim
 		class AswmPercMstpSnonWnonDnon;
@@ -43,7 +43,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 	};
 };
+/*
 class CfgAnimation
 {
 	ladderSpeed = "0.5*2"; //2x speed, obviously
-};
+};*/
