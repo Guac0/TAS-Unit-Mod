@@ -87,3 +87,5 @@ Credit to Vespade for making their Immersion Crayons mod available to the Arma c
 Credit to Seth Duda for making their Advanced * mods (Rappeling, Urban Rappeling, Towing) available to the Arma community at large to repack under the terms of the MIT license. https://github.com/sethduda/AdvancedRappelling https://github.com/sethduda/AdvancedUrbanRappelling https://github.com/sethduda/AdvancedTowing
 
 Credit to Vurtual for releasing their Car Seat and Stretcher mod to the public to edit and repack under the terms of the Arma Public License. https://steamcommunity.com/sharedfiles/filedetails/?id=1381327410
+
+Credit to Kaiser Mighty for making their Invisible TFAR Radio mod available to the public to repack and modify. https://steamcommunity.com/sharedfiles/filedetails/?id=2447842250
