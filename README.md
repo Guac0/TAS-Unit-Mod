@@ -89,5 +89,3 @@ Credit to Seth Duda for making their Advanced * mods (Rappeling, Urban Rappeling
 Credit to Vurtual for releasing their Car Seat and Stretcher mod to the public to edit and repack under the terms of the Arma Public License. https://steamcommunity.com/sharedfiles/filedetails/?id=1381327410
 
 Credit to Kaiser Mighty for making their Invisible TFAR Radio mod available to the public to repack and modify. https://steamcommunity.com/sharedfiles/filedetails/?id=2447842250
-
-Credit to POLPOX for releasing their Ladder Tweak Remastered mod to the arma community to edit and repack under the terms of the APL-SA https://steamcommunity.com/sharedfiles/filedetails/?id=2969350304 
