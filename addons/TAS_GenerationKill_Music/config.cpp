@@ -14,7 +14,7 @@ class CfgPatches
 		name = "Generation Kill music";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"XIMCore"};
+		requiredAddons[] = {};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};

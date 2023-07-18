@@ -14,7 +14,7 @@ class CfgPatches
 		name = "Metal Gear Solid 5: Phantom Pain 80’s Cassette Tapes";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"XIMCore"};
+		requiredAddons[] = {};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};

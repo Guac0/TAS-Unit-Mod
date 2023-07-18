@@ -5,7 +5,7 @@ class CfgPatches {
 		name = "TAS How To Train Your Dragon Music";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"XIMCore"};
+		requiredAddons[] = {};
 		author = "TAS Mod Team";
 		authorUrl = "https://discord.gg/invite/mcXfzqR5Kn";
 	};
