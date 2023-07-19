@@ -73,5 +73,17 @@ class CfgFaces
             displayname = "Colors";
             texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_Colors_ColorsFace1.paa";
         };
+        class TAS_Soyjack1_Face: TAS_Bernie_Face
+		{
+            author = "ElDuko";
+            displayname = "Soyjack 1";
+            texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_ElDuko_Soyjack1.paa";
+        };
+        class TAS_Soyjack2_Face: TAS_Bernie_Face
+		{
+            author = "ElDuko";
+            displayname = "Soyjack 2";
+            texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_ElDuko_Soyjack2.paa";
+        };
     };
 };
