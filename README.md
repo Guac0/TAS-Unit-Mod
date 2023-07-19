@@ -91,3 +91,5 @@ Credit to Vurtual for releasing their Car Seat and Stretcher mod to the public t
 Credit to Kaiser Mighty for making their Invisible TFAR Radio mod available to the public to repack and modify. https://steamcommunity.com/sharedfiles/filedetails/?id=2447842250
 
 Credit to Myke_Towers, Kettle, and supercas240 for allowing their Aurora Labs mod to be repacked by the community. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651 https://steamcommunity.com/sharedfiles/filedetails/?id=2872234627
+
+Credit to iNTERBRED for their Tactical Beards mod, Hhaine for publishing the mod, and -_LP_- for adding onto the mod and allowing the arma community to use it. https://steamcommunity.com/sharedfiles/filedetails/?id=1357784814 https://steamcommunity.com/sharedfiles/filedetails/?id=1432917255
