@@ -395,3 +395,10 @@
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-pleng.paa";
 		textureVehicle = "";
 	};
+	class TAS_53
+	{
+		displayName = "(TAS) Bocchi the Glock";
+		author = "Walter";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Walter_Bocchi_the_Glock_Patch.paa";
+		textureVehicle = "";
+	};
