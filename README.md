@@ -94,4 +94,4 @@ Credit to Myke_Towers, Kettle, and supercas240 for allowing their Aurora Labs mo
 
 Credit to iNTERBRED for their Tactical Beards mod, Hhaine for publishing the mod, and -_LP_- for adding onto the mod and allowing the arma community to use it. https://steamcommunity.com/sharedfiles/filedetails/?id=1357784814 https://steamcommunity.com/sharedfiles/filedetails/?id=1432917255
 
-Credit to Pike713 for their ADV ACE-CPR (Pike Edition) mod, which unfortuately seems to be outdated abandonware. We have applied several bugfixes and repacked it into this mod. https://steamcommunity.com/sharedfiles/filedetails/?id=1957746437
+Credit to Pike713 for their ADV ACE-CPR (Pike Edition) mod, which unfortuately seems to be outdated abandonware. We (namely Wuckles, good job) have applied several bugfixes and repacked it into this mod. If the original author has an issue with this, please create an issue. https://steamcommunity.com/sharedfiles/filedetails/?id=1957746437
