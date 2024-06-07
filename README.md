@@ -93,3 +93,5 @@ Credit to Kaiser Mighty for making their Invisible TFAR Radio mod available to t
 Credit to Myke_Towers, Kettle, and supercas240 for allowing their Aurora Labs mod to be repacked by the community. https://steamcommunity.com/sharedfiles/filedetails/?id=2573399651 https://steamcommunity.com/sharedfiles/filedetails/?id=2872234627
 
 Credit to iNTERBRED for their Tactical Beards mod, Hhaine for publishing the mod, and -_LP_- for adding onto the mod and allowing the arma community to use it. https://steamcommunity.com/sharedfiles/filedetails/?id=1357784814 https://steamcommunity.com/sharedfiles/filedetails/?id=1432917255
+
+Credit to Pike713 for their ADV ACE-CPR (Pike Edition) mod, which unfortuately seems to be outdated abandonware. We have applied several bugfixes and repacked it into this mod. https://steamcommunity.com/sharedfiles/filedetails/?id=1957746437
