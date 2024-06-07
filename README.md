@@ -94,4 +94,6 @@ Credit to Myke_Towers, Kettle, and supercas240 for allowing their Aurora Labs mo
 
 Credit to iNTERBRED for their Tactical Beards mod, Hhaine for publishing the mod, and -_LP_- for adding onto the mod and allowing the arma community to use it. https://steamcommunity.com/sharedfiles/filedetails/?id=1357784814 https://steamcommunity.com/sharedfiles/filedetails/?id=1432917255
 
+Credit to Xelantro for making their 'Cat Ears!' mod available to the Arma community at large to repack under CC Attribution 4.0. https://steamcommunity.com/sharedfiles/filedetails/?id=2825934019
+
 Credit to Pike713 for their ADV ACE-CPR (Pike Edition) mod, which unfortuately seems to be outdated abandonware. We (namely Wuckles, good job) have applied several bugfixes and repacked it into this mod. If the original author has an issue with this, please create an issue. https://steamcommunity.com/sharedfiles/filedetails/?id=1957746437
