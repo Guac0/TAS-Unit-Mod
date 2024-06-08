@@ -27,7 +27,7 @@ class RscDisplayMain: RscStandardDisplay {
                     text = "TAS OCAP AAR Tool";
                     tooltip = "Connect to the OCAP AAR Tool.";
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    url = "http://####.####.####:5000/";
+                    url = "http://arma.d404.nl:5000/";
                     //onbuttonclick = "connectToServer ['###.###.###.###', 2302, '']";
                 };
                 class JoinTasTeamspeak: ServerBrowser {
@@ -35,7 +35,8 @@ class RscDisplayMain: RscStandardDisplay {
                     text = "TAS Teamspeak Server Quickjoin";
                     tooltip = "Connect to the Main TAS Teamspeak Server.";
                     y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                    url = "ts3server://####.####.####?port=9987&password=######";
+                    url = "ts3server://arma.d404.nl?port=9987";
+                    //url = "ts3server://####.####.####?port=9987&password=######";
                     //onbuttonclick = "connectToServer ['###.###.###.###', 2302, '']";
                 };
                 class ScrollDown: ServerBrowser {
@@ -52,24 +53,24 @@ class RscDisplayMain: RscStandardDisplay {
                     tooltip = "Connect to the Main TAS Arma Server.";
                     y = "(6 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     //onbuttonclick = "connectToServer ['####.####.####', 2302, '']"; //Cat: ###.###.###.###
-                    onbuttonclick = "0 = [_this, '####.####.####', '2302', '######'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
+                    onbuttonclick = "0 = [_this, 'arma.d404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                 };
-                class JoinGuacServer: ServerBrowser {
+                /*class JoinGuacServer: ServerBrowser {
                     idc = -1;
                     text = "TAS Backup Arma Server Quickjoin";
                     tooltip = "Connect to the Backup TAS Arma Server.";
                     y = "(7 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     onbuttonclick = "0 = [_this, '###.###.###.###', '2302', '######'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
                     //onbuttonclick = "0 = [_this, '127.0.0.1', '2302', '######'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServer.sqf';";
-                };
-                class JoinGuacTeamspeak: ServerBrowser {
+                };*/
+                /*class JoinGuacTeamspeak: ServerBrowser {
                     idc = -1;
                     text = "TAS Backup Teamspeak Server Quickjoin";
                     tooltip = "Connect to the Backup TAS Teamspeak Server";
                     y = "(8 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     url = "ts3server://###.###.###.###?port=9987&password=######";
                     //onbuttonclick = "connectToServer ['###.###.###.###', 2302, '']";
-                };
+                };*/
             };
         };
     };
@@ -108,7 +109,7 @@ class CfgMainMenuSpotlight: RscStandardDisplay // RscDisplayMain >> Spotlight wo
         //text = "Connect to<br />TAS Arma Server";
         //picture = "Autismo_Seals_Unit_Mod\logo.paa";
         picture = "\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\media\logo.paa";
-        action = "0 = [_this, '###.###.###.###', '2302', '######'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServerFullRpt.sqf';";
+        action = "0 = [_this, 'arma.d404.nl', '2302', 'cheese'] execVM '\Autismo_Seals_Unit_Mod\addons\TAS_Quickjoin\scripts\joinServerFullRpt.sqf';";
         //action = "connectToServer ['####.####.####', 2302, '######']"; //Cat: ###.###.###.###, tbone: ###.###.###.###
         actionText = "You should connect to it... NOW";
         condition = "true";
