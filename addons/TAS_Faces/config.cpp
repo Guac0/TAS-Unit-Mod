@@ -85,5 +85,11 @@ class CfgFaces
             displayname = "Soyjack 2";
             texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_ElDuko_Soyjack2.paa";
         };
+        class TAS_Chad_Face: TAS_Bernie_Face
+		{
+            author = "Corny";
+            displayname = "Chad";
+            texture = "Autismo_Seals_Unit_Mod\addons\TAS_Faces\faces\TAS_Corny_Based_Face.paa";
+        };
     };
 };
