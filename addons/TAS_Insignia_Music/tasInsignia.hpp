@@ -402,3 +402,17 @@
 		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Walter_Bocchi_the_Glock_Patch.paa";
 		textureVehicle = "";
 	};
+	class TAS_54
+	{
+		displayName = "(TAS) Ukrainian Boykisser";
+		author = "Walter";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Walter_Ukrainian_Boykisser.paa";
+		textureVehicle = "";
+	};
+	class TAS_55
+	{
+		displayName = "(TAS) Sussy Jerma";
+		author = "Shears";
+		texture = "Autismo_Seals_Unit_Mod\addons\TAS_Insignia_Music\icon\TAS-Shears_Sussy_Jerma.paa";
+		textureVehicle = "";
+	};
